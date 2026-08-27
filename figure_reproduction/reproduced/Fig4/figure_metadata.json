@@ -1,0 +1,9 @@
+{
+  "width_mm": 180,
+  "height_mm": 96,
+  "dpi": 600,
+  "backend": "Python/matplotlib",
+  "panel_b_e": "Mean curves for scPLAD, TxPert, STATE (20k), and the direct-source-expression baseline. scPLAD is averaged over three random seeds; the other methods are shown as their available single-run means. The dashed direct-source-expression baseline uses all available source cells and is defined only for coverage 1-3.",
+  "panel_f": "Coverage-0 comparison; global source-average response is a mean-only baseline.",
+  "panel_g": "Single-seed anchor replacement diagnostic. Cell colors encode each score relative to the correct K562 anchor; annotations show raw scores."
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "val",
+    "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/val.h5ad",
+    "n_eval_cells": 12000,
+    "n_genes": 3352,
+    "mse": 0.0016345877666026354,
+    "mae": 0.01844516210258007,
+    "cell_pcc_mean": 0.9963030169011313,
+    "cell_pcc_median": 0.996711043556078,
+    "cell_spearman_mean": 0.8866393008972012,
+    "cell_spearman_median": 0.8952276773785686,
+    "cell_line_counts": {
+      "RPE1": 4702,
+      "hepg2": 2912,
+      "jurkat": 4386
+    },
+    "num_conditions": 452
+  },
+  {
+    "name": "test_control",
+    "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test_control.h5ad",
+    "n_eval_cells": 10691,
+    "n_genes": 3352,
+    "mse": 0.001867191749624908,
+    "mae": 0.01998836360871792,
+    "cell_pcc_mean": 0.9957292678659156,
+    "cell_pcc_median": 0.9960487848634043,
+    "cell_spearman_mean": 0.9065850845644466,
+    "cell_spearman_median": 0.9121686506124873,
+    "cell_line_counts": {
+      "K562": 10691
+    },
+    "num_conditions": 1
+  }
+]

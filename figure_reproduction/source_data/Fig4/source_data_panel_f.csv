@@ -1,0 +1,5 @@
+metric,method,value,sd
+Delta PCC,scPLAD,0.3080005706776736,0.03348639875382717
+Delta PCC,Global source-average response,0.3081315995632041,
+Delta Spearman,scPLAD,0.2239823342469144,0.019424579374085284
+Delta Spearman,Global source-average response,0.2300631122411277,

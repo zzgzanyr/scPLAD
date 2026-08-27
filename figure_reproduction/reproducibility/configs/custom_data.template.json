@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "mode": "custom",
+  "run_name": "my_scplad_run",
+  "task": "k562_only",
+  "required_inputs": [
+    "project_root",
+    "benchmark_root",
+    "train_h5ad",
+    "test_h5ad",
+    "control_context_h5ad",
+    "gene_feature_csv"
+  ],
+  "paths": {
+    "project_root": "/ABSOLUTE/PATH/TO/scPLAD_engineered_archive",
+    "benchmark_root": "/ABSOLUTE/PATH/TO/prepared_benchmark",
+    "train_h5ad": "/ABSOLUTE/PATH/TO/train.h5ad",
+    "test_h5ad": "/ABSOLUTE/PATH/TO/test.h5ad",
+    "control_context_h5ad": "/ABSOLUTE/PATH/TO/control_context.h5ad",
+    "gene_feature_csv": "/ABSOLUTE/PATH/TO/gene_condition_features.csv",
+    "run_root": "../runs/my_scplad_run",
+    "source_data_root": "../runs/my_scplad_run/figure_source_data",
+    "reproduced_root": "../runs/my_scplad_run/figures"
+  },
+  "stages": {
+        "prepare": [
+            {
+                "name": "validate_prepared_k562_inputs",
+                "argv": [
+                    "{python}",
+                    "{archive}/reproducibility/validate_custom_inputs.py",
+                    "--train-h5ad",
+                    "{train_h5ad}",
+                    "--test-h5ad",
+                    "{test_h5ad}",
+                    "--control-h5ad",
+                    "{control_context_h5ad}",
+                    "--feature-csv",
+                    "{gene_feature_csv}",
+                    "--output-json",
+                    "{run_root}/preparation/input_validation.json"
+                ],
+                "outputs": [
+                    "{run_root}/preparation/input_validation.json"
+                ]
+            }
+        ],
+    "train_patchae": [
+      {
+        "name": "train_pathway_patchae",
+        "argv": [
+          "{python}",
+                    "{project_root}/scripts/training/{task}/train_patchae.py",
+                    "--benchmark_root",
+                    "{benchmark_root}",
+                    "--output_dir",
+          "{run_root}/checkpoints/patchae",
+          "--latent_dim",
+          "32",
+          "--patch_size",
+          "20",
+                    "--epochs",
+                    "100",
+                    "--batch_size",
+                    "512",
+                    "--gaussian_weight",
+                    "0.001",
+                    "--latent_noise_sigma",
+                    "0.08",
+                    "--seed",
+                    "20260515"
+        ],
+        "outputs": [
+          "{run_root}/checkpoints/patchae/best_model.pt",
+          "{run_root}/checkpoints/patchae/config.json"
+        ]
+      }
+    ],
+    "train_scplad": [
+      {
+        "name": "train_control_anchored_displacement_diffusion",
+        "argv": [
+          "torchrun",
+          "--standalone",
+          "--nproc_per_node=2",
+          "{project_root}/scripts/training/{task}/train_drdd_lite.py",
+          "--benchmark_root",
+          "{benchmark_root}",
+          "--train_h5ad",
+          "{train_h5ad}",
+          "--control_context_h5ad",
+          "{control_context_h5ad}",
+          "--autoencoder_dir",
+          "{run_root}/checkpoints/patchae",
+          "--gene_feature_csv",
+          "{gene_feature_csv}",
+          "--output_dir",
+          "{run_root}/checkpoints/scplad",
+          "--model_variant",
+          "prior_feature_cond",
+          "--target_space",
+          "displacement",
+          "--prediction_target",
+          "x0",
+          "--fixed_noise_timestep",
+          "500",
+                    "--fixed_noise_shared_noise",
+                    "--standardize_displacement",
+                    "global_scalar",
+          "--exclude_feature_prefixes",
+          "depmap_",
+          "--steps",
+          "500000",
+                    "--save_interval",
+                    "100000",
+                    "--ema_decay",
+                    "0.9999",
+                    "--ema_save_interval",
+                    "100000",
+                    "--seed",
+                    "20260713"
+                ],
+                "outputs": [
+                    "{run_root}/checkpoints/scplad/config.json",
+                    "{run_root}/checkpoints/scplad/model_ema_step_100000.pt"
+        ]
+      }
+    ],
+    "infer": [
+      {
+        "name": "generate_test_cell_clouds",
+        "argv": [
+          "{python}",
+          "{project_root}/scripts/inference/{task}/generate_and_evaluate.py",
+                    "--checkpoint",
+                    "{run_root}/checkpoints/scplad/model_ema_step_100000.pt",
+          "--autoencoder_dir",
+          "{run_root}/checkpoints/patchae",
+          "--benchmark_root",
+          "{benchmark_root}",
+          "--eval_h5ad",
+          "{test_h5ad}",
+          "--control_context_h5ad",
+          "{control_context_h5ad}",
+          "--output_dir",
+          "{run_root}/predictions",
+          "--cells",
+          "fixed",
+          "--fixed_cells",
+          "2000",
+          "--sample_steps",
+          "50",
+          "--save_generated_h5ad"
+        ],
+        "outputs": [
+          "{run_root}/predictions"
+        ]
+      }
+    ],
+    "evaluate": [
+      {
+        "name": "evaluate_generated_cell_clouds",
+        "argv": [
+          "{python}",
+          "{archive}/reproducibility/evaluate_custom_predictions.py",
+          "--truth-h5ad",
+          "{test_h5ad}",
+          "--generated-h5ad",
+          "{run_root}/predictions/generated.h5ad",
+          "--control-h5ad",
+          "{control_context_h5ad}",
+          "--out-dir",
+          "{run_root}/metrics",
+          "--top-k",
+          "100",
+          "--expected-generated-cells",
+          "2000"
+        ],
+        "outputs": [
+          "{run_root}/metrics/per_condition_metrics.csv",
+          "{run_root}/metrics/summary_metrics.json"
+        ]
+      }
+    ],
+    "figures": [
+      {
+        "name": "render_custom_experiment_summary",
+        "argv": [
+          "{python}",
+          "{archive}/reproducibility/plot_custom_summary.py",
+          "--metrics-csv",
+          "{run_root}/metrics/per_condition_metrics.csv",
+          "--output-prefix",
+          "{reproduced_root}/custom_experiment_summary"
+        ],
+        "outputs": [
+          "{reproduced_root}/custom_experiment_summary.svg",
+          "{reproduced_root}/custom_experiment_summary.pdf"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "seeds": [
+    20260613,
+    20260713,
+    20260813
+  ],
+  "n_test_conditions": 272,
+  "n_train_conditions": 734,
+  "esm3_similarity_definition": "maximum cosine similarity to a training perturbation in ESM3-PCA256 space",
+  "esm3_similarity_median": 0.40913168552972934,
+  "network_rich_definition": "at least 3 of PPI, GRN, OmniPath, and Complex blocks are available",
+  "coverage_counts": {
+    "esm3_has_embedding": {
+      "positive": 272,
+      "negative": 0
+    },
+    "esm3_semantic_near": {
+      "positive": 136,
+      "negative": 136
+    },
+    "ppi_has_go_profile": {
+      "positive": 268,
+      "negative": 4
+    },
+    "grn_has_any": {
+      "positive": 75,
+      "negative": 197
+    },
+    "omnipath_has_any": {
+      "positive": 136,
+      "negative": 136
+    },
+    "complex_has_any": {
+      "positive": 196,
+      "negative": 76
+    },
+    "network_rich": {
+      "positive": 138,
+      "negative": 134
+    }
+  },
+  "network_block_count_distribution": {
+    "1": 52,
+    "2": 82,
+    "3": 93,
+    "4": 45
+  },
+  "gain_definition": "positive values always indicate improvement over GO+Reactome baseline",
+  "bootstrap_replicates": 10000,
+  "permutation_replicates": 10000
+}

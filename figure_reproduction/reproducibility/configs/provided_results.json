@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "mode": "provided",
+  "run_name": "paper_results",
+  "task": "all",
+  "paths": {
+    "project_root": "../../../../scPLAD_engineered_20260722_scaffold",
+    "source_data_root": "../../source_data",
+    "run_root": "../runs/paper_results",
+    "reproduced_root": "../../reproduced"
+  },
+  "stages": {
+    "prepare": [],
+    "train_patchae": [],
+    "train_scplad": [],
+    "infer": [],
+    "evaluate": [],
+    "figures": [
+      {
+        "name": "execute_figure_notebooks",
+        "argv": [
+          "{python}",
+          "{archive}/notebooks/run_all_notebooks.py"
+        ],
+        "cwd": "{archive}/notebooks",
+        "outputs": [
+          "{reproduced_root}/Fig1/figure1a_standalone.svg",
+          "{reproduced_root}/Fig1/figure1b_standalone.svg",
+          "{reproduced_root}/Fig1/figure1c_standalone.svg",
+          "{reproduced_root}/Fig1/figure1d_standalone.svg",
+          "{reproduced_root}/Fig2/figure2a_erc_labeled.svg",
+          "{reproduced_root}/Fig2/figure2b_csa_labeled.svg",
+          "{reproduced_root}/Fig2/figure2c_expression_distribution_labeled.svg",
+          "{reproduced_root}/Fig2/figure2d_latent_distribution_labeled.svg",
+          "{reproduced_root}/Fig2/figure2_patchae_vae_shared_umap.svg",
+          "{reproduced_root}/Fig3/figure3a_delta_pcc.svg",
+          "{reproduced_root}/Fig3/figure3b_topk_de.svg",
+          "{reproduced_root}/Fig3/figure3c_pra_all.svg",
+          "{reproduced_root}/Fig3/figure3d_csa_pearson.svg",
+          "{reproduced_root}/Fig3/figure3e_gge_wasserstein.svg",
+          "{reproduced_root}/Fig3/figure3f_gge_mmd.svg",
+          "{reproduced_root}/Fig3/figure3g_gge_energy.svg",
+          "{reproduced_root}/Fig3/figure4h_k562_ablation_bar_strip_20260716.svg",
+          "{reproduced_root}/Fig4/figure4a_cross_cell_overall_mean_metrics.svg",
+          "{reproduced_root}/Fig4/figure4b_delta_pcc_by_source_coverage.svg",
+          "{reproduced_root}/Fig4/figure4c_top100_de_by_source_coverage.svg",
+          "{reproduced_root}/Fig4/figure4d_erc_by_source_coverage.svg",
+          "{reproduced_root}/Fig4/figure4e_csa_by_source_coverage.svg",
+          "{reproduced_root}/Fig4/figure4f_prior_interaction_background.svg",
+          "{reproduced_root}/Fig5/figure5a_hspa9_external_targets.svg",
+          "{reproduced_root}/Fig5/figure5b_hspa9_csa_heatmap.svg",
+          "{reproduced_root}/Fig5/figure5c_hspa9_expression_range.svg"
+        ]
+      }
+    ]
+  }
+}

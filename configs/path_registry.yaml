@@ -1,0 +1,15 @@
+archive:
+  root: <SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722
+
+data:
+  k562_only: data/k562_only/pathway5000
+  k562_control_context: data/k562_only/drdd_context/control_context.h5ad
+  cross_cell_line: data/cross_cell_line/pathway3352/fold_0
+  cross_cell_line_priors: data/priors/cross_cell_line_bioprior
+
+original_sources:
+  server7_project: <SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307
+  server7_results: <SCPLAD_DATA_ROOT>/scplad/scPLAD_generated
+  server8_project: <SCPLAD_DATA_ROOT>/Squidiff_transport_20260601
+  server8_cross_data: <SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1
+  server8_cross_results: <SCPLAD_DATA_ROOT>/scplad/experiments_transport

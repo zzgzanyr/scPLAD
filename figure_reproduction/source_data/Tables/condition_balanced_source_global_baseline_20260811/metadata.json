@@ -1,0 +1,16 @@
+{
+  "dataset_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0",
+  "conditions_csv": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_unseen_conditions.csv",
+  "n_source_cells": 254170,
+  "n_source_gene_cell_line_conditions": 2981,
+  "n_source_genes": 1350,
+  "n_coverage0_conditions": 506,
+  "n_k562_control_cells": 10691,
+  "n_pred_cells_per_condition": 2000,
+  "sampling_seeds": [
+    20260601,
+    20260713,
+    20260714
+  ],
+  "condition_balanced_unit": "one observed (source cell line, perturbation gene) condition"
+}

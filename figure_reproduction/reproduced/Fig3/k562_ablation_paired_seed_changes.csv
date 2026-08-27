@@ -1,0 +1,49 @@
+variant,label,seed,metric,metric_title,metric_short,reference_value,ablation_value,paired_change_pp
+Original order + full prior,Original order,20260613,delta_pcc,Perturbation direction,Delta PCC,0.4647960907246795,0.4618451068566995,-0.2950983867979984
+Original order + full prior,Original order,20260613,topk_de_overlap,Response-gene recovery,TopK-DE,0.4082720588235294,0.3992647058823529,-0.9007352941176494
+Original order + full prior,Original order,20260613,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8228055655685181,0.8001516517383118,-2.265391383020632
+Original order + full prior,Original order,20260613,csa_pearson,Gene correlation structure,CSA Pearson,0.6415479299447203,0.628840953779978,-1.2706976164742367
+Original order + full prior,Original order,20260713,delta_pcc,Perturbation direction,Delta PCC,0.4622801904652723,0.4736828983202135,1.1402707854941185
+Original order + full prior,Original order,20260713,topk_de_overlap,Response-gene recovery,TopK-DE,0.4044117647058823,0.4095220588235294,0.5110294117647074
+Original order + full prior,Original order,20260713,pra_all_genes,Expression-range coverage,"ERC, all genes",0.822823552030211,0.807931496439046,-1.489205559116491
+Original order + full prior,Original order,20260713,csa_pearson,Gene correlation structure,CSA Pearson,0.6394636344408888,0.6306031275601368,-0.8860506880752017
+Original order + full prior,Original order,20260813,delta_pcc,Perturbation direction,Delta PCC,0.4568688597041427,0.4624357690616359,0.556690935749321
+Original order + full prior,Original order,20260813,topk_de_overlap,Response-gene recovery,TopK-DE,0.4040808823529411,0.3983088235294117,-0.577205882352938
+Original order + full prior,Original order,20260813,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8251260291888582,0.8073199876884123,-1.7806041500445957
+Original order + full prior,Original order,20260813,csa_pearson,Gene correlation structure,CSA Pearson,0.6391657071509407,0.6284683355513649,-1.0697371599575733
+GO + Reactome,GO + Reactome,20260613,delta_pcc,Perturbation direction,Delta PCC,0.4647960907246795,0.4605297405908298,-0.42663501338496834
+GO + Reactome,GO + Reactome,20260613,topk_de_overlap,Response-gene recovery,TopK-DE,0.4082720588235294,0.400625,-0.7647058823529396
+GO + Reactome,GO + Reactome,20260613,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8228055655685181,0.8107130085249024,-1.2092557043615781
+GO + Reactome,GO + Reactome,20260613,csa_pearson,Gene correlation structure,CSA Pearson,0.6415479299447203,0.6337432226437942,-0.7804707300926084
+GO + Reactome,GO + Reactome,20260713,delta_pcc,Perturbation direction,Delta PCC,0.4622801904652723,0.4593982116459987,-0.28819788192736007
+GO + Reactome,GO + Reactome,20260713,topk_de_overlap,Response-gene recovery,TopK-DE,0.4044117647058823,0.3990808823529411,-0.5330882352941213
+GO + Reactome,GO + Reactome,20260713,pra_all_genes,Expression-range coverage,"ERC, all genes",0.822823552030211,0.8111912376043342,-1.1632314425876755
+GO + Reactome,GO + Reactome,20260713,csa_pearson,Gene correlation structure,CSA Pearson,0.6394636344408888,0.6357486654157258,-0.3714969025162995
+GO + Reactome,GO + Reactome,20260813,delta_pcc,Perturbation direction,Delta PCC,0.4568688597041427,0.4614665039326073,0.45976442284645924
+GO + Reactome,GO + Reactome,20260813,topk_de_overlap,Response-gene recovery,TopK-DE,0.4040808823529411,0.4039338235294117,-0.014705882352938904
+GO + Reactome,GO + Reactome,20260813,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8251260291888582,0.8156991117253917,-0.9426917463466578
+GO + Reactome,GO + Reactome,20260813,csa_pearson,Gene correlation structure,CSA Pearson,0.6391657071509407,0.6343787832678284,-0.4786923883112304
+GO + Reactome + ESM3,+ ESM3,20260613,delta_pcc,Perturbation direction,Delta PCC,0.4647960907246795,0.4671822952908183,0.23862045661388054
+GO + Reactome + ESM3,+ ESM3,20260613,topk_de_overlap,Response-gene recovery,TopK-DE,0.4082720588235294,0.3973161764705882,-1.0955882352941204
+GO + Reactome + ESM3,+ ESM3,20260613,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8228055655685181,0.8209815752372006,-0.18239903313175265
+GO + Reactome + ESM3,+ ESM3,20260613,csa_pearson,Gene correlation structure,CSA Pearson,0.6415479299447203,0.6356376612435403,-0.5910268701180055
+GO + Reactome + ESM3,+ ESM3,20260713,delta_pcc,Perturbation direction,Delta PCC,0.4622801904652723,0.4515690418977908,-1.071114856748151
+GO + Reactome + ESM3,+ ESM3,20260713,topk_de_overlap,Response-gene recovery,TopK-DE,0.4044117647058823,0.3887132352941176,-1.5698529411764695
+GO + Reactome + ESM3,+ ESM3,20260713,pra_all_genes,Expression-range coverage,"ERC, all genes",0.822823552030211,0.819874086188108,-0.2949465842102983
+GO + Reactome + ESM3,+ ESM3,20260713,csa_pearson,Gene correlation structure,CSA Pearson,0.6394636344408888,0.6375955730741737,-0.18680613667151347
+GO + Reactome + ESM3,+ ESM3,20260813,delta_pcc,Perturbation direction,Delta PCC,0.4568688597041427,0.4561734285990851,-0.06954311050575979
+GO + Reactome + ESM3,+ ESM3,20260813,topk_de_overlap,Response-gene recovery,TopK-DE,0.4040808823529411,0.3922058823529411,-1.187499999999997
+GO + Reactome + ESM3,+ ESM3,20260813,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8251260291888582,0.8230774537017902,-0.20485754870680495
+GO + Reactome + ESM3,+ ESM3,20260813,csa_pearson,Gene correlation structure,CSA Pearson,0.6391657071509407,0.6394220256489198,0.025631849797913553
+GO + Reactome + network,+ Network,20260613,delta_pcc,Perturbation direction,Delta PCC,0.4647960907246795,0.4818866368066734,1.7090546081993896
+GO + Reactome + network,+ Network,20260613,topk_de_overlap,Response-gene recovery,TopK-DE,0.4082720588235294,0.4175735294117647,0.9301470588235272
+GO + Reactome + network,+ Network,20260613,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8228055655685181,0.8159131112875226,-0.6892454280995497
+GO + Reactome + network,+ Network,20260613,csa_pearson,Gene correlation structure,CSA Pearson,0.6415479299447203,0.6376982332913828,-0.38496966533375643
+GO + Reactome + network,+ Network,20260713,delta_pcc,Perturbation direction,Delta PCC,0.4622801904652723,0.479491416979132,1.72112265138597
+GO + Reactome + network,+ Network,20260713,topk_de_overlap,Response-gene recovery,TopK-DE,0.4044117647058823,0.4109191176470588,0.6507352941176492
+GO + Reactome + network,+ Network,20260713,pra_all_genes,Expression-range coverage,"ERC, all genes",0.822823552030211,0.8129772184496405,-0.984633358057041
+GO + Reactome + network,+ Network,20260713,csa_pearson,Gene correlation structure,CSA Pearson,0.6394636344408888,0.6361594136535357,-0.33042207873531515
+GO + Reactome + network,+ Network,20260813,delta_pcc,Perturbation direction,Delta PCC,0.4568688597041427,0.4732325354703279,1.6363675766185193
+GO + Reactome + network,+ Network,20260813,topk_de_overlap,Response-gene recovery,TopK-DE,0.4040808823529411,0.4098161764705882,0.5735294117647116
+GO + Reactome + network,+ Network,20260813,pra_all_genes,Expression-range coverage,"ERC, all genes",0.8251260291888582,0.819119939863595,-0.6006089325263253
+GO + Reactome + network,+ Network,20260813,csa_pearson,Gene correlation structure,CSA Pearson,0.6391657071509407,0.6411887580014402,0.2023050850499475

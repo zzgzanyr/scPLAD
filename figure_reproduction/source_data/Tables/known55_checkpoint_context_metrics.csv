@@ -1,0 +1,6 @@
+setting,checkpoint,cells,num_groups,mean_pcc,mean_spearman,delta_pcc,delta_spearman
+K562_known55,300k,match_true_counts,55,0.986724,0.926629,0.414016,0.268015
+K562_known55,300k,fixed2000,55,0.989083,0.948672,0.445530,0.307553
+K562_known55,500k,match_true_counts,55,0.988832,0.933142,0.394025,0.247982
+Source_known55_RPE1_hepg2_jurkat,300k,match_true_counts,143,0.992091,0.937401,0.698636,0.535599
+Source_known55_RPE1_hepg2_jurkat,500k,match_true_counts,143,0.992432,0.940642,0.676771,0.522139

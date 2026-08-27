@@ -1,0 +1,15 @@
+{
+  "condition": "HSPA9",
+  "context": "K562",
+  "model": "TxPert",
+  "full_csa_gene_set": "top true response genes by abs(mean true - K562 control mean)",
+  "full_csa_top_k": 100,
+  "displayed_gene_count": 36,
+  "display_selection": "highest-ranked genes within the full CSA top-response set",
+  "display_order": "average-linkage clustering on the true display correlation matrix; reused unchanged for generated cells",
+  "n_true_cells": 374,
+  "n_generated_cells": 2000,
+  "n_correlation_pairs_full_csa": 4950,
+  "csa_pearson_full_top_k": 0.19765573913442117,
+  "csa_spearman_full_top_k": 0.17886468146730167
+}

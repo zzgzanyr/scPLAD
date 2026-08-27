@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "mode": "custom",
+  "run_name": "my_cross_cell_line_run",
+  "task": "cross_cell_line",
+  "required_inputs": [
+    "project_root",
+    "benchmark_root",
+    "ae_train_h5ad",
+    "train_h5ad",
+    "test_h5ad",
+    "control_context_h5ad",
+    "gene_feature_csv"
+  ],
+  "paths": {
+    "project_root": "/ABSOLUTE/PATH/TO/scPLAD_engineered_archive",
+    "benchmark_root": "/ABSOLUTE/PATH/TO/prepared_cross_cell_benchmark",
+    "ae_train_h5ad": "/ABSOLUTE/PATH/TO/ae_train.h5ad",
+    "train_h5ad": "/ABSOLUTE/PATH/TO/source_cell_line_train.h5ad",
+    "test_h5ad": "/ABSOLUTE/PATH/TO/target_cell_line_test.h5ad",
+    "control_context_h5ad": "/ABSOLUTE/PATH/TO/target_control_context.h5ad",
+    "gene_feature_csv": "/ABSOLUTE/PATH/TO/gene_condition_features.csv",
+    "run_root": "../runs/my_cross_cell_line_run",
+    "source_data_root": "../runs/my_cross_cell_line_run/figure_source_data",
+    "reproduced_root": "../runs/my_cross_cell_line_run/figures"
+  },
+  "stages": {
+    "prepare": [
+      {
+        "name": "validate_prepared_cross_cell_line_inputs",
+        "argv": [
+          "{python}",
+          "{archive}/reproducibility/validate_custom_inputs.py",
+          "--train-h5ad",
+          "{train_h5ad}",
+          "--test-h5ad",
+          "{test_h5ad}",
+          "--control-h5ad",
+          "{control_context_h5ad}",
+          "--ae-train-h5ad",
+          "{ae_train_h5ad}",
+          "--feature-csv",
+          "{gene_feature_csv}",
+          "--output-json",
+          "{run_root}/preparation/input_validation.json"
+        ],
+        "outputs": [
+          "{run_root}/preparation/input_validation.json"
+        ]
+      }
+    ],
+    "train_patchae": [
+      {
+        "name": "train_cross_cell_line_patchae",
+        "argv": [
+          "{python}",
+          "{project_root}/scripts/training/exact_historical/cross_cell_line/train_patch_autoencoder_train_only.py",
+          "--benchmark_root",
+          "{benchmark_root}",
+          "--train_h5ad",
+          "{ae_train_h5ad}",
+          "--output_dir",
+          "{run_root}/checkpoints/patchae",
+          "--latent_dim",
+          "32",
+          "--patch_size",
+          "20",
+          "--hidden_dim",
+          "128",
+          "--num_layers",
+          "2",
+          "--num_heads",
+          "4",
+          "--latent_noise_sigma",
+          "0.08",
+          "--epochs",
+          "200",
+          "--batch_size",
+          "1024",
+          "--lr",
+          "0.001",
+          "--seed",
+          "20260426"
+        ],
+        "outputs": [
+          "{run_root}/checkpoints/patchae/best_model.pt",
+          "{run_root}/checkpoints/patchae/config.json"
+        ]
+      }
+    ],
+    "train_scplad": [
+      {
+        "name": "train_cross_cell_line_displacement_diffusion",
+        "argv": [
+          "torchrun",
+          "--standalone",
+          "--nproc_per_node=2",
+          "{project_root}/scripts/training/exact_historical/cross_cell_line/train_drdd_lite_fixed_noise_weighted_prior_ddp.py",
+          "--benchmark_root",
+          "{benchmark_root}",
+          "--train_h5ad",
+          "{train_h5ad}",
+          "--control_context_h5ad",
+          "{control_context_h5ad}",
+          "--autoencoder_dir",
+          "{run_root}/checkpoints/patchae",
+          "--gene_feature_csv",
+          "{gene_feature_csv}",
+          "--output_dir",
+          "{run_root}/checkpoints/scplad",
+          "--heldout_context",
+          "K562",
+          "--model_variant",
+          "prior_feature_cond",
+          "--target_space",
+          "displacement",
+          "--prediction_target",
+          "x0",
+          "--fixed_noise_timestep",
+          "500",
+          "--fixed_noise_shared_noise",
+          "--standardize_displacement",
+          "global_scalar",
+          "--exclude_feature_prefixes",
+          "depmap_",
+          "--steps",
+          "500000",
+          "--save_interval",
+          "100000",
+          "--seed",
+          "20260713"
+        ],
+        "outputs": [
+          "{run_root}/checkpoints/scplad/config.json"
+        ]
+      }
+    ],
+    "infer": [
+      {
+        "name": "generate_target_cell_line_clouds",
+        "argv": [
+          "{python}",
+          "{project_root}/scripts/inference/{task}/generate_and_evaluate.py",
+          "--checkpoint",
+          "{run_root}/checkpoints/scplad/model_step_300000.pt",
+          "--autoencoder_dir",
+          "{run_root}/checkpoints/patchae",
+          "--benchmark_root",
+          "{benchmark_root}",
+          "--eval_h5ad",
+          "{test_h5ad}",
+          "--control_context_h5ad",
+          "{control_context_h5ad}",
+          "--context_filter",
+          "K562",
+          "--output_dir",
+          "{run_root}/predictions",
+          "--cells",
+          "fixed",
+          "--fixed_cells",
+          "2000",
+          "--sample_steps",
+          "50",
+          "--save_generated_h5ad"
+        ],
+        "outputs": [
+          "{run_root}/predictions/generated.h5ad"
+        ]
+      }
+    ],
+    "evaluate": [
+      {
+        "name": "evaluate_target_cell_line_clouds",
+        "argv": [
+          "{python}",
+          "{archive}/reproducibility/evaluate_custom_predictions.py",
+          "--truth-h5ad",
+          "{test_h5ad}",
+          "--generated-h5ad",
+          "{run_root}/predictions/generated.h5ad",
+          "--control-h5ad",
+          "{control_context_h5ad}",
+          "--context-key",
+          "cell_line",
+          "--target-context",
+          "K562",
+          "--out-dir",
+          "{run_root}/metrics",
+          "--top-k",
+          "100",
+          "--expected-generated-cells",
+          "2000"
+        ],
+        "outputs": [
+          "{run_root}/metrics/per_condition_metrics.csv",
+          "{run_root}/metrics/summary_metrics.json"
+        ]
+      }
+    ],
+    "figures": [
+      {
+        "name": "render_cross_cell_line_summary",
+        "argv": [
+          "{python}",
+          "{archive}/reproducibility/plot_custom_summary.py",
+          "--metrics-csv",
+          "{run_root}/metrics/per_condition_metrics.csv",
+          "--output-prefix",
+          "{reproduced_root}/custom_cross_cell_line_summary"
+        ],
+        "outputs": [
+          "{reproduced_root}/custom_cross_cell_line_summary.svg",
+          "{reproduced_root}/custom_cross_cell_line_summary.pdf"
+        ]
+      }
+    ]
+  }
+}

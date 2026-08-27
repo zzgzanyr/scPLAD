@@ -1,0 +1,4 @@
+source_context_count,n_conditions,delta_pcc,topk_de_overlap,erc_top100_true_de,csa_pearson
+1,75,0.337,0.325,0.823,0.442
+2,162,0.386,0.344,0.850,0.446
+3,343,0.403,0.361,0.857,0.456

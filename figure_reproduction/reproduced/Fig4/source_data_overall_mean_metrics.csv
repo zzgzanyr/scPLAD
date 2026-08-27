@@ -1,0 +1,13 @@
+metric,label,method,mean,std
+delta_pcc,Delta PCC,scPLAD,0.381211,0.02742
+delta_pcc,Delta PCC,TxPert,0.49152869202767757,0.0
+delta_pcc,Delta PCC,STATE + mean fallback,0.3199586824929967,0.0
+delta_spearman,Delta Spearman,scPLAD,0.269626,0.015806
+delta_spearman,Delta Spearman,TxPert,0.36127733436909293,0.0
+delta_spearman,Delta Spearman,STATE + mean fallback,0.2053263014730884,0.0
+topk_de_overlap,Top-100 DE overlap,scPLAD,0.33934,0.016925
+topk_de_overlap,Top-100 DE overlap,TxPert,0.3773112338858195,0.0
+topk_de_overlap,Top-100 DE overlap,STATE + mean fallback,0.3193278084714548,0.0
+auprc,AUPRC,scPLAD,0.291703,0.019528
+auprc,AUPRC,TxPert,0.3406320323625102,0.0
+auprc,AUPRC,STATE + mean fallback,0.263263057822069,0.0

@@ -1,0 +1,53 @@
+{
+  "dataset_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0",
+  "target_context": "K562",
+  "source_contexts": [
+    "RPE1",
+    "hepg2",
+    "jurkat"
+  ],
+  "k562_test_perturbation_conditions": 1086,
+  "k562_test_perturbed_cells": 150312,
+  "source_train_perturbation_conditions_union": 1350,
+  "coverage_condition_counts": {
+    "0": 506,
+    "1": 75,
+    "2": 162,
+    "3": 343
+  },
+  "coverage_cell_counts": {
+    "0": 70159,
+    "1": 9853,
+    "2": 21450,
+    "3": 48850
+  },
+  "conditions_seen_in_any_source": 580,
+  "conditions_unseen_in_all_sources": 506,
+  "conditions_by_source_context": {
+    "RPE1": 467,
+    "hepg2": 480,
+    "jurkat": 481
+  },
+  "train_context_counts": {
+    "RPE1": 101210,
+    "jurkat": 92575,
+    "hepg2": 60385
+  },
+  "test_context_counts": {
+    "K562": 150312
+  },
+  "control_context_counts": {
+    "jurkat": 12013,
+    "RPE1": 11485,
+    "K562": 10691,
+    "hepg2": 4976
+  },
+  "outputs": {
+    "full_table": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_test_condition_source_coverage.csv",
+    "source_unseen_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_unseen_conditions.csv",
+    "source_seen_any_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_any_conditions.csv",
+    "source_seen_1_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_1_conditions.csv",
+    "source_seen_2_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_2_conditions.csv",
+    "source_seen_3_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_3_conditions.csv"
+  }
+}

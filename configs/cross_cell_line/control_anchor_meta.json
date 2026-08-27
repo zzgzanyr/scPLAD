@@ -1,0 +1,63 @@
+{
+  "autoencoder_dir": "<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1",
+  "autoencoder_config": {
+    "benchmark_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1",
+    "fold": 0,
+    "train_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/ae_train.h5ad",
+    "output_dir": "<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1",
+    "latent_dim": 32,
+    "patch_size": 20,
+    "hidden_dim": 128,
+    "num_layers": 2,
+    "num_heads": 4,
+    "dropout": 0.0,
+    "latent_norm": "none",
+    "gaussian_weight": 0.0,
+    "gaussian_cov_weight": 0.0,
+    "gaussian_cov_dims": 0,
+    "latent_noise_sigma": 0.08,
+    "epochs": 200,
+    "batch_size": 1024,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "seed": 20260426,
+    "num_workers": 2,
+    "final_eval_cells": 12000,
+    "max_train_cells": 0,
+    "resume_model": "<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_150ep_from100_v1/best_model.pt",
+    "resume_history": "<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_150ep_from100_v1/history.json",
+    "start_epoch": 150,
+    "gene_size": 3352,
+    "num_patches": 168,
+    "padded_gene_size": 3360,
+    "pad_genes": 8,
+    "latent_shape": [
+      168,
+      32
+    ],
+    "train_cells": 293335,
+    "device": "cuda",
+    "data_usage": "train_h5ad_only_no_val_no_test"
+  },
+  "control_context_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
+  "control_var_names_sha256": "5357bfd74fa5b84f0eb15785a66cfe90f465c26544991973ffdc176813364d71",
+  "control_gene_size": 3352,
+  "context_key": "cell_line",
+  "context_mapping": {
+    "K562": 0,
+    "RPE1": 1,
+    "hepg2": 2,
+    "jurkat": 3
+  },
+  "anchor_sampling": "mean",
+  "anchor_bank_size": 0,
+  "anchor_sample_cells": 0,
+  "anchor_bank_seed": 0,
+  "anchor_counts": {
+    "K562": 10691,
+    "RPE1": 11485,
+    "hepg2": 4976,
+    "jurkat": 12013
+  },
+  "cache_policy": "validated_against_autoencoder_control_path_var_names_and_context_mapping"
+}

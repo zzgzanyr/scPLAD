@@ -1,0 +1,17 @@
+variant,label,metric,metric_title,metric_short,n_seeds,mean_change_pp,sd_change_pp
+Original order + full prior,Original order,delta_pcc,Perturbation direction,Delta PCC,3,0.4672877781484804,0.7218489167640204
+Original order + full prior,Original order,topk_de_overlap,Response-gene recovery,TopK-DE,3,-0.3223039215686267,0.739595263236954
+Original order + full prior,Original order,pra_all_genes,Expression-range coverage,"ERC, all genes",3,-1.8450670307272397,0.39208762483259535
+Original order + full prior,Original order,csa_pearson,Gene correlation structure,CSA Pearson,3,-1.0754951548356706,0.1923880993213074
+GO + Reactome,GO + Reactome,delta_pcc,Perturbation direction,Delta PCC,3,-0.08502282415528972,0.4768501527873943
+GO + Reactome,GO + Reactome,topk_de_overlap,Response-gene recovery,TopK-DE,3,-0.43749999999999994,0.38402842739175375
+GO + Reactome,GO + Reactome,pra_all_genes,Expression-range coverage,"ERC, all genes",3,-1.1050596310986371,0.1424852822823544
+GO + Reactome,GO + Reactome,csa_pearson,Gene correlation structure,CSA Pearson,3,-0.5435533403067128,0.21206156000304324
+GO + Reactome + ESM3,+ ESM3,delta_pcc,Perturbation direction,Delta PCC,3,-0.3006791702133434,0.68477701212858
+GO + Reactome + ESM3,+ ESM3,topk_de_overlap,Response-gene recovery,TopK-DE,3,-1.2843137254901957,0.2515182416722223
+GO + Reactome + ESM3,+ ESM3,pra_all_genes,Expression-range coverage,"ERC, all genes",3,-0.22740105534961863,0.05956420974259961
+GO + Reactome + ESM3,+ ESM3,csa_pearson,Gene correlation structure,CSA Pearson,3,-0.2507337189972018,0.3132603486695862
+GO + Reactome + network,+ Network,delta_pcc,Perturbation direction,Delta PCC,3,1.6888482787346264,0.04584841859364366
+GO + Reactome + network,+ Network,topk_de_overlap,Response-gene recovery,TopK-DE,3,0.7181372549019627,0.18762010762873763
+GO + Reactome + network,+ Network,pra_all_genes,Expression-range coverage,"ERC, all genes",3,-0.7581625728943053,0.20107428847578956
+GO + Reactome + network,+ Network,csa_pearson,Gene correlation structure,CSA Pearson,3,-0.17102888633970803,0.32446502191470145

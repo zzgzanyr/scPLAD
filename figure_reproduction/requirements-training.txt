@@ -1,0 +1,4 @@
+-r requirements-figures.txt
+scanpy>=1.10
+torch>=2.2
+tqdm>=4.66

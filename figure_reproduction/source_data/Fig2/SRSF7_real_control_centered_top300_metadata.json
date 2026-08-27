@@ -1,0 +1,12 @@
+{
+  "h5ad": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/state_replogle_filtered/replogle_concat.h5ad",
+  "obs_col": "gene",
+  "requested_perturbation": "SRSF7",
+  "selected_perturbation": "SRSF7",
+  "control_label": "non-targeting",
+  "n_control_cells": 39165,
+  "n_perturbation_cells": 309,
+  "n_genes": 6546,
+  "top_n": 300,
+  "range_definition": "For each gene, subtract the control-cell mean, then compute per-perturbation-cell min/max, 10th/90th percentiles, and mean."
+}

@@ -1,0 +1,29 @@
+CUDA_VISIBLE_DEVICES=2,3 <SCPLAD_DATA_ROOT>/miniconda3/envs/squidiff_env/bin/python -m torch.distributed.run --standalone --nproc_per_node=2 train_drdd_lite_fixed_noise_weighted_prior_ddp.py \
+  --benchmark_root <SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1 \
+  --fold 0 \
+  --autoencoder_dir <SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1 \
+  --output_dir <SCPLAD_DATA_ROOT>/scplad/experiments_transport/txpert_xcell_bioprior_noDepMap_drdd_lite_fixedtau500_film_priorfeature_x0_500k_v1 \
+  --gene_feature_csv <SCPLAD_DATA_ROOT>/scplad/features/txpert_xcell_bioprior_esm3_v1/gene_condition_features_bioprior_go256_reactome256_esm3pca256_string_omnipath_grn_complex_depmap.csv \
+  --exclude_feature_prefixes depmap_ \
+  --context_feature_mode zero \
+  --model_variant prior_feature_cond \
+  --target_space displacement \
+  --fixed_noise_timestep 500 \
+  --fixed_noise_shared_noise \
+  --prediction_target x0 \
+  --standardize_displacement global_scalar \
+  --steps 500000 \
+  --save_interval 100000 \
+  --log_interval 100 \
+  --batch_size 256 \
+  --encode_batch_size 512 \
+  --lr 1e-4 \
+  --weight_decay 1e-4 \
+  --hidden_dim 256 \
+  --num_layers 6 \
+  --num_heads 8 \
+  --mlp_ratio 4.0 \
+  --dropout 0.0 \
+  --latent_cache_dtype float16 \
+  --num_workers 0 \
+  --heldout_context K562

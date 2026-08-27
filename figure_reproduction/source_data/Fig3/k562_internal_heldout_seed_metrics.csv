@@ -1,0 +1,4 @@
+seed,checkpoint,pred_cells_per_condition,n_conditions,mean_pcc,mean_spearman,delta_pcc,delta_spearman,topk_de_overlap,auprc,pra_all_genes,csa_pearson_top100_true_de,gge_wasserstein_pca50,gge_mmd_pca50,gge_energy_pca50,remote_dir
+20260713,EMA100k,2000,272,0.9928,0.9617,0.4623,0.3460,0.4044,0.3809,0.8228,0.6395,0.8365,0.2122,0.2826,<SCPLAD_DATA_ROOT>/scplad/scPLAD_generated/prior_feature_cond_ema100k_full_fixed2000_saveh5ad_20260707
+20260613,EMA100k,2000,272,0.9931,0.9625,0.4648,0.3517,0.4083,0.3846,0.8228,0.6415,0.8376,0.2134,0.2834,<SCPLAD_DATA_ROOT>/scplad/scPLAD_generated/prior_feature_cond_seed20260613_ema100k_full_fixed2000_saveh5ad_20260707
+20260813,EMA100k,2000,272,0.9929,0.9620,0.4569,0.3428,0.4041,0.3788,0.8251,0.6392,0.8378,0.2134,0.2836,<SCPLAD_DATA_ROOT>/scplad/scPLAD_generated/prior_feature_cond_seed20260813_ema100k_full_fixed2000_saveh5ad_20260707
