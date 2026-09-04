@@ -1,0 +1,24 @@
+model:
+  model_type: mean_baseline
+
+datamodule:
+  task_type: K562_single_cell_line
+  match_cntr: true
+  avg_cntr: true
+  batch_size: 64
+  embed_cntr: true
+  obsm_key: raw
+  train_cell_types: null
+  val_cell_type: null
+  test_cell_type: null
+  suppress_cell_type_validation: false
+  
+graph:
+  graph_cfg: {}
+
+seed: 1
+match_cntr_for_eval: true
+
+mode: baseline
+checkpoint_path: null
+save_dir: ./cache/predictions/baseline

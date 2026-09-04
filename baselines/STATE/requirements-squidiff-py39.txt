@@ -1,0 +1,7 @@
+# Packages missing from the existing squidiff_env on <PRIVATE_HOST>.
+# Install these into an overlay venv created with --system-site-packages.
+toml==0.10.2
+wandb==0.19.11
+geomloss==0.3.1
+transformers==4.57.6
+peft==0.17.1

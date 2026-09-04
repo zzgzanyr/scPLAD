@@ -1,0 +1,24 @@
+{
+  "model": "direct_source_expression",
+  "eval_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
+  "control_context_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/analysis/direct_source_perturbation_expression_allcells_20260719_v1/direct_source_expression/condition_npy",
+  "num_conditions": 580,
+  "gene_set": "top_true_de",
+  "top_k": 100,
+  "metrics_mean": {
+    "csa_pearson": 0.3773239217570988,
+    "csa_spearman": 0.34331721551782013,
+    "n_corr_pairs": 4927.472413793103
+  },
+  "metrics_median": {
+    "csa_pearson": 0.36717354576968325,
+    "csa_spearman": 0.32370118265252956,
+    "n_corr_pairs": 4950.0
+  },
+  "metrics_cell_weighted": {
+    "csa_pearson": 0.4136952716430741,
+    "csa_spearman": 0.3795767149465624,
+    "n_corr_pairs": 4928.5767594475565
+  }
+}

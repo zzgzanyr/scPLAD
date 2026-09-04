@@ -1,0 +1,50 @@
+{
+  "model": "TxPert GAT retrain320k last.ckpt",
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_known55_source_celllines_gat_retrain320k_last_v1",
+  "known_conditions_requested": 55,
+  "known_conditions_present": 55,
+  "condition_cell_line_pairs": 143,
+  "total_true_cells": 10311,
+  "control_global_definition": "mean control expression within each source cell line from TxPert cache de_adata_test.h5ad",
+  "control_matched_definition": "TxPert saved test_controls averaged within each condition-cell_line pair",
+  "global_ctrl": {
+    "metrics_mean": {
+      "mean_pcc": 0.9908826370201476,
+      "mean_spearman": 0.9480452565543069,
+      "delta_pcc_global_ctrl": 0.6768021242222259,
+      "delta_spearman_global_ctrl": 0.5322001862766592
+    },
+    "metrics_median": {
+      "mean_pcc": 0.9926148437317964,
+      "mean_spearman": 0.9531538403216742,
+      "delta_pcc_global_ctrl": 0.7327711683362619,
+      "delta_spearman_global_ctrl": 0.5691189778421591
+    },
+    "metrics_cell_weighted": {
+      "mean_pcc": 0.9930583548774219,
+      "mean_spearman": 0.9615028035019384,
+      "delta_pcc_global_ctrl": 0.6827794924213013,
+      "delta_spearman_global_ctrl": 0.5405345889044955
+    }
+  },
+  "matched_ctrl": {
+    "metrics_mean": {
+      "mean_pcc": 0.9908826370201476,
+      "mean_spearman": 0.9480452565543069,
+      "delta_pcc_matched_ctrl": 0.675593771771473,
+      "delta_spearman_matched_ctrl": 0.5316270404924737
+    },
+    "metrics_median": {
+      "mean_pcc": 0.9926148437317964,
+      "mean_spearman": 0.9531538403216742,
+      "delta_pcc_matched_ctrl": 0.740041343673495,
+      "delta_spearman_matched_ctrl": 0.5645957917247931
+    },
+    "metrics_cell_weighted": {
+      "mean_pcc": 0.9930583548774219,
+      "mean_spearman": 0.9615028035019384,
+      "delta_pcc_matched_ctrl": 0.6812498697196603,
+      "delta_spearman_matched_ctrl": 0.5399438472954378
+    }
+  }
+}

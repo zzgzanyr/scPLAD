@@ -40,19 +40,19 @@ def main() -> None:
     )
     parser.add_argument(
         "--source_h5ad",
-        default="datasets/otherdata/replogle_2022_k562_gwps/replogle_2022_k562_gwps.h5ad",
+        required=True,
     )
     parser.add_argument(
         "--cell_splits_csv",
-        default="datasets/otherdata/replogle_2022_k562_gwps/splits/cell_splits.csv",
+        required=True,
     )
     parser.add_argument(
         "--gene_order_json",
-        default="datasets/otherdata/state_replogle_filtered/k562_seen_hvg2000_top100_pathway_module/gene_order.json",
+        required=True,
     )
     parser.add_argument(
         "--output_root",
-        default="datasets/otherdata/replogle_2022_k562_gwps/k562_unseen_hvg2000_pathway_module",
+        required=True,
     )
     parser.add_argument("--normalization_target_sum", type=float, default=1e4)
     parser.add_argument("--chunk_size", type=int, default=8192)

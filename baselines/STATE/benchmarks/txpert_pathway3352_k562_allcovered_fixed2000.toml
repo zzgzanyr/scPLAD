@@ -1,0 +1,10 @@
+[datasets]
+txpert_pathway3352_allcovered_fixed2000 = "<SCPLAD_DATA_ROOT>/scplad/state_eval_data/txpert_pathway3352_k562_allcovered_fixed2000"
+
+[training]
+txpert_pathway3352_allcovered_fixed2000 = "train"
+
+[zeroshot]
+"txpert_pathway3352_allcovered_fixed2000.K562" = "test"
+
+[fewshot]

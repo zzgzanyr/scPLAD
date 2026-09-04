@@ -137,11 +137,24 @@ def run_command(
     if dry_run:
         return
 
-    cwd.mkdir(parents=True, exist_ok=True)
+    if not cwd.is_dir():
+        raise FileNotFoundError(f"Command working directory does not exist: {cwd}")
+    outputs = [Path(output) for output in rendered.get("outputs", [])]
+    formats = rendered.get("output_formats", [])
+    if formats:
+        outputs = [output.with_suffix(suffix) for output in outputs for suffix in formats]
+    # Existing artifacts must not hide a skipped export. Preserve them first.
+    import time
+    backup_id = str(time.time_ns())
+    for output in outputs:
+        if output.is_file():
+            backup = output.parent / ".previous" / backup_id / output.name
+            backup.parent.mkdir(parents=True, exist_ok=True)
+            output.rename(backup)
     subprocess.run(argv, cwd=cwd, env=env, check=True)
     missing = [
-        output for output in rendered.get("outputs", [])
-        if not Path(output).exists()
+        str(output) for output in outputs
+        if not output.exists() or (output.is_file() and output.stat().st_size == 0)
     ]
     if missing:
         raise FileNotFoundError(f"Expected outputs were not created: {missing}")

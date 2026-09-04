@@ -1,0 +1,17 @@
+{
+  "framework": "GGE",
+  "mode": "txpert_exphormer_mg_fixed2000_parallel_merged",
+  "n_conditions": 272,
+  "n_rows": 272,
+  "mean_n_test_cells": 141.45220588235293,
+  "mean_n_pred_cells": 2000.0,
+  "mean_mean_pearson": 0.994318020241159,
+  "mean_mean_spearman": 0.967224623141843,
+  "mean_perturbation_effect_pearson": 0.6008048451990875,
+  "mean_perturbation_effect_spearman": 0.46403898581304476,
+  "mean_r_squared": 0.9882479429772288,
+  "mean_mse": 0.0014658146999929525,
+  "mean_wasserstein_1_pca50": 1.0477390266888587,
+  "mean_mmd_pca50": 0.5118221827370641,
+  "mean_energy_pca50": 0.5021583429734064
+}

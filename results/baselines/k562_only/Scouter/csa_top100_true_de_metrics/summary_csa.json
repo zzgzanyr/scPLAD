@@ -1,0 +1,23 @@
+{
+  "model": "Scouter_GenePTv1_40ep_fixed2000",
+  "data_dir": "datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/predictions",
+  "num_conditions": 272,
+  "gene_set": "top_true_de",
+  "top_k": 100,
+  "metrics_mean": {
+    "csa_pearson": 0.6504479426186305,
+    "csa_spearman": 0.6217793613920473,
+    "n_corr_pairs": 4934.349264705882
+  },
+  "metrics_median": {
+    "csa_pearson": 0.6506887999605648,
+    "csa_spearman": 0.6175619618524326,
+    "n_corr_pairs": 4950.0
+  },
+  "metrics_cell_weighted": {
+    "csa_pearson": 0.696064390512122,
+    "csa_spearman": 0.6687810871248587,
+    "n_corr_pairs": 4935.750175438597
+  }
+}

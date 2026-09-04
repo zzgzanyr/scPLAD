@@ -1,0 +1,13 @@
+{
+  "model_dir": "<SCPLAD_DATA_ROOT>/CellFlow_runs/txpert_pathway5000_esm2_t36_3B_1000k_v1",
+  "benchmark_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "n_conditions": 272,
+  "num_samples": 2000,
+  "max_steps": 100,
+  "mean_pearson": 0.9883403337615377,
+  "mean_spearman": 0.949361527426608,
+  "delta_pearson": 0.2786480430136983,
+  "delta_spearman": 0.19614042941235502,
+  "weighted_delta_pearson": 0.28264536603278273,
+  "weighted_delta_spearman": 0.20633555367408365
+}

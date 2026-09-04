@@ -1,0 +1,59 @@
+{
+  "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "embedding": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle",
+  "adata_shape_after_filter": [
+    160238,
+    5000
+  ],
+  "train_shape": [
+    110845,
+    5000
+  ],
+  "val_shape": [
+    21609,
+    5000
+  ],
+  "test_shape": [
+    49166,
+    5000
+  ],
+  "train_conditions": 728,
+  "val_conditions": 82,
+  "test_conditions": 272,
+  "missing_perturb_genes_before_setup": [
+    "C12orf45",
+    "GARS",
+    "INTS2",
+    "POLR2B",
+    "WDR61"
+  ],
+  "unmatched_genes_after_setup": [
+    "C12orf45",
+    "GARS",
+    "INTS2",
+    "POLR2B",
+    "WDR61"
+  ],
+  "args": {
+    "project_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307",
+    "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+    "embedding": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle",
+    "outdir": "third_party/scouter_runs/txpert_pathway5000_unseen_geneptv1_official40_npred2000_v1",
+    "seed": 24,
+    "epochs": 40,
+    "batch_size": 256,
+    "lr": 0.001,
+    "loss_lambda": 0.5,
+    "encoder": "2048,512",
+    "latent_dim": 64,
+    "decoder": "2048",
+    "max_train_conds": 0,
+    "max_val_conds": 0,
+    "max_test_conds": 0,
+    "max_cells_per_condition": 0,
+    "n_pred": 2000,
+    "max_eval_conds": 0,
+    "device": "auto",
+    "save_pred_means": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "scplad.experiment_spec.v1",
+  "source_config": "configs/k562_only/patchae_original5000.json",
+  "path_base": "archive_root",
+  "note": "Specification, not a launcher config; supply missing large inputs.",
+  "parameters": {
+    "fold": 0,
+    "latent_dim": 32,
+    "patch_size": 20,
+    "hidden_dim": 128,
+    "num_layers": 2,
+    "num_heads": 4,
+    "dropout": 0.0,
+    "latent_norm": "none",
+    "gaussian_weight": 0.001,
+    "gaussian_cov_weight": 0.0,
+    "gaussian_cov_dims": 0,
+    "latent_noise_sigma": 0.08,
+    "epochs": 100,
+    "batch_size": 512,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "seed": 20260529,
+    "num_workers": 2,
+    "final_eval_cells": 12000,
+    "max_train_cells": 0,
+    "gene_size": 5000,
+    "num_patches": 250,
+    "latent_shape": [
+      250,
+      32
+    ],
+    "train_cells": 111770,
+    "device": "cuda",
+    "data_usage": "train_h5ad_only_no_val_no_test"
+  },
+  "files": {
+    "benchmark_root": {
+      "path": "data/k562_only/original5000",
+      "available_locally": false,
+      "role": "input"
+    },
+    "output_dir": {
+      "path": "runs/k562_only/patchae_original5000",
+      "available_locally": false,
+      "role": "output"
+    },
+    "gene_order_json": {
+      "path": "data/metadata/k562_only/original5000/gene_order.json",
+      "available_locally": true,
+      "role": "input"
+    }
+  }
+}

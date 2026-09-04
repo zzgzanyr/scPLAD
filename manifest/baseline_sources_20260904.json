@@ -1,0 +1,1940 @@
+[
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/README.md",
+    "local": "baselines/TxPert/README.md",
+    "sha256": "0f79f4f5aa34ec3d2c797b66a3f9cbaa1fa0d65eee1cbe21ed1905e1bf9b0962"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/eval_quick_corr_official_predictions.py",
+    "local": "baselines/TxPert/eval_quick_corr_official_predictions.py",
+    "sha256": "5d12c32a39cc03e36a0a3794d8005c5c29caf6256bb99409243f970be109e409"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/main.py",
+    "local": "baselines/TxPert/main.py",
+    "sha256": "1c15df7190ad2ccf6375a5fa2a25c0217633bf7be83a0feef995c6f28df1ad03"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/pyproject.toml",
+    "local": "baselines/TxPert/pyproject.toml",
+    "sha256": "8ab4a728d52604289aea540afd61270f4c0df90d10fb8b10af1946b4a2db3b95"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/configs/config-baseline.yaml",
+    "local": "baselines/TxPert/configs/config-baseline.yaml",
+    "sha256": "bd32abe3d6592e22df02ebe9ed54b9450c4b0fc6695b4648fd44bcf8c2939ec1"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/configs/config-exphormer-mg.yaml",
+    "local": "baselines/TxPert/configs/config-exphormer-mg.yaml",
+    "sha256": "2991e704496809979a47c4fade782698f9e465f593e0bc7fb87412f0c416df21"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/configs/config-exphormer.yaml",
+    "local": "baselines/TxPert/configs/config-exphormer.yaml",
+    "sha256": "23eb95ad7dfb1d28177f25ec2b75630cf3fbb01dff90be7a1106f5160f666375"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/configs/config-gat.yaml",
+    "local": "baselines/TxPert/configs/config-gat.yaml",
+    "sha256": "c113b7d76acf8988c6e1f4757330a2dcb18815fbaccf67075ab3ea3b07654fec"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/configs/config-x-cell-baseline.yaml",
+    "local": "baselines/TxPert/configs/config-x-cell-baseline.yaml",
+    "sha256": "a07468d8fe11f97f117e9b1961c41690ce3579e9048bcc6523d06f71820001d6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/configs/config-x-cell-gat.yaml",
+    "local": "baselines/TxPert/configs/config-x-cell-gat.yaml",
+    "sha256": "36c11ed5e188301c699ba2ef853493808683368f9a94f8005c857ac3e4396048"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/constants.py",
+    "local": "baselines/TxPert/gspp/constants.py",
+    "sha256": "45d7b50496a55c63b94209e5c96c74ff48a0c26bcbd969e8c2209f1c3c936c6e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/evaluation.py",
+    "local": "baselines/TxPert/gspp/evaluation.py",
+    "sha256": "88442580c8a545e27382f2d264fe5539a4187545cf2397cbc4e5b5c608d0eb1f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/metrics.py",
+    "local": "baselines/TxPert/gspp/metrics.py",
+    "sha256": "a8e7c34833edc3f9c9bfd575432ab77963ac2e0a22167f87581a56c3ad90b15c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/predictor.py",
+    "local": "baselines/TxPert/gspp/predictor.py",
+    "sha256": "54cb47bdf4172a5d822c3b64b35907462b4c55fb1934fee2e8562eb64ead3285"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/utils.py",
+    "local": "baselines/TxPert/gspp/utils.py",
+    "sha256": "2e5c0a17b6f86d92b5ac56836896e027b6989c75fe527b67acc6a9b2f6eb2cc4"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/baselines.py",
+    "local": "baselines/TxPert/gspp/models/baselines.py",
+    "sha256": "91ffa5968941d67f604ccf0cb3cb5298bc2a28ce137e304e6247069937218362"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/txpert.py",
+    "local": "baselines/TxPert/gspp/models/txpert.py",
+    "sha256": "0caefad613d2608cf221a4f5e27516da91d931bc6139dda05db1719d97731d34"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/basal_state_models/mlp.py",
+    "local": "baselines/TxPert/gspp/models/basal_state_models/mlp.py",
+    "sha256": "10094e63e727b3e59aec59c26a9e527780ff9cfcf971f2c4709f73fd58c51551"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/basal_state_models/moe.py",
+    "local": "baselines/TxPert/gspp/models/basal_state_models/moe.py",
+    "sha256": "aef2e3862226b848026b252931ec4aceaf12e6f1568137d74f23770737608928"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/basal_state_models/vae.py",
+    "local": "baselines/TxPert/gspp/models/basal_state_models/vae.py",
+    "sha256": "9957db8715b7416be51f6cee74cd10ee229e243e8ed6244d975610a13e900eef"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/pert_models/basic_gnn.py",
+    "local": "baselines/TxPert/gspp/models/pert_models/basic_gnn.py",
+    "sha256": "ea20e7e6e3643786efbf90475e7e7d1395527f01f473ee1d03d714ccaf234525"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/pert_models/exphormer.py",
+    "local": "baselines/TxPert/gspp/models/pert_models/exphormer.py",
+    "sha256": "bbf96278e6d727abe29fc4a4d2c213ff41bad595269387ad4ff9f819952e9560"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/pert_models/hybrid_wrapper.py",
+    "local": "baselines/TxPert/gspp/models/pert_models/hybrid_wrapper.py",
+    "sha256": "39d18e46084224a794f2dc98e1733f4b0121696f50e28e3c67d6d02d57a1e09d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/TxPert/gspp/models/pert_models/multi_graph.py",
+    "local": "baselines/TxPert/gspp/models/pert_models/multi_graph.py",
+    "sha256": "d69a86890bf463d11670a36299662695e0670497d2cb5349c324358a8322da07"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/LICENSE",
+    "local": "baselines/GEARS/LICENSE",
+    "sha256": "5c608f2c9421da729963328261ebffd23127dc55184fa8acc96acc52d8fd8b90"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/README.md",
+    "local": "baselines/GEARS/README.md",
+    "sha256": "fe78b7b1ede50c673b8f0d91fb2637707685c78b269ee157edb6cbc4d510d61b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/requirements.txt",
+    "local": "baselines/GEARS/requirements.txt",
+    "sha256": "dffa9f17177d33bc5d7e7cdcea7e734446d1775ea945b8151b081d8956f96c6c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/setup.py",
+    "local": "baselines/GEARS/setup.py",
+    "sha256": "f683681c539d3ac411dff3556d0286110a44a36676643177b5103b93c036ed68"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/__init__.py",
+    "local": "baselines/GEARS/gears/__init__.py",
+    "sha256": "3cdc747e61b16e073873d7f5ccb4f7c872d921c5355f2615049de09f279233ee"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/data_utils.py",
+    "local": "baselines/GEARS/gears/data_utils.py",
+    "sha256": "8091713aa91a8d3a6e07d7cb82535ace0b0e7d98ca1626c7e769d00ef77b8a88"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/gears.py",
+    "local": "baselines/GEARS/gears/gears.py",
+    "sha256": "b87b464b9bce74ff909626ef642781c5b8df6907902c5e18ec11d6c57ca7f562"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/inference.py",
+    "local": "baselines/GEARS/gears/inference.py",
+    "sha256": "744668b54fa05c0493baefad3da6fdccfa658426db5d0519b27a2d3f4f036dd7"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/model.py",
+    "local": "baselines/GEARS/gears/model.py",
+    "sha256": "d8b67c769d413075ef444fa2caa4c6358e14245dd9072c1c2a73264b2b4fef6b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/pertdata.py",
+    "local": "baselines/GEARS/gears/pertdata.py",
+    "sha256": "8de82853f07b494bcb86ed3b038c3f8a4d23cc3b45ffe3e8e154f491b4b60b66"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/utils.py",
+    "local": "baselines/GEARS/gears/utils.py",
+    "sha256": "0cba7cdbd1eae4622d94d2b8bf8043b3f39a2af93bd921adb9f14a72c9c0704c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/GEARS/gears/version.py",
+    "local": "baselines/GEARS/gears/version.py",
+    "sha256": "de9054fdc97b182c042b260989d08811e34adcce38c712da471dc3db873afa29"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.codecov.yaml",
+    "local": "baselines/CellFlow/.codecov.yaml",
+    "sha256": "ffec7bcd54f62d17c9931e104f1e9027415731fcee7c66c4b6ca57ad9bc7b1ab"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.cruft.json",
+    "local": "baselines/CellFlow/.cruft.json",
+    "sha256": "73c1bb245017f288c6a4362ba4c020b22af53abca92fc6a85a55f732223261d2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.pre-commit-config.yaml",
+    "local": "baselines/CellFlow/.pre-commit-config.yaml",
+    "sha256": "b051d12b962a6e7526663e0daa2ae6421ffd7550cb758e87dc286c0fe29169d5"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.readthedocs.yaml",
+    "local": "baselines/CellFlow/.readthedocs.yaml",
+    "sha256": "0c195470a1ba94b5de679e3053021af27c2db5809ed5190eb9121e4bfd1c654c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/CHANGELOG.md",
+    "local": "baselines/CellFlow/CHANGELOG.md",
+    "sha256": "872f878dc88e8d3626cb6f5e6f489215ab10a7c90dfa6f2550d18714294e0ad2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/LICENSE",
+    "local": "baselines/CellFlow/LICENSE",
+    "sha256": "2c31cbfc07eff294f2a6ec1efcb4ddac1c78759201af7cdad1a4bc3802e1768f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/README.md",
+    "local": "baselines/CellFlow/README.md",
+    "sha256": "67a27b3f78e9811ccf7a73fffb29cd1b59a0c4e2c6388e75e491cdb54ba48dad"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/pyproject.toml",
+    "local": "baselines/CellFlow/pyproject.toml",
+    "sha256": "d75cd977aafcacbf56bc5a4b1d477d4984f598c79110f462e5abbc1114266bfb"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/ISSUE_TEMPLATE/bug_report.yml",
+    "local": "baselines/CellFlow/.github/ISSUE_TEMPLATE/bug_report.yml",
+    "sha256": "380e483bca3b91739c7f1e69549741afb9072ed663203a833c9245266468b993"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/ISSUE_TEMPLATE/config.yml",
+    "local": "baselines/CellFlow/.github/ISSUE_TEMPLATE/config.yml",
+    "sha256": "e6715cfa1412a59e6697471e9483c589369514090c2a26c809f54defa56ffb52"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/ISSUE_TEMPLATE/feature_request.yml",
+    "local": "baselines/CellFlow/.github/ISSUE_TEMPLATE/feature_request.yml",
+    "sha256": "bf590beb93567b5d35cf904d08179be1ef222268fcc4e8093b434a4f4c2572ed"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/workflows/build.yaml",
+    "local": "baselines/CellFlow/.github/workflows/build.yaml",
+    "sha256": "d6ceeb89c0c39b6af8c9d84b3b3d9672abd189e4f87cbe0b60ef6cfcbfe429a2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/workflows/lint.yml",
+    "local": "baselines/CellFlow/.github/workflows/lint.yml",
+    "sha256": "c5185c5d7931075cd14ce3f0afbed2bc7cdfdfc3e89d730981ae108b3e0ac681"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/workflows/release.yml",
+    "local": "baselines/CellFlow/.github/workflows/release.yml",
+    "sha256": "a2c02397c62db1f610af90aefacf2814f1b9ca8bdbfd61a32c9f8bb6673dfc8d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/workflows/test-slow.yaml",
+    "local": "baselines/CellFlow/.github/workflows/test-slow.yaml",
+    "sha256": "365f124c660b6d3dbbc2b477859faa0340c678362d6b791772e714d4582cce3d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/.github/workflows/test.yaml",
+    "local": "baselines/CellFlow/.github/workflows/test.yaml",
+    "sha256": "b288efe4d2a6d4ec7baa28d2531232041988cb436ca18447d32bd946dc7546d2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/conf.py",
+    "local": "baselines/CellFlow/docs/conf.py",
+    "sha256": "7cf65c0dbf34d065baa925ad5e647d083d2c01a01f3730258281f7b23cd4efcc"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/contributing.rst",
+    "local": "baselines/CellFlow/docs/contributing.rst",
+    "sha256": "55fd9d78cecafcfb8a7dde6bfaf58e28476256652165ecf3b169ba4db9dd47c3"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/developer.rst",
+    "local": "baselines/CellFlow/docs/developer.rst",
+    "sha256": "8501d588a68682ab85349cc9db7ae329867c11f0274f5452845b68de28fcc8ba"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/index.rst",
+    "local": "baselines/CellFlow/docs/index.rst",
+    "sha256": "d1cd68b0ee6d8b128dcf4e567bca3928ae38f5939ccf1f953d0d01d00c493238"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/installation.rst",
+    "local": "baselines/CellFlow/docs/installation.rst",
+    "sha256": "21d6bedeeffd8a5f214afca294e19c3eb63cbdba6f021b8a6c863bbe475bf5dd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/references.rst",
+    "local": "baselines/CellFlow/docs/references.rst",
+    "sha256": "8b870c433259109512ba4e341a2ca0b9b21d0670d5dca278e4fab6c7d8f9f902"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/_templates/autosummary/class.rst",
+    "local": "baselines/CellFlow/docs/_templates/autosummary/class.rst",
+    "sha256": "8b220b23c284014ffdfd43fbea9c0c04317076aa4e5a9f9894ba12a715e18b78"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/extensions/typed_returns.py",
+    "local": "baselines/CellFlow/docs/extensions/typed_returns.py",
+    "sha256": "fd1961ea0b25cec7fd8920063086032302acd55dc61707f6136bd281d2341544"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/notebooks/index.rst",
+    "local": "baselines/CellFlow/docs/notebooks/index.rst",
+    "sha256": "e211d0cc2afd5a9ceaf31768d1eb5e58de5253c12ff9271f2c4297222a1ee93f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/datasets.rst",
+    "local": "baselines/CellFlow/docs/user/datasets.rst",
+    "sha256": "8e408fe3bba92c3eb27d90d3c022631bcb13575f1fa59f2aee0d9e7dc7fa4d79"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/external.rst",
+    "local": "baselines/CellFlow/docs/user/external.rst",
+    "sha256": "60d4ac9f4b8899fe6b841e972ece7a4d23637da34dc2015f44017ee6b7b315bd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/index.rst",
+    "local": "baselines/CellFlow/docs/user/index.rst",
+    "sha256": "2bd6bf65042682689d80779b0f968383207ef6a9dc789c6765f0185c100a618b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/metrics.rst",
+    "local": "baselines/CellFlow/docs/user/metrics.rst",
+    "sha256": "5cc8b202cf1d9b7c4609ff0ebbe795d36df877da04eb4c332566a9f949654421"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/model.rst",
+    "local": "baselines/CellFlow/docs/user/model.rst",
+    "sha256": "1f74d473ac16938b4388af3546ba52cbcc578f79609c7fbdf5ef34d31b6023b4"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/networks.rst",
+    "local": "baselines/CellFlow/docs/user/networks.rst",
+    "sha256": "c0504e71ab9ec69ac2b04eb28b37eb4c04d2031ccd614f199d2a77a8cdd11293"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/plotting.rst",
+    "local": "baselines/CellFlow/docs/user/plotting.rst",
+    "sha256": "10066775c8205b3866a0898076cb72f1eb3707ace6569a637b80086c95a4cdae"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/preprocessing.rst",
+    "local": "baselines/CellFlow/docs/user/preprocessing.rst",
+    "sha256": "cdc0c0b9ae6aaab79b677b53164d9b635966b5e4faead7b613c0ce102fb87a78"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/solvers.rst",
+    "local": "baselines/CellFlow/docs/user/solvers.rst",
+    "sha256": "f779bb76746948bf120840d2debb226ec74e856b40a1df9849697392876195af"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/training.rst",
+    "local": "baselines/CellFlow/docs/user/training.rst",
+    "sha256": "5f3d4b656e59ab1acaf91acc73179d030c0fbad6ed84cce3025dd5f49008efdf"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/docs/user/utils.rst",
+    "local": "baselines/CellFlow/docs/user/utils.rst",
+    "sha256": "eb2c08e9b7134501129df3a6f592ac556de54bf07e7f9f409c4666e561f05b6d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/scripts/run_replogle_top100_seen.py",
+    "local": "baselines/CellFlow/scripts/run_replogle_top100_seen.py",
+    "sha256": "a5bb94e70d251a5760c473af175fb25782375d88369bebe85916118e2323bfea"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/__init__.py",
+    "sha256": "40082c8d2fcb4e0b54581c2c82fceadc65ea02d542eb95ed1ecb39fa5034c23f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/_compat.py",
+    "local": "baselines/CellFlow/src/cellflow/_compat.py",
+    "sha256": "010894b05902b351680d6ae8c1b19bf7febbd223fad08d68a6aa5f4e2a8f5b5e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/_constants.py",
+    "local": "baselines/CellFlow/src/cellflow/_constants.py",
+    "sha256": "84b569d1ebfb5da7e2bbb3a0b0026a8c47fd0c1a043f9ad5741b505df73dc560"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/_logging.py",
+    "local": "baselines/CellFlow/src/cellflow/_logging.py",
+    "sha256": "ffeb5d00431a467d91406b8871d3ee246941ff56ad548e4f178aaf8a5b7f9200"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/_types.py",
+    "local": "baselines/CellFlow/src/cellflow/_types.py",
+    "sha256": "482ec72525c784d8e00ebcb3d3d2f002edfdaa9d6977d5c613df9c13c834dd64"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/datasets.py",
+    "local": "baselines/CellFlow/src/cellflow/datasets.py",
+    "sha256": "faac0b7e21f2df7627a75ce5186fb10a5e94b6c0cb196df1dd6ee7d84c3d120f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/utils.py",
+    "local": "baselines/CellFlow/src/cellflow/utils.py",
+    "sha256": "ca5f9a3001df309f7603fcb4749a243029da8cdb3b3a1a3ea592596ea0721443"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/external/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/external/__init__.py",
+    "sha256": "47b616e3a9dec32812a3fcd07d538ed716acc152d3b12d32a603d27e83efd8d5"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/external/_scvi.py",
+    "local": "baselines/CellFlow/src/cellflow/external/_scvi.py",
+    "sha256": "ce36bcb07d01b50a108cca28177267f1090ea4041e6f8c06ec3fb76290245a62"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/external/_scvi_utils.py",
+    "local": "baselines/CellFlow/src/cellflow/external/_scvi_utils.py",
+    "sha256": "0d62b04212b2ce231aedf569fdec43fab20646fadbb868ca8ecde4de396e6289"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/metrics/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/metrics/__init__.py",
+    "sha256": "f1c71fde489a17103066f113edd4fba5e1d0641d2338592ab7f14e7fdca2d859"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/metrics/_metrics.py",
+    "local": "baselines/CellFlow/src/cellflow/metrics/_metrics.py",
+    "sha256": "493980a4a63225f4993268ac20feed3853cce01c95e3876da2e5ef4a74a67577"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/model/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/model/__init__.py",
+    "sha256": "d09122311591f833cd9280ea0ca3fa31b2d4ee0b9e8aaf4c825652e2015a6133"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/model/_cellflow.py",
+    "local": "baselines/CellFlow/src/cellflow/model/_cellflow.py",
+    "sha256": "8a38135c6bbcf0da18d21fe5a6a7872c23f21a73f8a6c78d49b95227b682b582"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/model/_utils.py",
+    "local": "baselines/CellFlow/src/cellflow/model/_utils.py",
+    "sha256": "e95f35f0171b5eec042f9416dacada43cc412b1a400311a2e1685e987258be7a"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/networks/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/networks/__init__.py",
+    "sha256": "a81311337bf79d4bfd28c366f390c18ad3c958937cfc1cefe22e1f2d1bf93860"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/networks/_set_encoders.py",
+    "local": "baselines/CellFlow/src/cellflow/networks/_set_encoders.py",
+    "sha256": "0c11e613f122d857c35bcffcbbc45fac8e7c357e89b0952deba16cc0c380e073"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/networks/_utils.py",
+    "local": "baselines/CellFlow/src/cellflow/networks/_utils.py",
+    "sha256": "820cefce4f1ba35ecb3eed9adcbc6cbfa70a171af07a6abe366c033b7a4bc7bd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/networks/_velocity_field.py",
+    "local": "baselines/CellFlow/src/cellflow/networks/_velocity_field.py",
+    "sha256": "22d7946d7ea552c54b652ba17164dd290134f99be827af475c3ea25a187f9f22"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/plotting/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/plotting/__init__.py",
+    "sha256": "60b49562fad1e1da2b417a501e2513027b5dadfd590ed89619adc900296eebd9"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/plotting/_plotting.py",
+    "local": "baselines/CellFlow/src/cellflow/plotting/_plotting.py",
+    "sha256": "c687ab059694af3f1bd5346bb888bb76886fa28635981307aaf3e9ce4ab63f42"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/plotting/_utils.py",
+    "local": "baselines/CellFlow/src/cellflow/plotting/_utils.py",
+    "sha256": "dbd9d32859dd0257878acfb8dcb5f01af91588a049fa0fcfe85677437a5ccdd0"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/preprocessing/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/preprocessing/__init__.py",
+    "sha256": "a504b971c85522f493d683e00bd8ce2dd1ae2117760ac277d42184b10bbfd7c2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/preprocessing/_gene_emb.py",
+    "local": "baselines/CellFlow/src/cellflow/preprocessing/_gene_emb.py",
+    "sha256": "e37d35caa1d782cd87717b0bf0f673d6307d524c3d24d384bd1bee062f71a51f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/preprocessing/_pca.py",
+    "local": "baselines/CellFlow/src/cellflow/preprocessing/_pca.py",
+    "sha256": "44e3ced255a445bfe7ffa147cb41f15e0e0fefefde7638942606d1d1a724546b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/preprocessing/_preprocessing.py",
+    "local": "baselines/CellFlow/src/cellflow/preprocessing/_preprocessing.py",
+    "sha256": "997215f5446172ee3f1863e37f10bb60f22b01fcb4c82699096e29ba54fb1885"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/preprocessing/_wknn.py",
+    "local": "baselines/CellFlow/src/cellflow/preprocessing/_wknn.py",
+    "sha256": "0cf0aee6d9a391a5e7834a497976e4ff3f21bc779bab71f4e394c6be307b0713"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/solvers/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/solvers/__init__.py",
+    "sha256": "93d1036c031fde7b9de3be7f2cbde30fb9da67ba65405aa1622bda4962dc73ef"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/solvers/_genot.py",
+    "local": "baselines/CellFlow/src/cellflow/solvers/_genot.py",
+    "sha256": "751566e38c149b6621ff9d5afd1a0a477a80e98b3a318bb379629a694bea7f67"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/solvers/_otfm.py",
+    "local": "baselines/CellFlow/src/cellflow/solvers/_otfm.py",
+    "sha256": "76b240247cc8f0deee766941e8009735b2727f7fe726612da025a1ead1c0a039"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/solvers/utils.py",
+    "local": "baselines/CellFlow/src/cellflow/solvers/utils.py",
+    "sha256": "b9e8f990767d5011e083f8efaaea7e14b660cb8852ef3fd3915784506f8adef1"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/training/__init__.py",
+    "local": "baselines/CellFlow/src/cellflow/training/__init__.py",
+    "sha256": "3df70f4187d5adfdc0776b5e91753e5ff4d9d337dbf747543deb48f4732be9fd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/training/_callbacks.py",
+    "local": "baselines/CellFlow/src/cellflow/training/_callbacks.py",
+    "sha256": "84b26453a3e74ac6a71ca495bc0de2c75010c17f2be6c44a690e946ca7d93071"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/training/_trainer.py",
+    "local": "baselines/CellFlow/src/cellflow/training/_trainer.py",
+    "sha256": "cb67ed2c1e5a23a0bb0e2f84d6f734552dbe12e79eed5f965bc595a22c77c163"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cellflow/training/_utils.py",
+    "local": "baselines/CellFlow/src/cellflow/training/_utils.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/src/cfp/__init__.py",
+    "local": "baselines/CellFlow/src/cfp/__init__.py",
+    "sha256": "45e631ea4ab23c5b8a3c6395147d10845887746bb6a6d1fb0c01ed75dca668e2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/conftest.py",
+    "local": "baselines/CellFlow/tests/conftest.py",
+    "sha256": "e776ee8f138ae1878be4791c583cdc75ce540d0565002d5de9655fae45a678e7"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/test_datasets.py",
+    "local": "baselines/CellFlow/tests/test_datasets.py",
+    "sha256": "a02639181a865dd1bf2636ca5bbe4aac4f68ee509d0295c4ffc3adc52f2f074d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/external/test_CFJaxSCVI.py",
+    "local": "baselines/CellFlow/tests/external/test_CFJaxSCVI.py",
+    "sha256": "0d818981df1df065a68fda056f4da4fd537ca9f2bcf8cd5b0dc682f7b2827bf5"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/metrics/test_metrics.py",
+    "local": "baselines/CellFlow/tests/metrics/test_metrics.py",
+    "sha256": "cdf9eb655c00adab3a0025c8f639c0fa47a991481108dcdbaea2ba435aaa5a9b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/model/test_cellflow.py",
+    "local": "baselines/CellFlow/tests/model/test_cellflow.py",
+    "sha256": "89bef7bd60370e94b88f82e4e425c7866643f90babd071324471e3abee3f115c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/networks/test_aggregators.py",
+    "local": "baselines/CellFlow/tests/networks/test_aggregators.py",
+    "sha256": "92a16244c4aa51c675556f6b94c322d86459d624502a085bcc29ed58df6a6c6a"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/networks/test_condencoder.py",
+    "local": "baselines/CellFlow/tests/networks/test_condencoder.py",
+    "sha256": "548127399020351ace3030dcd2f74fafef09c2bf632cc2b9079dd056b8a4f3f6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/networks/test_velocityfield.py",
+    "local": "baselines/CellFlow/tests/networks/test_velocityfield.py",
+    "sha256": "65fd3a842f4c93c8f7af5b1eea6d0df5f3700cb910979ffcdfe30caa124fc37a"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/plotting/conftest.py",
+    "local": "baselines/CellFlow/tests/plotting/conftest.py",
+    "sha256": "899cbd89b64c081812b97d439d3962f39bb9bf584ada2e63c28968fcc3b3c391"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/plotting/test_plotting.py",
+    "local": "baselines/CellFlow/tests/plotting/test_plotting.py",
+    "sha256": "f78e04a22e66fdd0be08eb5fb7e86b46b6bb1525774f09971b729f56d979b6fd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/preprocessing/test_gene_emb.py",
+    "local": "baselines/CellFlow/tests/preprocessing/test_gene_emb.py",
+    "sha256": "a5891ed395c0a5d46aa42121fd5017321373585446adc9a13ec0359a509d81eb"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/preprocessing/test_pca.py",
+    "local": "baselines/CellFlow/tests/preprocessing/test_pca.py",
+    "sha256": "c1b27e1cf4c9c9a92be34c11d9abbfe7f5e8d45fb77f5e0e67dc89b7e8980525"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/preprocessing/test_preprocessing.py",
+    "local": "baselines/CellFlow/tests/preprocessing/test_preprocessing.py",
+    "sha256": "b2d230ba50ff84bc2e5f6a993267c00332590a9436592f744f334dc11833fd60"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/preprocessing/test_wknn.py",
+    "local": "baselines/CellFlow/tests/preprocessing/test_wknn.py",
+    "sha256": "5ff965e2884cf8c242f905e42ea7d25943dd0ad00662e657d383931df4155773"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/solver/test_solver.py",
+    "local": "baselines/CellFlow/tests/solver/test_solver.py",
+    "sha256": "5e576f0ff5f4a1d39d373ccd80be51aa9775d6fcff12d8d43ae4ab3ddf259209"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/trainer/test_callbacks.py",
+    "local": "baselines/CellFlow/tests/trainer/test_callbacks.py",
+    "sha256": "ce577ac8fc9971bd6564b3613cfebeedca7a51b27830e75898ecbe0fad615d80"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/CellFlow/tests/trainer/test_trainer.py",
+    "local": "baselines/CellFlow/tests/trainer/test_trainer.py",
+    "sha256": "efae8349048ce0f07c83d3ce34832721c2b84cadfb254dad3dc61bee7eec0875"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/LICENSE",
+    "local": "baselines/Scouter/LICENSE",
+    "sha256": "50b60c9974e5121b7e73575729382a50a6a9a8127a286ffbec9d94fd3c76b14b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/README.md",
+    "local": "baselines/Scouter/README.md",
+    "sha256": "eb003f82c037df6f67e084318493ccfdbba430baa802d96376014161616ec64d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/setup.py",
+    "local": "baselines/Scouter/setup.py",
+    "sha256": "bfc10add40c6ecd584ab230ccf66202d3049764702709f4000a2053fe7c241a8"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/scouter/Scouter.py",
+    "local": "baselines/Scouter/scouter/Scouter.py",
+    "sha256": "5d631600b6f0c58830e601b5a66a4c8436c2378fbd3348ed83e20b56e7410d72"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/scouter/ScouterData.py",
+    "local": "baselines/Scouter/scouter/ScouterData.py",
+    "sha256": "d5cedcc29beb84e5c516e528995a2bb5b53f071e3a61a3ff77865c794db9942a"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/scouter/__init__.py",
+    "local": "baselines/Scouter/scouter/__init__.py",
+    "sha256": "e447ef461a62ac4b9f371add68b48d76461d535d0e05ca59612682916874576e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/scouter/_datasets.py",
+    "local": "baselines/Scouter/scouter/_datasets.py",
+    "sha256": "7f069c4bd3d08f6ee6694750d060e71199e6621b7a24230bc31a872929f02311"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/scouter/_model.py",
+    "local": "baselines/Scouter/scouter/_model.py",
+    "sha256": "29adf92fe6b4abbfcfe160c5c6c1c18fcb5cc9e595e6bdacd011e510c602b435"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/scouter/_utils.py",
+    "local": "baselines/Scouter/scouter/_utils.py",
+    "sha256": "ec1558f92dbc3a9bb065e31d6b9c7a99a94a27922db7c134799381a2a4a4c369"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/Scouter/scouter/_version.py",
+    "local": "baselines/Scouter/scouter/_version.py",
+    "sha256": "8cb1ae15d13084cbc7be494e24fbecaaf6c7423f535b993682b73eb5e76ef981"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/LICENSE",
+    "local": "baselines/STATE/LICENSE",
+    "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/MODEL_ACCEPTABLE_USE_POLICY.md",
+    "local": "baselines/STATE/MODEL_ACCEPTABLE_USE_POLICY.md",
+    "sha256": "9e4d733b1523d3fe415afaa0c7d6ebbfd01be9248b6a953aecf468def3dee7ab"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/MODEL_LICENSE.md",
+    "local": "baselines/STATE/MODEL_LICENSE.md",
+    "sha256": "5f2422e25c47f3c0ffa1eb563ab8e3e708a357b5fe81594eef4ed3d298b21ca4"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/PYTHON39_COMPAT.md",
+    "local": "baselines/STATE/PYTHON39_COMPAT.md",
+    "sha256": "b6e7f478c276c11607ef7345fd9eca126511118ee49af4abbb744aeee44c4315"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/README.md",
+    "local": "baselines/STATE/README.md",
+    "sha256": "568c0b4f9d93374f7ebc7467c226fdde0050abfd60147bce0b316163bf4199d6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/pyproject.toml",
+    "local": "baselines/STATE/pyproject.toml",
+    "sha256": "a5107a013e9d783d8cdcbbc5e46b9e95500f20b65a3dacd23589405e3c263ac7"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/requirements-squidiff-py39.txt",
+    "local": "baselines/STATE/requirements-squidiff-py39.txt",
+    "sha256": "642fedd498c83eca895f0a780a06ba91664a8c5c37c03fe9012ef023d9bcfea2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/ruff.toml",
+    "local": "baselines/STATE/ruff.toml",
+    "sha256": "5764ff30edf39c36684848b9268e2ffe734ed90c0f3725b455b442abe4591380"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/LICENSE",
+    "local": "baselines/STATE/.compat/cell-load/LICENSE",
+    "sha256": "a6e5dcab637abf2cf8570008941d29ab898124f1b4893c18a929d77d3715a812"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/README.md",
+    "local": "baselines/STATE/.compat/cell-load/README.md",
+    "sha256": "51d170fdd728a02df7224d90c44dde5cd7e84355a95ac89f3f48f4a6cb28801f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/pyproject.toml",
+    "local": "baselines/STATE/.compat/cell-load/pyproject.toml",
+    "sha256": "555c9ec77ff8d78a9521d7c5580d39eda1814deeb1d86929f2380e7ba7045f82"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/ruff.toml",
+    "local": "baselines/STATE/.compat/cell-load/ruff.toml",
+    "sha256": "50b5b4512eff4cf56dfc074e768a17b0599bd4f583d30135250d2ec5d1df48f3"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/.github/workflows/CI.yml",
+    "local": "baselines/STATE/.compat/cell-load/.github/workflows/CI.yml",
+    "sha256": "12aa4da9f0709dd5ab0e41698d27985084b83f6f4f35eafb8d385495ce85715b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/.github/workflows/release.yml",
+    "local": "baselines/STATE/.compat/cell-load/.github/workflows/release.yml",
+    "sha256": "b17b75c2004b0c9afed1e771547be2b941ba02c1e65d4316ac110e56901c465b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/examples/example.toml",
+    "local": "baselines/STATE/.compat/cell-load/examples/example.toml",
+    "sha256": "47f9981d53b466d40794d416d8955e87d936363fcd9c15e679b5930aabdf490c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/__init__.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/config.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/config.py",
+    "sha256": "1e069fa6710691f2f586e5e57380d593311c9ba42f8bd0a796be8c428e72f324"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/_cli/__init__.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/_cli/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/_cli/filter_on_target_knockdown.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/_cli/filter_on_target_knockdown.py",
+    "sha256": "97085dcd5371cc0cde1407ea7f288eb4d3f5d21a6c86cee7bef341ec80558066"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/data_modules/__init__.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/data_modules/__init__.py",
+    "sha256": "aac3e45e3d9ac9067d9becc1705b85f89ce264f824967d3e6162228e3b482996"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/data_modules/perturbation_dataloader.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/data_modules/perturbation_dataloader.py",
+    "sha256": "0bc91ae686b774e6237e6d94137cb9b62bc25933bbcf5328d336b9cbb309076f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/data_modules/samplers.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/data_modules/samplers.py",
+    "sha256": "780a874480fa5d6f6759823a8add036c597967e7c72c7cba7c53cf7f3b66d430"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/data_modules/tasks.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/data_modules/tasks.py",
+    "sha256": "8c59474b3ddb7bc9da17467192d619034e8e51203a51838d38fc5597cf4530af"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/dataset/__init__.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/dataset/__init__.py",
+    "sha256": "1ec1b47e89474fe226ebf62b07ee88351f27978ffadabb69471402034d5fffa6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/dataset/_metadata.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/dataset/_metadata.py",
+    "sha256": "f1b9988c6efbba0d90f249a4efc4ff94472266840508879cf7c769bfc811fa0c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/dataset/_perturbation.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/dataset/_perturbation.py",
+    "sha256": "ceb7d4376263e770b22965d612b681a3deb04270da7dd27b0dc6905d87d235d8"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/__init__.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/__init__.py",
+    "sha256": "05961d83b33c8b86321b8523072a8c474e1b9e8441903383b22e203550459846"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/batch.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/batch.py",
+    "sha256": "8ab7acf3eae96680ee483a8a3983b70a5ca823597a830220a8325f41e3185bd0"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/mapping_strategies.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/mapping_strategies.py",
+    "sha256": "41fdc8c820125723adc3c0a880e40524aac4d299426b2e7637c284baa56aa26c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/random.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/mapping_strategies/random.py",
+    "sha256": "021becd06599b5895eb2b4f812b21179fa7d5787ab8fd05cf8f2a598514fa65c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/utils/data_utils.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/utils/data_utils.py",
+    "sha256": "57d70581ad9d40cf5f343e0d88dc2299721d63c627a91ae87db63945b448b964"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/utils/modules.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/utils/modules.py",
+    "sha256": "abdd26a2d47a2300fd33fe9bfb5e2e2c86281cb0a5cc7bbfbb518bf0c196ea8f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/src/cell_load/utils/singleton.py",
+    "local": "baselines/STATE/.compat/cell-load/src/cell_load/utils/singleton.py",
+    "sha256": "07a143b0a6b28b3cc2bdc5a5fbd5e26320f4e89139c2b809101584b20b0eb6f5"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/tests/conftest.py",
+    "local": "baselines/STATE/.compat/cell-load/tests/conftest.py",
+    "sha256": "987ec96bcac919d6d1f2ada755e2960a08c9243d89c05490f8e4cd56edc73433"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/tests/test_dataloader.py",
+    "local": "baselines/STATE/.compat/cell-load/tests/test_dataloader.py",
+    "sha256": "94bb3a15d60302b9837a13abc3cb54340af018577e22ea69b488d52e4b37469d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/tests/test_mapping_strategy.py",
+    "local": "baselines/STATE/.compat/cell-load/tests/test_mapping_strategy.py",
+    "sha256": "4348a19145943b95945b980e6ad6cb4fc79282791788a54b51c959b1e22c9911"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.compat/cell-load/tests/test_sampler.py",
+    "local": "baselines/STATE/.compat/cell-load/tests/test_sampler.py",
+    "sha256": "85b5921ab2bbd65c3a436f337e529740481bbdd19ab42a50b025b99041e5f202"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/.github/workflows/release.yml",
+    "local": "baselines/STATE/.github/workflows/release.yml",
+    "sha256": "b17b75c2004b0c9afed1e771547be2b941ba02c1e65d4316ac110e56901c465b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/examples/fewshot.toml",
+    "local": "baselines/STATE/examples/fewshot.toml",
+    "sha256": "411389084c989fa30208ba0749fd9fb3572c759e52685a4980116657f8353688"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/examples/mixed.toml",
+    "local": "baselines/STATE/examples/mixed.toml",
+    "sha256": "7f6bee68bacaa8923df7b88c98ed7ea67af4d5ac1546d6f0e415b3f14db78202"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/examples/zeroshot.toml",
+    "local": "baselines/STATE/examples/zeroshot.toml",
+    "sha256": "07862f985388c1111decaf187b3d0e90f550d864799d913eb298af1015d95a96"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/scripts/setup_python39.sh",
+    "local": "baselines/STATE/scripts/setup_python39.sh",
+    "sha256": "72631914359baced92113c8f9256f89c6a8cdd8041a139529b8603bf87acccf8"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/__init__.py",
+    "local": "baselines/STATE/src/state/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/__main__.py",
+    "local": "baselines/STATE/src/state/__main__.py",
+    "sha256": "83d9b0b06ed75b1be774c8ae93900c0b4770e95056abac99bc27f8478ff8c95d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/__init__.py",
+    "local": "baselines/STATE/src/state/_cli/__init__.py",
+    "sha256": "dd0eebced2773065dee76ed5dd75a26c5a5e888e0690bb8a92d2a9f6dd9a4cc6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_emb/__init__.py",
+    "local": "baselines/STATE/src/state/_cli/_emb/__init__.py",
+    "sha256": "86d1a9a6a8dc3bcd79eb2bbf8a7b6a1ed0102a1c293e1d853341d85c2ff158ac"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_emb/_eval.py",
+    "local": "baselines/STATE/src/state/_cli/_emb/_eval.py",
+    "sha256": "8956062ca855d2a01782bccf6cffd751b17cd04a640f673410897aaa88b9078f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_emb/_fit.py",
+    "local": "baselines/STATE/src/state/_cli/_emb/_fit.py",
+    "sha256": "033a1636d139dd6d5e3660e53cf38562ecde089e2c67423a2c5ba22d753cf1e8"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_emb/_preprocess.py",
+    "local": "baselines/STATE/src/state/_cli/_emb/_preprocess.py",
+    "sha256": "c2743f9f1bcd5be929c4bd15a474fcd170e449b1c990a7760293ce049f0b83f3"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_emb/_query.py",
+    "local": "baselines/STATE/src/state/_cli/_emb/_query.py",
+    "sha256": "faf06eb47916c3c50e2e5e0a570aee2075e7db4723ed56cf3fa2ee9dc73acc53"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_emb/_transform.py",
+    "local": "baselines/STATE/src/state/_cli/_emb/_transform.py",
+    "sha256": "3a44e64068085fdebf418408a06958b5568aacbace54a5aa6d2d2fb43a65d502"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_tx/__init__.py",
+    "local": "baselines/STATE/src/state/_cli/_tx/__init__.py",
+    "sha256": "a9a6da96e5fc275af402b2618579a665fe417a94bc5d30fc8308fade707bb789"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_tx/_infer.py",
+    "local": "baselines/STATE/src/state/_cli/_tx/_infer.py",
+    "sha256": "152951cd6464efe08a4e8780712f004a2bfe6e6f287ac890ff2569a07bf71db9"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_tx/_predict.py",
+    "local": "baselines/STATE/src/state/_cli/_tx/_predict.py",
+    "sha256": "80f80ef943cd5452d5b0c965f7a46a44f6021b8e65a9db7458a0e9dcb6d4a727"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_tx/_preprocess_train.py",
+    "local": "baselines/STATE/src/state/_cli/_tx/_preprocess_train.py",
+    "sha256": "1f32dc1f24cace41d9b43ec77b86b610410081a3e284253a50bb35cd6f78e95b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_tx/_stream_h5ad.py",
+    "local": "baselines/STATE/src/state/_cli/_tx/_stream_h5ad.py",
+    "sha256": "b83ba465127913832ed46187fe6d07cc8fc33f59f5ed9728e18157e10171727e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_tx/_train.py",
+    "local": "baselines/STATE/src/state/_cli/_tx/_train.py",
+    "sha256": "59ad91c58daedfb8c268b6f5b6361c666d5728d4f772f59cc83f1dc73dee686d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/_cli/_tx/_utils.py",
+    "local": "baselines/STATE/src/state/_cli/_tx/_utils.py",
+    "sha256": "9d2e7d4d6e2f44b50fc323344d3e9558b0ebb000301f77fbd3dd13bb06129ced"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/__init__.py",
+    "local": "baselines/STATE/src/state/configs/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/config.yaml",
+    "local": "baselines/STATE/src/state/configs/config.yaml",
+    "sha256": "45809e05379729f751b23f231b02400d67448c56399579fb27412887de3cc06c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/state-defaults.yaml",
+    "local": "baselines/STATE/src/state/configs/state-defaults.yaml",
+    "sha256": "3a3c9e5d15e952268f18c08ecb727ee72b54f7c5a1fe6a6d9128af256e58738f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/celltypemean.yaml",
+    "local": "baselines/STATE/src/state/configs/model/celltypemean.yaml",
+    "sha256": "42c73ea42e21b2c169a2a78627f10421304175fce80540c841ee4f52977dfa15"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/context_mean.yaml",
+    "local": "baselines/STATE/src/state/configs/model/context_mean.yaml",
+    "sha256": "8fe555c0580ee3d2aebdcdb8c8ceea444046f044bd88fa2529fe6878b422e1ef"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/cpa.yaml",
+    "local": "baselines/STATE/src/state/configs/model/cpa.yaml",
+    "sha256": "57c6af1d1822518f72c6bd67fee13d8dfd6e80af18c0c613971cf61f78e6d67e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/decoder_only.yaml",
+    "local": "baselines/STATE/src/state/configs/model/decoder_only.yaml",
+    "sha256": "5aaf6d966f15e4291cb1a305f50dbcfe553977b4553dba2bb022be71121421eb"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/embedsum.yaml",
+    "local": "baselines/STATE/src/state/configs/model/embedsum.yaml",
+    "sha256": "b4fd63d05aebf95037d6cb6870a852e2edeedb7c1970b5ede9d90d9e1aacdce1"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/globalsimplesum.yaml",
+    "local": "baselines/STATE/src/state/configs/model/globalsimplesum.yaml",
+    "sha256": "c4b59de339896ade181a9de7f2d5138e875625bda3f9131eb8fb435af98cd34f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/old_neuralot.yaml",
+    "local": "baselines/STATE/src/state/configs/model/old_neuralot.yaml",
+    "sha256": "d4ffe06f7d818c5d9129af73b375b38f186d6d4f0956118e7fa1b23cfcf34369"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/pertsets.yaml",
+    "local": "baselines/STATE/src/state/configs/model/pertsets.yaml",
+    "sha256": "f0a23a5551d800801eb9d55ef4be07efd520747c065a48713d1de3dd62a0166f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/perturb_mean.yaml",
+    "local": "baselines/STATE/src/state/configs/model/perturb_mean.yaml",
+    "sha256": "b78ee5b19e456760e724d7f527903f6d6552d6160cba996b68bfd11f2c04148e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/pseudobulk.yaml",
+    "local": "baselines/STATE/src/state/configs/model/pseudobulk.yaml",
+    "sha256": "43853bbfbb8348b753da20f695a18418f574e3624a2b950655cfaf51e8261f1c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/scgpt-chemical.yaml",
+    "local": "baselines/STATE/src/state/configs/model/scgpt-chemical.yaml",
+    "sha256": "d62017dbc12e751a7b1e86dc0450788d72017cfea44cae54e366a2703efffc26"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/scgpt-genetic.yaml",
+    "local": "baselines/STATE/src/state/configs/model/scgpt-genetic.yaml",
+    "sha256": "3695be22074f96a0b66a867774acac52e31f15b29261a4e2750834744b6be651"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/scvi.yaml",
+    "local": "baselines/STATE/src/state/configs/model/scvi.yaml",
+    "sha256": "f2758c9d359d50443a4a372714c758b923ed783508e34919d597934ff6615177"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/state.yaml",
+    "local": "baselines/STATE/src/state/configs/model/state.yaml",
+    "sha256": "9f57727f4a246cb7bcb967750c016321833f7ca0b5fc82a3a6656eab9ddb7ac0"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/state_lg.yaml",
+    "local": "baselines/STATE/src/state/configs/model/state_lg.yaml",
+    "sha256": "cfef7ac0150a7c99e117deb021dd88cd6b3647d300eb7acee57c3051b7f96084"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/state_sm.yaml",
+    "local": "baselines/STATE/src/state/configs/model/state_sm.yaml",
+    "sha256": "b05f379e1e4bd785cde9db1cc986c25c6ff8172e268e5dfde651a7d45f08eca7"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/tahoe_best.yaml",
+    "local": "baselines/STATE/src/state/configs/model/tahoe_best.yaml",
+    "sha256": "9ec452756c9054ef80b733db3b7bec6b57d1f0af64c2752a16054f5b3ffc0f62"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/tahoe_llama_212693232.yaml",
+    "local": "baselines/STATE/src/state/configs/model/tahoe_llama_212693232.yaml",
+    "sha256": "4903e4da03c0f44c3f22713e29ee255be055fdcf4f2e76e74eba0d3c9d6c149f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/model/tahoe_llama_62089464.yaml",
+    "local": "baselines/STATE/src/state/configs/model/tahoe_llama_62089464.yaml",
+    "sha256": "7bd908c55e113bcfc41f9e15b4d68c518ee8b35768ea0c77d9675f794e52fe56"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/training/cpa.yaml",
+    "local": "baselines/STATE/src/state/configs/training/cpa.yaml",
+    "sha256": "6a233246fd0651312b1153ea018c8759021f1947e81b31fc671ef90b3dcee058"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/training/default.yaml",
+    "local": "baselines/STATE/src/state/configs/training/default.yaml",
+    "sha256": "a015f0f0ea516e0b1bf7e382e0b2cea2d6d2f11fde0e9798e8e1d5b364d64ce2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/training/scgpt.yaml",
+    "local": "baselines/STATE/src/state/configs/training/scgpt.yaml",
+    "sha256": "3615837d197be036864bb144032af7fb916b732addf9e853591c26d7ab7a0942"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/configs/training/scvi.yaml",
+    "local": "baselines/STATE/src/state/configs/training/scvi.yaml",
+    "sha256": "b7f745684f6cdd66e7638d251b5124de077c7a686ab291e29026c3298e39f289"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/__init__.py",
+    "local": "baselines/STATE/src/state/emb/__init__.py",
+    "sha256": "03179e7ec8cca120f960e222d12c2b10baee79999e0ec4656903eb330bc28f48"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/finetune_decoder.py",
+    "local": "baselines/STATE/src/state/emb/finetune_decoder.py",
+    "sha256": "6f3c804dbdd29c926d524c612d7c45986cee6a98ab67cd03685e3296784c2082"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/inference.py",
+    "local": "baselines/STATE/src/state/emb/inference.py",
+    "sha256": "98eba6fee56aad97362feb91aa7e76a996ddbdad4e51fcc1ec21f62041cf5117"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/utils.py",
+    "local": "baselines/STATE/src/state/emb/utils.py",
+    "sha256": "03dfcd79d308e384ae1769852d188300c2123de9f81a6d366e4cb9106a3e46e7"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/vectordb.py",
+    "local": "baselines/STATE/src/state/emb/vectordb.py",
+    "sha256": "ff9db6c2b6e47478b0e2d795344e3f2c5473c32327ea7f34558ca33d415fafd9"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/eval/__init__.py",
+    "local": "baselines/STATE/src/state/emb/eval/__init__.py",
+    "sha256": "d123e94daa6e608380b16afcc8151e1fc2c136d6bc031743fffaf022a3ec8ccd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/eval/emb.py",
+    "local": "baselines/STATE/src/state/emb/eval/emb.py",
+    "sha256": "4223de5897428f0d99ea6a8da5e64e08c8b3bf012ca87ab4eb0103fe8a0df66d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/nn/__init__.py",
+    "local": "baselines/STATE/src/state/emb/nn/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/nn/eval_utils.py",
+    "local": "baselines/STATE/src/state/emb/nn/eval_utils.py",
+    "sha256": "9ae44c27f977d7df3771df1477a8fe11718367d7f268b63b735880973b725a6d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/nn/flash_transformer.py",
+    "local": "baselines/STATE/src/state/emb/nn/flash_transformer.py",
+    "sha256": "0246e3a28de11f6578f83ebdb5612cd30c618061a1ae6497533a2ab41fcb9330"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/nn/loss.py",
+    "local": "baselines/STATE/src/state/emb/nn/loss.py",
+    "sha256": "81b0f552e9f7395a28f04c21a940de2ec7e047815b716e89f6c5c673e47a7f3b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/nn/model.py",
+    "local": "baselines/STATE/src/state/emb/nn/model.py",
+    "sha256": "1e9be08a4f7bdabe27dbf529353f71ab53381e030d2492e7c0fda9e93215a9f9"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/tools/__init__.py",
+    "local": "baselines/STATE/src/state/emb/tools/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/tools/slurm.py",
+    "local": "baselines/STATE/src/state/emb/tools/slurm.py",
+    "sha256": "3baf267d97e2ad7a3046977c80abebfb80a38bba3ce0f1381965573b8a58646c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/train/__init__.py",
+    "local": "baselines/STATE/src/state/emb/train/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/train/__main__.py",
+    "local": "baselines/STATE/src/state/emb/train/__main__.py",
+    "sha256": "8405a25bd5d57c34270e082a7961448e600f5bc3f8149d8a06b440f1c6894c82"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/train/callbacks.py",
+    "local": "baselines/STATE/src/state/emb/train/callbacks.py",
+    "sha256": "4300ab650772011a92deaed9b5709ad1aaa02b5e50557f627a726aa37e429b77"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/emb/train/trainer.py",
+    "local": "baselines/STATE/src/state/emb/train/trainer.py",
+    "sha256": "a56bf5700349d1e02c94dc4b1d6f27ac70eb72300a0f23906e2cdc564f91d3c9"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/__init__.py",
+    "local": "baselines/STATE/src/state/tx/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/callbacks/__init__.py",
+    "local": "baselines/STATE/src/state/tx/callbacks/__init__.py",
+    "sha256": "7d94d02aa87f049265023c7ef228160bf96df96d2578da99402c3ae41dc4db03"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/callbacks/batch_speed_monitor.py",
+    "local": "baselines/STATE/src/state/tx/callbacks/batch_speed_monitor.py",
+    "sha256": "26f0013986c752578550b56bdc53a7e6c48bfafa47e54057905e6eeb2c62e967"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/callbacks/cumulative_flops.py",
+    "local": "baselines/STATE/src/state/tx/callbacks/cumulative_flops.py",
+    "sha256": "00137ec54b5c5ff0922849205d423e82dd304498a11203965f8e588be727a26d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/callbacks/model_flops_utilization.py",
+    "local": "baselines/STATE/src/state/tx/callbacks/model_flops_utilization.py",
+    "sha256": "8d0197523d775c4e81a981964ce9ac2a533da88f39f9ef90df41b3c856ba8fdc"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/__init__.py",
+    "local": "baselines/STATE/src/state/tx/models/__init__.py",
+    "sha256": "940e9c2606dc73f05054ed501b7e309702c24d159ffdbaa2f91d17700cee4501"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/base.py",
+    "local": "baselines/STATE/src/state/tx/models/base.py",
+    "sha256": "f81d81b1d7d9bb8cc29f0d3136b3fb2830c4821d31ee39f1382de1b5c9b75ffa"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/context_mean.py",
+    "local": "baselines/STATE/src/state/tx/models/context_mean.py",
+    "sha256": "68092a0ade1353a9cf89262894d4ff958e17b6d44389e9a9fe5487068e0b1313"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/decoder_only.py",
+    "local": "baselines/STATE/src/state/tx/models/decoder_only.py",
+    "sha256": "5c08c3d9eb8cb4e1dae7de7a8f7bb8e7937551b477032be0fe536f02da0766d1"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/decoders.py",
+    "local": "baselines/STATE/src/state/tx/models/decoders.py",
+    "sha256": "b4b55f3a47b806f1fd73eada34c6ae3faa65e5f9219184453cc38ecddd92b470"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/embed_sum.py",
+    "local": "baselines/STATE/src/state/tx/models/embed_sum.py",
+    "sha256": "906196c21934ca6bcc2ba2bfbb0bbd31f46dd2c52b9e5d04a8d528b4d07c1ebb"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/old_neural_ot.py",
+    "local": "baselines/STATE/src/state/tx/models/old_neural_ot.py",
+    "sha256": "057cab2c5c65847ad721a91340de68752ecae6182b2587663da5cd977d7f4559"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/perturb_mean.py",
+    "local": "baselines/STATE/src/state/tx/models/perturb_mean.py",
+    "sha256": "815ca7a3e4a67d1fd14c712a2ec574b8072a4b0f3bb1735a1a62d0438a9f9190"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/pseudobulk.py",
+    "local": "baselines/STATE/src/state/tx/models/pseudobulk.py",
+    "sha256": "7da65da4048408aeb40460ea412620bca52673a5a2607da0fcb0711d52ef9001"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/state_transition.py",
+    "local": "baselines/STATE/src/state/tx/models/state_transition.py",
+    "sha256": "6c31cc74533a42039e5e643fa910878f3d5b2f5d5dbf7d61b7cacdfac230fa1f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/utils.py",
+    "local": "baselines/STATE/src/state/tx/models/utils.py",
+    "sha256": "cb2c07fdae7aa22c9e0dd50256fca480220fda9e85c12cf9d29b13cef9104278"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/cpa/__init__.py",
+    "local": "baselines/STATE/src/state/tx/models/cpa/__init__.py",
+    "sha256": "615c78507d15101ecfe73a4a20bad55a1a9f0af1b674df9258e05c8eaca3211d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/cpa/_base_modules.py",
+    "local": "baselines/STATE/src/state/tx/models/cpa/_base_modules.py",
+    "sha256": "99b5afc11654790b3380295bd80156a5bf2e0d5aa03998d6a51a08cd7a1b86f1"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/cpa/_callbacks.py",
+    "local": "baselines/STATE/src/state/tx/models/cpa/_callbacks.py",
+    "sha256": "b46bef59e755fbfe8fd2933b74f1db30460df113e809d399199b13ae5eddca43"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/cpa/_dists.py",
+    "local": "baselines/STATE/src/state/tx/models/cpa/_dists.py",
+    "sha256": "240e4f68755c86fa3dd50be4d5a55a90977b2a3232a19596d48cbfe4a2cdd8c2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/cpa/_model.py",
+    "local": "baselines/STATE/src/state/tx/models/cpa/_model.py",
+    "sha256": "677f56756ac7e2604862cd6acc0c5ae9b09d5bed54c5768f83032420f27f5ebb"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/cpa/_module.py",
+    "local": "baselines/STATE/src/state/tx/models/cpa/_module.py",
+    "sha256": "958ec5919fc4fd55fdc8a198272cf24a8ee90369801df3be7fc04d69becaa455"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/cpa/_task.py",
+    "local": "baselines/STATE/src/state/tx/models/cpa/_task.py",
+    "sha256": "7d8b137e1f79fb6d2c88823feb4976a91ba36db2afac8cf6d4e6cb299bf30297"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/__init__.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/__init__.py",
+    "sha256": "2deb071cdbe47533a5b134df4fdccaa8823ff7b1758fc185e2cb746d6f5e0819"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/dsbn.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/dsbn.py",
+    "sha256": "43c59fe9b673ca5103d65853e0aa67a59772c35c2b3696fdce08466f1d64f5bd"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/gene_tokenizer.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/gene_tokenizer.py",
+    "sha256": "b2fb1473ca697d656486877a162fcfd50f4956561996924e14fe409065ed2a38"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/generation_model.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/generation_model.py",
+    "sha256": "29a7c47919240291a2ce7d86df095b383e2a67797008d49da5074a66ff68b3b9"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/grad_reverse.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/grad_reverse.py",
+    "sha256": "506b0adb351b1dc50f5778434b6c4a553cd18d23a6100add62fdbf2791764ad6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/lightning_model.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/lightning_model.py",
+    "sha256": "dc58152765748e9fa1db2c182f7bda3409fff0e0a13d222a1e9f75d097c8bd4c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/loss.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/loss.py",
+    "sha256": "dc82150e1a445f34b7303dd224fd1298ea31cfd4996cb54e5242ec92ace3e54e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/model.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/model.py",
+    "sha256": "0ff98f96f8868e2d48d82e50ae89e727b2cff9f63e62ed9c5d40e58b2e85f96d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scgpt/utils.py",
+    "local": "baselines/STATE/src/state/tx/models/scgpt/utils.py",
+    "sha256": "eb35ab4c532c3ab60d37542971577b28e708dae98e22e807134d73665e757790"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scvi/__init__.py",
+    "local": "baselines/STATE/src/state/tx/models/scvi/__init__.py",
+    "sha256": "56cad90e29e9b4233fa7839246792439759e6e5c002b0ff42954910877267dde"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scvi/_base_modules.py",
+    "local": "baselines/STATE/src/state/tx/models/scvi/_base_modules.py",
+    "sha256": "f4b050731533024ffccd623f47132d56a4e5b09335e77c3f67641c4acbf90d1e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scvi/_callbacks.py",
+    "local": "baselines/STATE/src/state/tx/models/scvi/_callbacks.py",
+    "sha256": "b46bef59e755fbfe8fd2933b74f1db30460df113e809d399199b13ae5eddca43"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scvi/_dists.py",
+    "local": "baselines/STATE/src/state/tx/models/scvi/_dists.py",
+    "sha256": "240e4f68755c86fa3dd50be4d5a55a90977b2a3232a19596d48cbfe4a2cdd8c2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scvi/_model.py",
+    "local": "baselines/STATE/src/state/tx/models/scvi/_model.py",
+    "sha256": "bda9bb7b47c57577ecc22b6fae66f5ed972c920268536b077f24c0e0d90041f5"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scvi/_module.py",
+    "local": "baselines/STATE/src/state/tx/models/scvi/_module.py",
+    "sha256": "cbec41e48b26efdb199b3c8efe80aabd573fc9e2319d66fe0f53e3b566aea7d0"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/models/scvi/_task.py",
+    "local": "baselines/STATE/src/state/tx/models/scvi/_task.py",
+    "sha256": "847d7b286d634563a95331175f26760b0cc8d496f7da6463987b72bbd1da83ae"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/utils/__init__.py",
+    "local": "baselines/STATE/src/state/tx/utils/__init__.py",
+    "sha256": "aaef2afea68fa71f5e2de9822426bd9b0b53dbfbf243391ed30ae19266f23955"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/src/state/tx/utils/singleton.py",
+    "local": "baselines/STATE/src/state/tx/utils/singleton.py",
+    "sha256": "9b229850fb05befbc65c9006c4829605cd64f4be7a28806f41de697942d419d2"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/celltype.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/celltype.toml",
+    "sha256": "5f1e7836492e6f39a37fffad93f7dfd78b4cfbd9a9ebb2f63558b39f7a1716cc"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/donor.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/donor.toml",
+    "sha256": "f334a2ab6d01dc89e5c1d7868d8d19990ee1475d50331d30ed2d5148f7cec6cc"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_1.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_1.toml",
+    "sha256": "c48c807449bfff1bbb8c0070766a9b29198b9b256b14a0f55fba6422a13c420a"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_1_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_1_zeroshot.toml",
+    "sha256": "2616ceec1361b0023e75ed541f5e7797d5da5240eb838d7ee56703a24e2ea4f6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_2.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_2.toml",
+    "sha256": "ac6847b9eb80098fdbb3f951562dce022cc78d18ea1e07a4ae8157bbbe62d84f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_2_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_2_zeroshot.toml",
+    "sha256": "69cfa0efa22a09e921a54a937a7bbc16f3442f24d5c110cc1406dffdfdea981f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_3.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_3.toml",
+    "sha256": "e4fc3ff1e036f8ec9e3b16418f7bfad569a72fee35dcc101fc13bfd77fef5f87"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_3_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_3_zeroshot.toml",
+    "sha256": "3de12fd8fa169b343a075ac8c97359e7388fe854c24d036eee777ec605e3d452"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_4.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_4.toml",
+    "sha256": "d928a7b0086512b15b99d86f551556b15751512ae9d0e3c0f2ff02b52db660e4"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_4_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_4_zeroshot.toml",
+    "sha256": "2f5cbbe9f26fd7763ac3e9cf3dc7a2489ebe4a974e05419db3867de20e38cf8a"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_5.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_5.toml",
+    "sha256": "73f3bacd8446025a17de3ea2cb11b1b2f6762ff8f9b867f6820d40a40ffeb7c6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/parse_tomls/split_5_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/parse_tomls/split_5_zeroshot.toml",
+    "sha256": "567d63f781baaaf1074ba41024fba3674325c4b6392cf56e008255a6a73a5f6f"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/hepg2.toml",
+    "sha256": "7f8d5df29942f7532fef09b23a0a8deec7b8339bfe7817505b977bd894813962"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/hepg2_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/hepg2_zeroshot.toml",
+    "sha256": "2cc13dbc83b4afe44544eab8ee6277333eb020630d3e80644d514ec68bfceba0"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/jurkat.toml",
+    "sha256": "9606316c24dfd140bbfe7e252375c18283d4f4f10b5a4adcb463a87cd1472634"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/jurkat_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/jurkat_zeroshot.toml",
+    "sha256": "7ed319aac657bb54f403fc84770fcc4250cd7b99e5a12c84dbfcc6acdb06639c"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/k562.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/k562.toml",
+    "sha256": "a794ae85cacbb8ae2ce59ad5ba0fb465f5be244950b84aea28c7fa29226597c3"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/k562_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/k562_zeroshot.toml",
+    "sha256": "76590c2a12fff844f54aad994607d8c366151be5d8b503114cf76b8b9d3e006e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/rpe1.toml",
+    "sha256": "1681633c6b902933a8e83aae07d941ba2e63e5b968be0b80fea61a247308ecdc"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/replogle_tomls/rpe1_zeroshot.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/replogle_tomls/rpe1_zeroshot.toml",
+    "sha256": "a39a8ca7adcd3f5256546e3448ffcf8d829946f39189d1e65814581e55736467"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/state_preprint_toml_files/tahoe_tomls/generalization.toml",
+    "local": "baselines/STATE/state_preprint_toml_files/tahoe_tomls/generalization.toml",
+    "sha256": "eac16fb06052dec9d6842dfae04d5ca693b847e3432f719a975adce205707783"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/tests/test_bidirectional_models.py",
+    "local": "baselines/STATE/tests/test_bidirectional_models.py",
+    "sha256": "242cb3c99f1afd7c6f7a33e5be53c2f9031db0f03c9dd12666aabfedc047bd89"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/tests/test_callbacks.py",
+    "local": "baselines/STATE/tests/test_callbacks.py",
+    "sha256": "08aa8649155a74a572ec2f0c2df3d745bc897d4136a4ca633a919dfb9aef0f27"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/STATE/tests/test_stream_h5ad.py",
+    "local": "baselines/STATE/tests/test_stream_h5ad.py",
+    "sha256": "50338ebe163cf6206cb494b1dfdf07e26a3ef9191ffb7b5ece3cc9138c2a5eac"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/txpert_pathway3352_xcell_zeroshot_k562.toml",
+    "local": "baselines/STATE/benchmarks/txpert_pathway3352_xcell_zeroshot_k562.toml",
+    "sha256": "0a6cf0c12c9f7e558fec2ec44c6ea8af6a41cb319eea05c311b48b862fd01bd9"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/run_state_batch_memory_benchmark.sh",
+    "local": "baselines/STATE/benchmarks/run_state_batch_memory_benchmark.sh",
+    "sha256": "e4f5ebcf1b27b56e58589f0e74b97fc2d4e9055ef09c6c76056579f2ccbf2ae1"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/run_state_bs8_500step_memory_test.sh",
+    "local": "baselines/STATE/benchmarks/run_state_bs8_500step_memory_test.sh",
+    "sha256": "e5f12e254c344fea637b046b431c432099c3f1b3a1e45ac1c1a649b04bfeb630"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/run_state_bs8_30k_training.sh",
+    "local": "baselines/STATE/benchmarks/run_state_bs8_30k_training.sh",
+    "sha256": "163a05cb6c60123e1523d9e1f1b7420ab97ae23f4fc187e6e90d2e32b4b93224"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/prepare_state_known55_eval.py",
+    "local": "baselines/STATE/benchmarks/prepare_state_known55_eval.py",
+    "sha256": "04974f476cd795d48ea0b8482e08cab30b17fd1a9eb718aa5a76e90402b56d63"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/txpert_pathway3352_k562_known55.toml",
+    "local": "baselines/STATE/benchmarks/txpert_pathway3352_k562_known55.toml",
+    "sha256": "52bb288466d85bae7ef82ca05f0b2abb439f1cb7cfc366dab04776ac46e10c9e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/score_state_known55_means.py",
+    "local": "baselines/STATE/benchmarks/score_state_known55_means.py",
+    "sha256": "aa7cf8a19afe2a592bdee37f20407c8a9f46c01400a743069c1d2f9f45bf65bf"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/export_state_known55_predictions.py",
+    "local": "baselines/STATE/benchmarks/export_state_known55_predictions.py",
+    "sha256": "09b1e354a0406cbe567c596b9a3d922c441deb4a71f3adbb7316a167e0dff679"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/prepare_state_known55_fixed2000_eval.py",
+    "local": "baselines/STATE/benchmarks/prepare_state_known55_fixed2000_eval.py",
+    "sha256": "04a167d76e5e1fb4fff944374f1b85ad4deddf4ab1d2fd0e6165173c28619fe4"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/txpert_pathway3352_k562_known55_fixed2000.toml",
+    "local": "baselines/STATE/benchmarks/txpert_pathway3352_k562_known55_fixed2000.toml",
+    "sha256": "c3983795cd68a4d58dafadbae0fecac931aea333c35264e720ca536baa2b7ac7"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/score_state_known55_fixed2000.py",
+    "local": "baselines/STATE/benchmarks/score_state_known55_fixed2000.py",
+    "sha256": "27e0d05b228dab922774a968a9fe761559d3f61fa0966b2a93156984e52879ce"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/prepare_state_allcovered_eval.py",
+    "local": "baselines/STATE/benchmarks/prepare_state_allcovered_eval.py",
+    "sha256": "32a42d9141aeedce0b9e64b4c18f51d155831b676241c00a91b3ad801a2891a6"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/txpert_pathway3352_k562_allcovered.toml",
+    "local": "baselines/STATE/benchmarks/txpert_pathway3352_k562_allcovered.toml",
+    "sha256": "22172ca27839878ec32dee941cc3bafa9c73337a7d22ddab4c02a3a166b423da"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/score_state_cloud_metrics.py",
+    "local": "baselines/STATE/benchmarks/score_state_cloud_metrics.py",
+    "sha256": "1e081d67dafc7c3bab54b574ff2111c7af10d5d021a4e1f1f69f1927292154da"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/prepare_state_allcovered_fixed2000_eval.py",
+    "local": "baselines/STATE/benchmarks/prepare_state_allcovered_fixed2000_eval.py",
+    "sha256": "40cae0ec2715ef9ab7dd62ba5530a0726036afbe554ff81879923488747b4c6e"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/txpert_pathway3352_k562_allcovered_fixed2000.toml",
+    "local": "baselines/STATE/benchmarks/txpert_pathway3352_k562_allcovered_fixed2000.toml",
+    "sha256": "6959a2f2b94788a607f0735fe4048e87fade5044b7cd3b11f8a13964bb4fa68b"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/score_state_fixed2000_means.py",
+    "local": "baselines/STATE/benchmarks/score_state_fixed2000_means.py",
+    "sha256": "c56b2f8a923649e9efbfbbccf5e9e0c48fbb609087a04d0979a184c92ce8d226"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/scripts_tmp/current_txpert_official_fixed2000/convert_txpert_official_predictions_to_condition_npy.py",
+    "local": "baselines/experiment_runners/TxPert/current_txpert_official_fixed2000/convert_txpert_official_predictions_to_condition_npy.py",
+    "sha256": "5f03c8e3d1d723f1a3dd3aa42d8de552b139699ad4a717e54c52424b34d819fe"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/scripts_tmp/current_txpert_official_fixed2000/prepare_txpert_official_fixed2000_cache.py",
+    "local": "baselines/experiment_runners/TxPert/current_txpert_official_fixed2000/prepare_txpert_official_fixed2000_cache.py",
+    "sha256": "f71a6cb6f2b922c58d5bf8b2446611eb984ca627269c68c246f8d2fbe611f36d"
+  },
+  {
+    "host": "<PRIVATE_HOST>",
+    "source": "<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/scripts_tmp/current_txpert_official_fixed2000/run_txpert_official_k562_all_fixed2000_sharded4.sh",
+    "local": "baselines/experiment_runners/TxPert/current_txpert_official_fixed2000/run_txpert_official_k562_all_fixed2000_sharded4.sh",
+    "sha256": "235f699080edfa40c4a587339f8d61d6b81f20eaa099fde86d72521513a0ac09"
+  }
+]

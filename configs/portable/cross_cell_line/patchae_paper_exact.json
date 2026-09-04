@@ -1,0 +1,54 @@
+{
+  "schema": "scplad.experiment_spec.v1",
+  "source_config": "configs/cross_cell_line/patchae_paper_exact.json",
+  "path_base": "archive_root",
+  "note": "Specification, not a launcher config; supply missing large inputs.",
+  "parameters": {
+    "purpose": "Paper-exact architecture and training lineage for the cross-cell-line PatchAE",
+    "training_code": "scripts/training/exact_historical/cross_cell_line/train_patch_autoencoder_train_only.py",
+    "training_code_sha256": "fc677ebe3daa6690f79d7c6f123098d6c1355fe3628cc3e95a9cae286873d7f4",
+    "data": "data/cross_cell_line/pathway3352/fold_0/ae_train.h5ad",
+    "latent_dim": 32,
+    "patch_size": 20,
+    "hidden_dim": 128,
+    "num_layers": 2,
+    "num_heads": 4,
+    "dropout": 0.0,
+    "latent_norm": "none",
+    "gaussian_weight": 0.0,
+    "gaussian_cov_weight": 0.0,
+    "gaussian_cov_dims": 0,
+    "latent_noise_sigma": 0.08,
+    "epochs": 200,
+    "batch_size": 1024,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "seed": 20260426,
+    "num_workers": 2,
+    "training_lineage": {
+      "description": "The archived paper checkpoint was continued through epochs 100, 150, and 200; a fresh 200-epoch run uses the same objective and hyperparameters but is not expected to be bitwise identical.",
+      "final_start_epoch": 150,
+      "final_resume_model": "previous_150_epoch_run/best_model.pt",
+      "final_resume_history": "previous_150_epoch_run/history.json"
+    },
+    "observed_final_config": {
+      "gene_size": 3352,
+      "num_patches": 168,
+      "padded_gene_size": 3360,
+      "pad_genes": 8,
+      "latent_shape": [
+        168,
+        32
+      ],
+      "train_cells": 293335,
+      "data_usage": "ae_train_h5ad_only_no_val_no_test"
+    }
+  },
+  "files": {
+    "gene_order_json": {
+      "path": "data/metadata/cross_cell_line/pathway3352/gene_order.json",
+      "available_locally": true,
+      "role": "input"
+    }
+  }
+}

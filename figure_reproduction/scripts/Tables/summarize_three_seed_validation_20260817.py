@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "source_data" / "three_seed_validation_20260817"
+ROOT = Path(__file__).resolve().parents[2]
+DATA = ROOT / "source_data" / "Tables" / "three_seed_validation_20260817"
 SEEDS = ["seed20260601", "seed20260713", "seed20260714"]
 METRICS = ["mean_pcc", "mean_spearman", "delta_pcc", "delta_spearman"]
 

@@ -1,0 +1,49 @@
+{
+  "model": "TxPert official K562_unseen_cell_gat",
+  "checkpoint": "K562_unseen_cell_gat.ckpt",
+  "condition_encoding": "GENE+ctrl",
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_clean_quick100_k562heldout_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1",
+  "benchmark_root": "<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae200ep_meanlatent_finetune_from700k_20k_lr5e-6_v1/k562_known55_match_counts_eval_input",
+  "task": "k562_known55_unseen_perturbations",
+  "sample_count_mode": "match_k562_true_condition_counts_from_saved_txpert_predictions",
+  "num_conditions": 55,
+  "total_true_cells": 6544,
+  "total_generated_cells": 6544,
+  "gene_order": "reordered TxPert output to scPLAD benchmark var_names",
+  "control_mean": "scPLAD K562 train non-targeting global mean",
+  "pra_quantiles": [
+    0.1,
+    0.9
+  ],
+  "csa_gene_selection": "top-k genes by abs(true_mean - K562_control_mean)",
+  "metrics_mean": {
+    "mean_pcc": 0.9907411063958514,
+    "mean_spearman": 0.9500107374875691,
+    "delta_pcc": 0.5063997837674585,
+    "delta_spearman": 0.36809405576471466,
+    "pra_q10_q90": 0.10846126653311507,
+    "csa_top50": 0.2268300834661839,
+    "csa_top100": 0.21057349246708693,
+    "csa_top200": 0.17862772675631602
+  },
+  "metrics_median": {
+    "mean_pcc": 0.9918406745719333,
+    "mean_spearman": 0.9522112677007019,
+    "delta_pcc": 0.5539764391386052,
+    "delta_spearman": 0.35821111124959626,
+    "pra_q10_q90": 0.10924417707588555,
+    "csa_top50": 0.18807332528424578,
+    "csa_top100": 0.18235121779017208,
+    "csa_top200": 0.15847221325711697
+  },
+  "metrics_cell_weighted": {
+    "mean_pcc": 0.9911760391814541,
+    "mean_spearman": 0.9555990535255887,
+    "delta_pcc": 0.5068916174886506,
+    "delta_spearman": 0.3753145975908821,
+    "pra_q10_q90": 0.10878366998023628,
+    "csa_top50": 0.23532673370249077,
+    "csa_top100": 0.22082210692471227,
+    "csa_top200": 0.1952319326962681
+  }
+}

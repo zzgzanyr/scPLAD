@@ -69,6 +69,12 @@ def replace_svg2_drop_shadows(root: ET.Element) -> None:
 
 
 def find_inkscape() -> str | None:
+    override = os.environ.get("INKSCAPE_BINARY")
+    if override:
+        candidate = shutil.which(override)
+        if candidate:
+            return candidate
+        raise FileNotFoundError(f"INKSCAPE_BINARY is not executable: {override}")
     candidate = shutil.which("inkscape")
     if candidate:
         return candidate
@@ -78,7 +84,7 @@ def find_inkscape() -> str | None:
 
 def export_derivatives(svg: Path, inkscape: str | None) -> None:
     if inkscape is None:
-        return
+        raise RuntimeError("Inkscape is required for PDF/PNG/TIFF export. Install it on PATH or set INKSCAPE_BINARY.")
     pdf = svg.with_suffix(".pdf")
     png = svg.with_suffix(".png")
     subprocess.run(
@@ -98,8 +104,10 @@ def export_derivatives(svg: Path, inkscape: str | None) -> None:
 
 
 def main() -> None:
-    OUT.mkdir(parents=True, exist_ok=True)
     inkscape = find_inkscape()
+    if inkscape is None:
+        raise RuntimeError("Inkscape is required for complete Figure 1 export. Install it on PATH or set INKSCAPE_BINARY.")
+    OUT.mkdir(parents=True, exist_ok=True)
     for panel, (x, y, width, height) in CROPS.items():
         tree = ET.parse(SOURCE)
         root = tree.getroot()

@@ -74,6 +74,13 @@ single-cell training matrices.
 
 ## Start here
 
+- `docs/BASELINE_RECOVERY_20260904.md`: recovered baseline code and actual-run parameters.
+- `manifest/baseline_runs.tsv`: eight baseline model/task and diagnostic evidence records.
+
+- `docs/LOCAL_REPRODUCTION_ASSETS_20260904.md`: local configuration and compact-input audit.
+- `manifest/portable_configs.tsv`: ten archive-relative experiment parameter specifications.
+- `manifest/small_assets_20260904.json`: verified sources and hashes for the local priors and gene orders.
+
 - `docs/DIRECTORY_LAYOUT.md`: directory responsibilities.
 - `docs/SOURCE_PROVENANCE.md`: original server paths and copy/link policy.
 - `docs/RESULTS_CATALOG.md`: current manuscript result families.
@@ -82,7 +89,7 @@ single-cell training matrices.
 - `configs/path_registry.yaml`: canonical archive paths and original paths.
 - `manifest/files.tsv`: generated file inventory.
 - `manifest/experiments.tsv`: machine-readable experiment registry.
-- `manifest/checksums.sha256`: checksums for copied core data and selected checkpoints.
+- `manifest/checksums.sha256`: checksums for available copied core data and checkpoints (not a promise that omitted files are present).
 - `figure_reproduction/manifests/PANEL_REPRODUCIBILITY.tsv`: links every
   manuscript panel to experiment IDs, data, training/evaluation entry points,
   plotting code, and canonical assets.
@@ -92,3 +99,10 @@ single-cell training matrices.
   check from the files that are present.
 
 The original source directories are never modified by archive construction.
+
+## Reproduction fixes (2026-09-04)
+
+See [the repair and validation notes](docs/REPRODUCIBILITY_FIXES_20260904.md)
+for input contracts, task-specific settings, VAE source provenance, and remaining
+limits of the legacy raw-data/prior builders. No training result was changed.
+Figure 1 requires Inkscape on PATH, or an explicit `INKSCAPE_BINARY` path.

@@ -1,0 +1,12 @@
+{
+  "seed": 20260718,
+  "mode": "direct_source_expression",
+  "definition": "All observed source perturbation cells, used once without resampling, control subtraction, or target-background alignment",
+  "source_weighting": "natural weighting by observed source-cell counts",
+  "coverage_counts": {
+    "0": 506,
+    "1": 75,
+    "2": 162,
+    "3": 343
+  }
+}

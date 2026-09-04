@@ -1,0 +1,36 @@
+{
+  "model": "TxPert_official_cell_gat_k562_all_fixed2000_trrustTF",
+  "eval_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
+  "control_context_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
+  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/condition_npy",
+  "trrust_tsv": "<SCPLAD_DATA_ROOT>/scplad/features/external_priors_20260611/trrust_rawdata.human.tsv",
+  "num_conditions": 1086,
+  "n_tfs": 86,
+  "min_targets": 3,
+  "unknown_weight": 0.0,
+  "top_k_tf": 25,
+  "metrics_mean": {
+    "tf_activity_mean_pcc": 0.9865943791415258,
+    "tf_activity_mean_spearman": 0.9850406265905901,
+    "tf_activity_delta_pcc": 0.5089937334986985,
+    "tf_activity_delta_spearman": 0.48582564814459184,
+    "tf_activity_topk_overlap": 0.4864088397790055,
+    "tf_activity_auprc": 0.5327125474375116
+  },
+  "metrics_median": {
+    "tf_activity_mean_pcc": 0.99151183392277,
+    "tf_activity_mean_spearman": 0.9900561347233359,
+    "tf_activity_delta_pcc": 0.5633824282396482,
+    "tf_activity_delta_spearman": 0.5266663521864239,
+    "tf_activity_topk_overlap": 0.48,
+    "tf_activity_auprc": 0.5339425346632869
+  },
+  "metrics_cell_weighted": {
+    "tf_activity_mean_pcc": 0.9863577284819832,
+    "tf_activity_mean_spearman": 0.9848530632490844,
+    "tf_activity_delta_pcc": 0.5320988017686122,
+    "tf_activity_delta_spearman": 0.5094735670835062,
+    "tf_activity_topk_overlap": 0.49900926073766566,
+    "tf_activity_auprc": 0.5472149734232561
+  }
+}

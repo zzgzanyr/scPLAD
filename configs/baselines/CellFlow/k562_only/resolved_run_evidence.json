@@ -1,0 +1,37 @@
+{
+  "status": "saved_run_metadata_and_evaluation_summary",
+  "source": "configs/baselines/CellFlow/k562_only/run_parameters.json",
+  "training_code": "baselines/experiment_runners/CellFlow/run_cellflow_txpert_pathway5000_smoke.py",
+  "inference_code": "baselines/experiment_runners/CellFlow/eval_cellflow_txpert_unseen_fixed2000.py",
+  "saved_run": {
+    "benchmark_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+    "outdir": "<SCPLAD_DATA_ROOT>/CellFlow_runs/txpert_pathway5000_esm2_t36_3B_1000k_v1",
+    "steps": 1000000,
+    "batch_size": 128,
+    "lr": 5e-05,
+    "seed": 0,
+    "control_label": "ctrl",
+    "condition_key": "gene_name",
+    "embedding_pkl": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/txpert_perturb_gene_esm2_t36_3B_embeddings.pkl",
+    "embedding_uns_key": "gene_embedding",
+    "embedding_dim": 2560,
+    "n_train_cells": 111770,
+    "n_train_genes": 5000,
+    "n_train_conditions": 734,
+    "n_train_control_cells": 10691
+  },
+  "evaluation": {
+    "model_dir": "<SCPLAD_DATA_ROOT>/CellFlow_runs/txpert_pathway5000_esm2_t36_3B_1000k_v1",
+    "benchmark_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+    "n_conditions": 272,
+    "num_samples": 2000,
+    "max_steps": 100,
+    "mean_pearson": 0.9883403337615377,
+    "mean_spearman": 0.949361527426608,
+    "delta_pearson": 0.2786480430136983,
+    "delta_spearman": 0.19614042941235502,
+    "weighted_delta_pearson": 0.28264536603278273,
+    "weighted_delta_spearman": 0.20633555367408365
+  },
+  "warning": "The separate run_cellflow_1000k_generate2000_20260511.sh is an older Replogle experiment, NOT this TxPert-pathway5000 launch."
+}

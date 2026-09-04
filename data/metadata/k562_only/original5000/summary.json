@@ -1,0 +1,83 @@
+{
+  "source_original_h5ad": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/K562_single_cell_line/de_adata_test.h5ad",
+  "split_source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "output_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_original5000_module",
+  "feature_space": "TxPert original 5000 gene order",
+  "splits": {
+    "train": {
+      "cells": 111770,
+      "genes": 5000,
+      "conditions": 734,
+      "first_genes": [
+        "LINC01409",
+        "HES4",
+        "ISG15",
+        "SDF4",
+        "ACAP3",
+        "MXRA8",
+        "CCNL2",
+        "MRPL20-AS1"
+      ],
+      "last_genes": [
+        "MT-ND4L",
+        "MT-ND5",
+        "MT-ND6",
+        "MT-CYB",
+        "BX004987.1",
+        "MAFIP",
+        "AL354822.1",
+        "AC240274.1"
+      ]
+    },
+    "val": {
+      "cells": 10918,
+      "genes": 5000,
+      "conditions": 82,
+      "first_genes": [
+        "LINC01409",
+        "HES4",
+        "ISG15",
+        "SDF4",
+        "ACAP3",
+        "MXRA8",
+        "CCNL2",
+        "MRPL20-AS1"
+      ],
+      "last_genes": [
+        "MT-ND4L",
+        "MT-ND5",
+        "MT-ND6",
+        "MT-CYB",
+        "BX004987.1",
+        "MAFIP",
+        "AL354822.1",
+        "AC240274.1"
+      ]
+    },
+    "test": {
+      "cells": 38475,
+      "genes": 5000,
+      "conditions": 272,
+      "first_genes": [
+        "LINC01409",
+        "HES4",
+        "ISG15",
+        "SDF4",
+        "ACAP3",
+        "MXRA8",
+        "CCNL2",
+        "MRPL20-AS1"
+      ],
+      "last_genes": [
+        "MT-ND4L",
+        "MT-ND5",
+        "MT-ND6",
+        "MT-CYB",
+        "BX004987.1",
+        "MAFIP",
+        "AL354822.1",
+        "AC240274.1"
+      ]
+    }
+  }
+}

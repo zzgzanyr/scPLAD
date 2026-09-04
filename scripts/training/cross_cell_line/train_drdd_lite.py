@@ -243,6 +243,12 @@ def infer_control_mask(obs, condition_key, group_key, control_labels):
 
 
 def enforce_diffusion_boundary(train_obs, control_obs, args):
+    control_labels = parse_label_set(args.control_labels)
+    control_mask = infer_control_mask(control_obs, args.condition_key, args.group_key, control_labels)
+    if not len(control_mask) or not bool(control_mask.all()):
+        raise ValueError("control_context_h5ad must contain identifiable control-only rows.")
+    if args.context_key not in control_obs.columns:
+        raise KeyError(f"context_key={args.context_key} not found in control_context_h5ad obs")
     heldout = str(args.heldout_context).strip()
     if not heldout:
         return
@@ -265,7 +271,7 @@ def enforce_diffusion_boundary(train_obs, control_obs, args):
             "generation needs the target control anchor."
         )
     control_mask = infer_control_mask(control_obs, args.condition_key, args.group_key, control_labels)
-    if bool(control_mask.any()) and not bool(control_mask.all()):
+    if not bool(control_mask.all()):
         raise ValueError(
             "control_context_h5ad appears to contain non-control rows. "
             "Please pass a control-only h5ad for anchor construction."

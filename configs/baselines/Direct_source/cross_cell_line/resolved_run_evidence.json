@@ -1,0 +1,18 @@
+{
+  "status": "recovered_no_resampling_source_code",
+  "inference_code": "baselines/experiment_runners/Direct_source/generate_source_expression_baselines.py",
+  "definition": "Concatenate all available source perturbation cells once; no subtraction or target-control addition; natural source-cell-count weighting.",
+  "saved_generation_summary": {
+    "seed": 20260718,
+    "mode": "direct_source_expression",
+    "definition": "All observed source perturbation cells, used once without resampling, control subtraction, or target-background alignment",
+    "source_weighting": "natural weighting by observed source-cell counts",
+    "coverage_counts": {
+      "0": 506,
+      "1": 75,
+      "2": 162,
+      "3": 343
+    }
+  },
+  "warning": "This differs from the source-effect-plus-target-control script. No claim of equal weighting per source cell line."
+}

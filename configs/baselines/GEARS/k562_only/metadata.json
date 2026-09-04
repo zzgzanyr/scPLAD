@@ -1,0 +1,25 @@
+{
+  "benchmark_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "gears_data_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_data",
+  "dataset_name": "txpert_k562_pathway5000_trainonly_unseen_graph_v1",
+  "train_shape": [
+    111770,
+    5000
+  ],
+  "val_shape": [
+    10918,
+    5000
+  ],
+  "test_shape": [
+    38475,
+    5000
+  ],
+  "num_train_conditions": 734,
+  "num_val_conditions": 82,
+  "num_test_conditions": 272,
+  "num_perturbation_genes_in_graph": 1087,
+  "source_gene2go": "<SCPLAD_DATA_ROOT>/GEARS_data/gene2go_all.pkl",
+  "gene_set_path": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_data/txpert_pathway5000_gene_set_train_val_test_perts.pkl",
+  "control_label": "ctrl",
+  "skip_calc_de": true
+}

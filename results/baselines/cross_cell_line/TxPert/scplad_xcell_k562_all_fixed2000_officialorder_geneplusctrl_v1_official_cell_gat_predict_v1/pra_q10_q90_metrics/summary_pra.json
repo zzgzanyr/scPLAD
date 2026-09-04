@@ -1,0 +1,34 @@
+{
+  "model": "TxPert_official_cell_gat_k562_all_fixed2000",
+  "eval_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
+  "control_context_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
+  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/condition_npy",
+  "num_conditions": 1086,
+  "q_low": 0.1,
+  "q_high": 0.9,
+  "de_top_k": 100,
+  "metrics_mean": {
+    "pra_all_genes": 0.11068439014007847,
+    "pra_top100_true_de": 0.15667821356507544,
+    "pra_nonzero_genes": 0.11073042465871084,
+    "true_range_mean": 0.46043804443388514,
+    "pred_range_mean": 0.05520649867631713,
+    "range_width_ratio": 0.12042640563387774
+  },
+  "metrics_median": {
+    "pra_all_genes": 0.11145244521235495,
+    "pra_top100_true_de": 0.15435799460412014,
+    "pra_nonzero_genes": 0.1114534306677027,
+    "true_range_mean": 0.4553477823868759,
+    "pred_range_mean": 0.05529709904010659,
+    "range_width_ratio": 0.1212118966937803
+  },
+  "metrics_cell_weighted": {
+    "pra_all_genes": 0.10972087814503743,
+    "pra_top100_true_de": 0.1552165597139225,
+    "pra_nonzero_genes": 0.1097372055374781,
+    "true_range_mean": 0.4669768424484007,
+    "pred_range_mean": 0.05534448317929556,
+    "range_width_ratio": 0.11911072708100602
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "model": "GEARS_fixed2000_repeated_mean",
+  "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/native_eval/predictions",
+  "num_conditions": 272,
+  "q_low": 0.1,
+  "q_high": 0.9,
+  "de_top_k": 100,
+  "metrics_mean": {
+    "pra_all_genes": 0.0,
+    "pra_top100_true_de": 0.0,
+    "pra_nonzero_genes": 0.0,
+    "true_range_mean": 0.40349637454607307,
+    "pred_range_mean": 0.0,
+    "range_width_ratio": 0.0
+  },
+  "metrics_median": {
+    "pra_all_genes": 0.0,
+    "pra_top100_true_de": 0.0,
+    "pra_nonzero_genes": 0.0,
+    "true_range_mean": 0.40140989315792924,
+    "pred_range_mean": 0.0,
+    "range_width_ratio": 0.0
+  },
+  "metrics_cell_weighted": {
+    "pra_all_genes": 0.0,
+    "pra_top100_true_de": 0.0,
+    "pra_nonzero_genes": 0.0,
+    "true_range_mean": 0.4082200068389007,
+    "pred_range_mean": 0.0,
+    "range_width_ratio": 0.0
+  }
+}

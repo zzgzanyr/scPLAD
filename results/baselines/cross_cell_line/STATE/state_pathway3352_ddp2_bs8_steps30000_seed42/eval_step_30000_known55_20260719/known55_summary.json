@@ -1,0 +1,24 @@
+{
+  "n_conditions": 55,
+  "n_perturbation_cells": 6544,
+  "mean_pcc": {
+    "condition_mean": 0.9894455444349289,
+    "condition_median": 0.9900648980744948,
+    "cell_weighted_mean": 0.9902303220545402
+  },
+  "mean_spearman": {
+    "condition_mean": 0.9385129625172037,
+    "condition_median": 0.9443678781048279,
+    "cell_weighted_mean": 0.9486829720932591
+  },
+  "delta_pcc": {
+    "condition_mean": 0.31338404356733157,
+    "condition_median": 0.3326034145296463,
+    "cell_weighted_mean": 0.3304866520705728
+  },
+  "delta_spearman": {
+    "condition_mean": 0.18633939241090405,
+    "condition_median": 0.15091721657297275,
+    "cell_weighted_mean": 0.19952464394608516
+  }
+}

@@ -1,0 +1,4 @@
+cell_line,task_type,n_pairs,n_cells
+RPE1,scplad_xcell_random50_known_source_officialorder_geneplusctrl_v1_RPE1,50,3936
+hepg2,scplad_xcell_random50_known_source_officialorder_geneplusctrl_v1_hepg2,50,3074
+jurkat,scplad_xcell_random50_known_source_officialorder_geneplusctrl_v1_jurkat,50,4212

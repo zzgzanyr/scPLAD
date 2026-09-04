@@ -1,0 +1,91 @@
+{
+  "source_h5ad": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/K562_single_cell_line/de_adata_test.h5ad",
+  "output_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "feature_space": "txpert_original_5000_gene_pathway_module_order",
+  "gene_size": 5000,
+  "patch_size": 20,
+  "num_patches": 250,
+  "num_conditions": 1093,
+  "control_label": "ctrl",
+  "gene_order_json": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gene_order.json",
+  "written": {
+    "train": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/train.h5ad",
+    "val": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/val.h5ad",
+    "test": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/test.h5ad"
+  },
+  "splits": {
+    "train": {
+      "conditions": 734,
+      "cells": 111770,
+      "genes": 5000,
+      "top5_conditions": {
+        "ctrl": 10691,
+        "NCBP2+ctrl": 765,
+        "SLC39A9+ctrl": 724,
+        "GAB2+ctrl": 637,
+        "MED12+ctrl": 567
+      },
+      "bottom5_conditions": {
+        "PSMB3+ctrl": 19,
+        "RPS15+ctrl": 18,
+        "SF1+ctrl": 18,
+        "BUD31+ctrl": 15,
+        "SRSF3+ctrl": 15
+      }
+    },
+    "val": {
+      "conditions": 82,
+      "cells": 10918,
+      "genes": 5000,
+      "top5_conditions": {
+        "MED10+ctrl": 454,
+        "KRR1+ctrl": 398,
+        "EIF4E+ctrl": 324,
+        "TREX2+ctrl": 275,
+        "HARS+ctrl": 263
+      },
+      "bottom5_conditions": {
+        "RPL35+ctrl": 36,
+        "CHAF1A+ctrl": 33,
+        "NAT10+ctrl": 28,
+        "PSMC3+ctrl": 23,
+        "RBM8A+ctrl": 17
+      }
+    },
+    "test": {
+      "conditions": 272,
+      "cells": 38475,
+      "genes": 5000,
+      "top5_conditions": {
+        "DONSON+ctrl": 688,
+        "CHMP6+ctrl": 620,
+        "CPSF3+ctrl": 575,
+        "TSR2+ctrl": 486,
+        "SSRP1+ctrl": 440
+      },
+      "bottom5_conditions": {
+        "XRCC6+ctrl": 26,
+        "HSPE1+ctrl": 25,
+        "PRPF31+ctrl": 23,
+        "PSMA6+ctrl": 18,
+        "BMS1+ctrl": 18
+      }
+    }
+  },
+  "ordering_meta": {
+    "mode": "pathway5000_greedy",
+    "gmt_path": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/priors/ReactomePathways.gmt",
+    "patch_size": 20,
+    "corr_weight": 0.7,
+    "pathway_weight": 0.3,
+    "min_pathway_genes": 5,
+    "max_pathway_genes": 80,
+    "pathways_kept": 1288,
+    "genes_with_pathway": 2802,
+    "module_quality_reordered": {
+      "mean_module_score": 0.020155665747821332,
+      "median_module_score": 0.012875271961092949,
+      "num_modules": 250
+    }
+  }
+}

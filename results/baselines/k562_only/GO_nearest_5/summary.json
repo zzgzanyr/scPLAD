@@ -1,0 +1,11 @@
+{
+  "baseline": "GO-nearest-5 perturb cloud",
+  "strategy": "equal_neighbor",
+  "n_cells": 2000,
+  "seed": 20260524,
+  "n_train_conditions": 1086,
+  "n_test_conditions": 136,
+  "feature_dim": 256,
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/predictions_by_condition",
+  "median_nearest_source_cell_count": 109.0
+}

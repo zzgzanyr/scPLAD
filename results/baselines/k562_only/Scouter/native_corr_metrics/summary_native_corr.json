@@ -1,0 +1,25 @@
+{
+  "benchmark_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/predictions",
+  "num_conditions": 272,
+  "sample_count_mode": "fixed_n_cells_from_saved_predictions",
+  "fixed_n_cells": 2000,
+  "metrics_mean": {
+    "mean_pcc": 0.9886780825488761,
+    "mean_spearman": 0.9395907490680439,
+    "delta_pcc": 0.4022648447456446,
+    "delta_spearman": 0.28534722649299665
+  },
+  "metrics_median": {
+    "mean_pcc": 0.9901175506880375,
+    "mean_spearman": 0.9430936940230656,
+    "delta_pcc": 0.3966923542039301,
+    "delta_spearman": 0.2510042144332294
+  },
+  "metrics_cell_weighted": {
+    "mean_pcc": 0.9891524228913571,
+    "mean_spearman": 0.9446123518200501,
+    "delta_pcc": 0.4110361408054818,
+    "delta_spearman": 0.3037686825183533
+  }
+}

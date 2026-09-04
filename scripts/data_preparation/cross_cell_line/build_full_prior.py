@@ -442,7 +442,9 @@ def build_depmap_features(genes: pd.Series, depmap_csv: Path):
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Legacy ESM2/TRRUST builder, not the final ESM3 paper-prior pipeline.")
+    parser.add_argument("--allow-legacy-priors", action="store_true",
+                        help="Explicitly acknowledge that this builds the historical prior variant.")
     parser.add_argument("--go_csv", required=True)
     parser.add_argument("--esm_pkl", required=True)
     parser.add_argument("--ppi_parquet", required=True)
@@ -458,6 +460,8 @@ def main() -> None:
     parser.add_argument("--ppi_top_k", type=int, default=50)
     parser.add_argument("--seed", type=int, default=20260611)
     args = parser.parse_args()
+    if not args.allow_legacy_priors:
+        parser.error("This is the legacy ESM2/TRRUST builder. Use the prepared final ESM3 feature table for paper reproduction; see docs/REPRODUCIBILITY_FIXES_20260904.md. For legacy experiments only, pass --allow-legacy-priors.")
 
     go = pd.read_csv(args.go_csv)
     if "condition" not in go.columns or "gene" not in go.columns:

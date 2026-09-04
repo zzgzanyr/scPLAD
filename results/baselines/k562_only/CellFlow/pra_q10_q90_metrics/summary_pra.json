@@ -1,0 +1,33 @@
+{
+  "model": "CellFlow_ESM2_1000k_fixed2000",
+  "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/CellFlow_generated/txpert_pathway5000_esm2_t36_3B_1000k_fixed2000/predictions",
+  "num_conditions": 272,
+  "q_low": 0.1,
+  "q_high": 0.9,
+  "de_top_k": 100,
+  "metrics_mean": {
+    "pra_all_genes": 0.7370628216916257,
+    "pra_top100_true_de": 0.6371546930035638,
+    "pra_nonzero_genes": 0.7376837819403538,
+    "true_range_mean": 0.40349637454607307,
+    "pred_range_mean": 0.3456526210474151,
+    "range_width_ratio": 0.859194404445882
+  },
+  "metrics_median": {
+    "pra_all_genes": 0.7414125357281274,
+    "pra_top100_true_de": 0.6518765342999717,
+    "pra_nonzero_genes": 0.7416425915584044,
+    "true_range_mean": 0.40140989315792924,
+    "pred_range_mean": 0.3451874176863945,
+    "range_width_ratio": 0.8594524490468625
+  },
+  "metrics_cell_weighted": {
+    "pra_all_genes": 0.7402909633897644,
+    "pra_top100_true_de": 0.6313280186021519,
+    "pra_nonzero_genes": 0.7404601227880462,
+    "true_range_mean": 0.4082200068389007,
+    "pred_range_mean": 0.3454803310659072,
+    "range_width_ratio": 0.8487909223374939
+  }
+}

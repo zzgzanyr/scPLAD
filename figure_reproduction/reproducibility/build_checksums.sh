@@ -18,6 +18,8 @@ find \
   ! -name '.DS_Store' \
   ! -path '*/__pycache__/*' \
   ! -path '*/.ipynb_checkpoints/*' \
+  ! -path 'reproducibility/runs/*' \
+  ! -path '*/.previous/*' \
   ! -path 'reproduced/*' \
   -print0 \
   | LC_ALL=C sort -z \

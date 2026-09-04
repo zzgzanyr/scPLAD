@@ -1,0 +1,160 @@
+{
+  "benchmark_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1",
+  "fold": 0,
+  "space": "raw_expression",
+  "gene_dim": 3352,
+  "control_mean_norms": {
+    "K562": 28.152536128449263,
+    "RPE1": 28.853607460758756,
+    "hepg2": 27.240832506089358,
+    "jurkat": 27.946280213592036
+  },
+  "train": {
+    "overall": {
+      "anchor_l2": 27.481289888483307,
+      "x_y": {
+        "cells": 254170,
+        "cell_l2_mean": 30.829306214272965,
+        "cell_l2_std": 1.100449070954414,
+        "cell_l2_median": 31.02688050258105,
+        "mean_vector_l2": 26.984103494049464,
+        "scalar_mean": 0.25973684600078956,
+        "scalar_std": 0.465235449165117
+      },
+      "delta_x": {
+        "cells": 254170,
+        "cell_l2_mean": 14.81485043041944,
+        "cell_l2_std": 2.531136143789543,
+        "cell_l2_median": 14.4367535884129,
+        "mean_vector_l2": 1.5398620134590972,
+        "scalar_mean": -0.003790466413053658,
+        "scalar_std": 0.2595653857523168
+      },
+      "delta_over_x_l2_ratio_mean": 0.47969758240698335,
+      "delta_over_x_l2_ratio_median": 0.4690873088865861,
+      "note": "overall anchor in this block is the mean of per-cell matched context control means"
+    },
+    "by_context": {
+      "RPE1": {
+        "anchor_l2": 28.853607460758756,
+        "x_y": {
+          "cells": 101210,
+          "cell_l2_mean": 31.369752761851313,
+          "cell_l2_std": 0.6467385561837534,
+          "cell_l2_median": 31.378513521032982,
+          "mean_vector_l2": 28.451336433620238,
+          "scalar_mean": 0.25897701519243044,
+          "scalar_std": 0.4760568116422762
+        },
+        "delta_x": {
+          "cells": 101210,
+          "cell_l2_mean": 13.210750078947484,
+          "cell_l2_std": 2.2635735729399236,
+          "cell_l2_median": 12.836060102963952,
+          "mean_vector_l2": 2.1555901112772657,
+          "scalar_mean": -0.005376786469542543,
+          "scalar_std": 0.231441715478946
+        },
+        "delta_over_x_l2_ratio_mean": 0.42050297909262646,
+        "delta_over_x_l2_ratio_median": 0.4096148865612278
+      },
+      "hepg2": {
+        "anchor_l2": 27.240832506089358,
+        "x_y": {
+          "cells": 60385,
+          "cell_l2_mean": 29.367085347976445,
+          "cell_l2_std": 0.88535167620531,
+          "cell_l2_median": 29.391093140992144,
+          "mean_vector_l2": 26.787954679434083,
+          "scalar_mean": 0.2453121669102847,
+          "scalar_std": 0.44423269735712806
+        },
+        "delta_x": {
+          "cells": 60385,
+          "cell_l2_mean": 11.917653920124742,
+          "cell_l2_std": 2.4888024664996418,
+          "cell_l2_median": 11.647314607571225,
+          "mean_vector_l2": 1.6154191897588293,
+          "scalar_mean": -0.0034772106858960957,
+          "scalar_std": 0.21025618228994816
+        },
+        "delta_over_x_l2_ratio_mean": 0.40502518743102267,
+        "delta_over_x_l2_ratio_median": 0.39742655088824136
+      },
+      "jurkat": {
+        "anchor_l2": 27.946280213592036,
+        "x_y": {
+          "cells": 92575,
+          "cell_l2_mean": 31.19222937852799,
+          "cell_l2_std": 0.7145527495273132,
+          "cell_l2_median": 31.139604507499122,
+          "mean_vector_l2": 27.36526010447194,
+          "scalar_mean": 0.2699765081449377,
+          "scalar_std": 0.46639693149648986
+        },
+        "delta_x": {
+          "cells": 92575,
+          "cell_l2_mean": 14.723684063021908,
+          "cell_l2_std": 3.0784426055235907,
+          "cell_l2_median": 14.336985680388874,
+          "mean_vector_l2": 1.2866167315986552,
+          "scalar_mean": -0.0022605122587385255,
+          "scalar_std": 0.2597999005257751
+        },
+        "delta_over_x_l2_ratio_mean": 0.47070564199962267,
+        "delta_over_x_l2_ratio_median": 0.4599706547087829
+      }
+    }
+  },
+  "test": {
+    "overall": {
+      "anchor_l2": 28.152536128445995,
+      "x_y": {
+        "cells": 150312,
+        "cell_l2_mean": 30.529440728889092,
+        "cell_l2_std": 0.6857245586244994,
+        "cell_l2_median": 30.467269732646283,
+        "mean_vector_l2": 27.572189562321775,
+        "scalar_mean": 0.25846627672402106,
+        "scalar_std": 0.4597742602281403
+      },
+      "delta_x": {
+        "cells": 150312,
+        "cell_l2_mean": 12.933957284164961,
+        "cell_l2_std": 2.6935573541865687,
+        "cell_l2_median": 12.386960294511793,
+        "mean_vector_l2": 1.5003899894526538,
+        "scalar_mean": 0.00031723764430208944,
+        "scalar_std": 0.22819082273943744
+      },
+      "delta_over_x_l2_ratio_mean": 0.42264476078681906,
+      "delta_over_x_l2_ratio_median": 0.40733369952501214,
+      "note": "overall anchor in this block is the mean of per-cell matched context control means"
+    },
+    "by_context": {
+      "K562": {
+        "anchor_l2": 28.152536128449263,
+        "x_y": {
+          "cells": 150312,
+          "cell_l2_mean": 30.529440728889092,
+          "cell_l2_std": 0.6857245586244994,
+          "cell_l2_median": 30.467269732646283,
+          "mean_vector_l2": 27.572189562321775,
+          "scalar_mean": 0.25846627672402106,
+          "scalar_std": 0.4597742602281403
+        },
+        "delta_x": {
+          "cells": 150312,
+          "cell_l2_mean": 12.933957284164808,
+          "cell_l2_std": 2.693557354186564,
+          "cell_l2_median": 12.386960294511404,
+          "mean_vector_l2": 1.5003899894510753,
+          "scalar_mean": 0.0003172376442886904,
+          "scalar_std": 0.2281908227394349
+        },
+        "delta_over_x_l2_ratio_mean": 0.4226447607868139,
+        "delta_over_x_l2_ratio_median": 0.4073336995249994
+      }
+    }
+  }
+}

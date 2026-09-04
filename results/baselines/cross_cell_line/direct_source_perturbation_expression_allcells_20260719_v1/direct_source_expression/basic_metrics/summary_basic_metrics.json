@@ -1,0 +1,19 @@
+{
+  "num_conditions": 580,
+  "coverage_counts": {
+    "1": 75,
+    "2": 162,
+    "3": 343
+  },
+  "metrics_mean": {
+    "mean_pcc": 0.9280792808801891,
+    "mean_spearman": 0.7556685699796714,
+    "pcc_delta": 0.3077091903958431,
+    "spearman_delta": 0.2179271998870627,
+    "topk_de_overlap": 0.281051724137931,
+    "auprc": 0.21520874151017527,
+    "pra_all_genes": 0.8519336463154539,
+    "pra_top100_true_de": 0.7733157853766264,
+    "range_width_ratio": 1.129005656402472
+  }
+}

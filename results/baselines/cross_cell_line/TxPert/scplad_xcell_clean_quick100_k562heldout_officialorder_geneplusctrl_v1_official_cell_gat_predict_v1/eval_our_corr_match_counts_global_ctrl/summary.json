@@ -1,0 +1,18 @@
+{
+  "model": "TxPert official K562_unseen_cell_gat",
+  "checkpoint": "K562_unseen_cell_gat.ckpt",
+  "condition_encoding": "GENE+ctrl",
+  "eval_mode": "same quick100, match true cell counts, global_ctrl",
+  "conditions": 100,
+  "n_cells_total": 12124,
+  "mean_pcc_mean": 0.9912651740053043,
+  "mean_pcc_median": 0.9921692141546088,
+  "mean_spearman_mean": 0.9526511981615283,
+  "mean_spearman_median": 0.9570928629773439,
+  "delta_pcc_mean": 0.4814205742455384,
+  "delta_pcc_median": 0.5167349186770637,
+  "delta_spearman_mean": 0.3559352250626939,
+  "delta_spearman_median": 0.3504084466537536,
+  "cell_weighted_delta_pcc": 0.48983525083420765,
+  "cell_weighted_delta_spearman": 0.3738971895247654
+}

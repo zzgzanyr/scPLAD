@@ -1,0 +1,10 @@
+[datasets]
+txpert_pathway3352_allcovered = "<SCPLAD_DATA_ROOT>/third_party/state_py39/eval_data/txpert_pathway3352_k562_allcovered"
+
+[training]
+txpert_pathway3352_allcovered = "train"
+
+[zeroshot]
+"txpert_pathway3352_allcovered.K562" = "test"
+
+[fewshot]

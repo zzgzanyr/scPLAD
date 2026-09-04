@@ -1,0 +1,29 @@
+{
+  "framework": "GGE",
+  "benchmark_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/predictions_condition",
+  "n_conditions": 34,
+  "total_conditions": 272,
+  "condition_start": 170,
+  "condition_limit": 34,
+  "pca_components": 50,
+  "max_cells_per_group": null,
+  "metric_names": [
+    "wasserstein_1_pca50",
+    "mmd_pca50",
+    "energy_pca50"
+  ],
+  "note": "Only PCA-space distribution metrics are computed; mean/correlation metrics should come from the project-native evaluator.",
+  "mean_n_test_cells": 119.0,
+  "std_n_test_cells": 79.81006865567483,
+  "mean_n_pred_cells": 2000.0,
+  "std_n_pred_cells": 0.0,
+  "mean_n_genes": 5000.0,
+  "std_n_genes": 0.0,
+  "mean_wasserstein_1_pca50": 1.1952279908101404,
+  "std_wasserstein_1_pca50": 0.23745742402429054,
+  "mean_mmd_pca50": 0.3014929309148659,
+  "std_mmd_pca50": 0.007117005655583424,
+  "mean_energy_pca50": 0.3244312954998953,
+  "std_energy_pca50": 0.05863526961379004
+}

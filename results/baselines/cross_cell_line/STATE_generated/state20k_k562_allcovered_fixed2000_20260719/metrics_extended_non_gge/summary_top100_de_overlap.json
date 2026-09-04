@@ -1,0 +1,10 @@
+{
+  "model": "state_20k_k562_allcovered_fixed2000",
+  "top_k": 100,
+  "n_conditions": 580,
+  "top100_de_overlap": {
+    "condition_mean": 0.3515689655172414,
+    "condition_median": 0.33,
+    "cell_weighted_mean": 0.3653486457150699
+  }
+}

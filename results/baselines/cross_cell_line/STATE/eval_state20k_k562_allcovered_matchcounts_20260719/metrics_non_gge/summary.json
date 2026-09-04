@@ -1,0 +1,68 @@
+{
+  "model": "state_20k_k562_allcovered_matchcounts",
+  "n_conditions": 580,
+  "n_generated_perturbation_cells": 80153,
+  "n_true_perturbation_cells": 80153,
+  "metrics": {
+    "mean_pcc": {
+      "condition_mean": 0.9896933496711857,
+      "condition_median": 0.991796764004161,
+      "cell_weighted_mean": 0.9903365293053834
+    },
+    "mean_spearman": {
+      "condition_mean": 0.9399864891583295,
+      "condition_median": 0.950658754150218,
+      "cell_weighted_mean": 0.9479854721606215
+    },
+    "delta_pcc": {
+      "condition_mean": 0.3499018212937897,
+      "condition_median": 0.3372447565392058,
+      "cell_weighted_mean": 0.3907146677160558
+    },
+    "delta_spearman": {
+      "condition_mean": 0.2243062252596553,
+      "condition_median": 0.19908695689851091,
+      "cell_weighted_mean": 0.2589939036101422
+    },
+    "pra_all_genes": {
+      "condition_mean": 0.8411019932791869,
+      "condition_median": 0.8523840693163236,
+      "cell_weighted_mean": 0.8554319184462819
+    },
+    "pra_top100_true_de": {
+      "condition_mean": 0.8218666368240227,
+      "condition_median": 0.8366325061300457,
+      "cell_weighted_mean": 0.8352453028532232
+    },
+    "pra_nonzero_genes": {
+      "condition_mean": 0.8414319017761887,
+      "condition_median": 0.8523840693163236,
+      "cell_weighted_mean": 0.8555570833877518
+    },
+    "true_range_mean": {
+      "condition_mean": 0.46103981538428856,
+      "condition_median": 0.45554961237460734,
+      "cell_weighted_mean": 0.46785440726171545
+    },
+    "pred_range_mean": {
+      "condition_mean": 0.4486568055890747,
+      "condition_median": 0.443101794700175,
+      "cell_weighted_mean": 0.45788333532201425
+    },
+    "range_width_ratio": {
+      "condition_mean": 0.9748264408370336,
+      "condition_median": 0.9743378518947149,
+      "cell_weighted_mean": 0.980512148221901
+    },
+    "csa_pearson": {
+      "condition_mean": 0.367884472989962,
+      "condition_median": 0.36136286260929595,
+      "cell_weighted_mean": 0.4327979684204428
+    },
+    "csa_spearman": {
+      "condition_mean": 0.33364595478351644,
+      "condition_median": 0.31222791136775907,
+      "cell_weighted_mean": 0.3967369177725657
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "scplad.experiment_spec.v1",
+  "source_config": "configs/cross_cell_line/drdd_paper_exact.json",
+  "path_base": "archive_root",
+  "note": "Specification, not a launcher config; supply missing large inputs.",
+  "parameters": {
+    "purpose": "Paper-exact cross-cell-line DRDD-lite configuration",
+    "training_code": "scripts/training/exact_historical/cross_cell_line/train_drdd_lite_fixed_noise_weighted_prior_ddp.py",
+    "training_code_sha256": "eee12679e77cea7b6e318ca2770c45038aa6a2d5bd83713b2026121201720252",
+    "fold": 0,
+    "heldout_context": "K562",
+    "context_feature_mode": "zero",
+    "exclude_feature_prefixes": "depmap_",
+    "steps": 500000,
+    "diffusion_steps": 1000,
+    "noise_schedule": "linear",
+    "prediction_target": "x0",
+    "batch_size_per_rank": 256,
+    "world_size": 2,
+    "encode_batch_size": 512,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "hidden_dim": 256,
+    "num_layers": 6,
+    "num_heads": 8,
+    "mlp_ratio": 4.0,
+    "dropout": 0.0,
+    "model_variant": "prior_feature_cond",
+    "target_space": "displacement",
+    "anchor_sampling": "mean",
+    "fixed_noise_timestep": 500,
+    "fixed_noise_shared_noise": true,
+    "standardize_displacement": "global_scalar",
+    "latent_cache_dtype": "float16",
+    "save_interval": 100000,
+    "seeds": [
+      20260601,
+      20260713,
+      20260714
+    ]
+  },
+  "files": {
+    "gene_order_json": {
+      "path": "data/metadata/cross_cell_line/pathway3352/gene_order.json",
+      "available_locally": true,
+      "role": "input"
+    }
+  }
+}

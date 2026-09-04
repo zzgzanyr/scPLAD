@@ -1,0 +1,44 @@
+{
+  "model": "TxPert GAT retrain320k last.ckpt",
+  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_known55_source_celllines_gat_retrain320k_last_v1",
+  "sample_count_mode": "match_source_cell_line_counts_from_saved_txpert_predictions",
+  "control_definition": "same-cell-line global control mean from TxPert cache",
+  "pra_quantiles": [
+    0.1,
+    0.9
+  ],
+  "csa_gene_selection": "top-k genes by abs(true_mean - same_cell_line_control_mean)",
+  "known_conditions": 55,
+  "condition_cell_line_pairs": 143,
+  "total_true_cells": 10311,
+  "metrics_mean": {
+    "mean_pcc": 0.9908826370201476,
+    "mean_spearman": 0.9480452565543069,
+    "delta_pcc": 0.6768021242222259,
+    "delta_spearman": 0.5322001862766592,
+    "pra_q10_q90": 0.14522511139930333,
+    "csa_top50": 0.2224014777964666,
+    "csa_top100": 0.2079361711255329,
+    "csa_top200": 0.19086344340299924
+  },
+  "metrics_median": {
+    "mean_pcc": 0.9926148437317964,
+    "mean_spearman": 0.9531538403216742,
+    "delta_pcc": 0.7327711683362619,
+    "delta_spearman": 0.5691189778421591,
+    "pra_q10_q90": 0.1452364617446554,
+    "csa_top50": 0.19238450231775492,
+    "csa_top100": 0.19518354130747528,
+    "csa_top200": 0.18787063421450192
+  },
+  "metrics_cell_weighted": {
+    "mean_pcc": 0.9930583548774219,
+    "mean_spearman": 0.9615028035019384,
+    "delta_pcc": 0.6827794924213013,
+    "delta_spearman": 0.5405345889044955,
+    "pra_q10_q90": 0.1419602296373787,
+    "csa_top50": 0.2511645846627118,
+    "csa_top100": 0.2358957468149253,
+    "csa_top200": 0.2190893838410909
+  }
+}

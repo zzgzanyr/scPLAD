@@ -1,0 +1,2 @@
+n_conditions,n_state_available,n_global_mean_fallback,mean_pcc,mean_spearman,delta_pcc,delta_spearman,top100_de_overlap,auprc
+1086,580,506,0.9899463649664909,0.9473625749283574,0.31995845952715685,0.20532708029572938,0.31932780847145487,0.26326298768464407

@@ -1,0 +1,48 @@
+{
+  "model": "GEARS_fixed2000_repeated_mean",
+  "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/native_eval/predictions",
+  "num_conditions": 272,
+  "de_top_k": 100,
+  "distribution_pca_dim": 50,
+  "distribution_bins": 50,
+  "metrics_mean": {
+    "mse": 0.0023024500226122603,
+    "mae": 0.027774088961236617,
+    "pcc_delta": 0.31429333181586117,
+    "pearson_delta": 0.31429333181586117,
+    "spearman_delta": 0.17468526503355547,
+    "topk_de_overlap": 0.31312499999999993,
+    "auprc": 0.25431382295759103,
+    "wasserstein": 1.0848630886439583,
+    "e_distance": 0.7408943944620016,
+    "kl_divergence": 14.722052891551163,
+    "distribution_n_components": 50.0
+  },
+  "metrics_median": {
+    "mse": 0.0018436486134305596,
+    "mae": 0.02602906245738268,
+    "pcc_delta": 0.2971791923046112,
+    "pearson_delta": 0.2971791923046112,
+    "spearman_delta": 0.15390724778337123,
+    "topk_de_overlap": 0.29,
+    "auprc": 0.22359634065655581,
+    "wasserstein": 1.0839566042563358,
+    "e_distance": 0.7458821800522989,
+    "kl_divergence": 15.117875906000702,
+    "distribution_n_components": 50.0
+  },
+  "metrics_cell_weighted": {
+    "mse": 0.0022656826944682865,
+    "mae": 0.026817598203178968,
+    "pcc_delta": 0.334324421541326,
+    "pearson_delta": 0.334324421541326,
+    "spearman_delta": 0.19120544007503154,
+    "topk_de_overlap": 0.32532449642625083,
+    "auprc": 0.26847383186102847,
+    "wasserstein": 1.0049315107970982,
+    "e_distance": 0.7226810589770589,
+    "kl_divergence": 14.926491539441203,
+    "distribution_n_components": 50.0
+  }
+}
