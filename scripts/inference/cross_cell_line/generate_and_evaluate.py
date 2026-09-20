@@ -88,7 +88,9 @@ def load_condition_feature_map(feature_csv, feature_cols):
     return feature_map
 
 
-def load_displacement_scaler(train_config, checkpoint_path):
+def load_displacement_scaler(train_config, checkpoint_path, override_path=""):
+    if override_path:
+        return json.loads(Path(override_path).resolve().read_text(encoding="utf-8"))
     scaler = train_config.get("target_scaler")
     if scaler is None:
         scaler = train_config.get("displacement_scaler")
@@ -103,6 +105,20 @@ def load_displacement_scaler(train_config, checkpoint_path):
     if scaler is None:
         scaler = {"mode": "none", "mean": 0.0, "std": 1.0, "eps": 1e-8}
     return scaler
+
+
+def control_row_mask(obs, condition_key, control_labels):
+    if condition_key not in obs.columns:
+        raise KeyError(f"condition_key={condition_key} not found in control_context_h5ad obs")
+    labels = {label.strip().lower() for label in control_labels if label.strip()}
+    values = obs[condition_key].astype(str).str.strip().str.lower().to_numpy()
+    mask = np.isin(values, list(labels))
+    if not bool(mask.any()):
+        raise ValueError(
+            f"control_context_h5ad contains no rows identified by {condition_key} "
+            f"using control labels {sorted(labels)}"
+        )
+    return mask
 
 
 def unscale_displacement(u, scaler):
@@ -425,8 +441,12 @@ def generate_group(
 def main():
     parser = argparse.ArgumentParser(description="Minimal eval for control-anchored displacement diffusion.")
     parser.add_argument("--checkpoint", required=True)
+    parser.add_argument("--config", default="")
     parser.add_argument("--autoencoder_dir", default="")
-    parser.add_argument("--benchmark_root", required=True)
+    parser.add_argument("--gene_feature_csv", default="")
+    parser.add_argument("--control_anchor_latents", default="")
+    parser.add_argument("--displacement_scaler", default="")
+    parser.add_argument("--benchmark_root", default="")
     parser.add_argument("--fold", type=int, default=0)
     parser.add_argument("--eval_h5ad", default="")
     parser.add_argument("--control_context_h5ad", default="")
@@ -453,39 +473,62 @@ def main():
 
     output_dir = Path(args.output_dir).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
-    benchmark_root = Path(args.benchmark_root).resolve()
-    fold_dir = benchmark_root / f"fold_{args.fold}"
+    benchmark_root = Path(args.benchmark_root).resolve() if args.benchmark_root else None
+    fold_dir = benchmark_root / f"fold_{args.fold}" if benchmark_root else None
+    if fold_dir is not None and not fold_dir.exists():
+        fold_dir = benchmark_root
+    if not args.eval_h5ad and fold_dir is None:
+        raise ValueError("Pass --eval_h5ad or --benchmark_root.")
     eval_h5ad = Path(args.eval_h5ad).resolve() if args.eval_h5ad else fold_dir / "test.h5ad"
     control_h5ad = (
         Path(args.control_context_h5ad).resolve()
         if args.control_context_h5ad
-        else fold_dir / "control_context.h5ad"
+        else fold_dir / "control_context.h5ad" if fold_dir is not None else None
     )
+    if control_h5ad is None:
+        raise ValueError("Pass --control_context_h5ad or --benchmark_root.")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     checkpoint_path = Path(args.checkpoint).resolve()
     checkpoint = torch.load(checkpoint_path, map_location=device)
     train_config = checkpoint.get("config") or {}
-    run_config_path = checkpoint_path.parent / "config.json"
+    task_root = checkpoint_path.parent.parent
+    run_config_path = Path(args.config).resolve() if args.config else checkpoint_path.parent / "config.json"
+    if not run_config_path.exists() and (task_root / "config/config.json").exists():
+        run_config_path = task_root / "config/config.json"
     if run_config_path.exists():
         # Resumed checkpoints can carry an older embedded config. The run-level
         # config is the authoritative architecture/configuration for eval.
         train_config = {**train_config, **json.loads(run_config_path.read_text(encoding="utf-8"))}
-    displacement_scaler = load_displacement_scaler(train_config, args.checkpoint)
+    scaler_path = args.displacement_scaler
+    if not scaler_path and (task_root / "config/displacement_scaler.json").exists():
+        scaler_path = str(task_root / "config/displacement_scaler.json")
+    displacement_scaler = load_displacement_scaler(train_config, args.checkpoint, scaler_path)
     target_space = str(train_config.get("target_space", "displacement"))
     prediction_target = str(train_config.get("prediction_target", "noise"))
     fixed_noise_timestep = int(train_config.get("fixed_noise_timestep", -1))
     fixed_noise_shared_noise = bool(train_config.get("fixed_noise_shared_noise", False))
-    autoencoder_dir = Path(args.autoencoder_dir or train_config["autoencoder_dir"]).resolve()
+    default_autoencoder_dir = task_root / "patchae"
+    autoencoder_dir = Path(
+        args.autoencoder_dir
+        or (default_autoencoder_dir if (default_autoencoder_dir / "config.json").exists() else train_config["autoencoder_dir"])
+    ).resolve()
     autoencoder, ae_config = load_autoencoder(autoencoder_dir, device)
     if "num_patches" not in ae_config:
         ae_config["num_patches"] = int(np.ceil(int(ae_config["gene_size"]) / int(ae_config["patch_size"])))
 
     context_mapping = {str(k): int(v) for k, v in train_config["context_mapping"].items()}
-    control_anchors = torch.load(Path(args.checkpoint).resolve().parent / "control_anchor_latents.pt", map_location="cpu")
+    anchor_path = Path(args.control_anchor_latents).resolve() if args.control_anchor_latents else task_root / "config/control_anchor_latents.pt"
+    if not anchor_path.exists():
+        anchor_path = checkpoint_path.parent / "control_anchor_latents.pt"
+    control_anchors = torch.load(anchor_path, map_location="cpu")
     context_features = build_context_features(len(context_mapping), train_config.get("context_feature_type", "zero"))
     feature_cols = train_config["condition_feature_columns"]
-    feature_map = load_condition_feature_map(train_config["gene_feature_csv"], feature_cols)
+    feature_path = Path(args.gene_feature_csv).resolve() if args.gene_feature_csv else None
+    if feature_path is None:
+        release_priors = sorted((task_root / "priors").glob("*.csv"))
+        feature_path = release_priors[0] if len(release_priors) == 1 else Path(train_config["gene_feature_csv"]).resolve()
+    feature_map = load_condition_feature_map(feature_path, feature_cols)
 
     model = resolve_model_class(train_config.get("model_variant", "adaln"))(
         num_patches=int(ae_config["num_patches"]),
@@ -515,8 +558,9 @@ def main():
         raise ValueError(f"AE gene_size={ae_config['gene_size']} but eval_h5ad genes={eval_adata.n_vars}")
 
     x_true = dense_matrix(eval_adata.X).astype(np.float32, copy=False)
-    x_control = dense_matrix(control_adata.X).astype(np.float32, copy=False)
-    control_contexts = control_adata.obs[args.context_key].astype(str).to_numpy()
+    control_mask = control_row_mask(control_adata.obs, args.condition_key, parse_label_set(args.control_labels))
+    x_control = dense_matrix(control_adata.X[control_mask]).astype(np.float32, copy=False)
+    control_contexts = control_adata.obs.loc[control_mask, args.context_key].astype(str).to_numpy()
     control_means = {}
     for context in sorted(set(control_contexts)):
         mask = control_contexts == context

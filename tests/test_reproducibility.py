@@ -140,6 +140,28 @@ class InputValidationTests(unittest.TestCase):
 
 
 class EntryPointTests(unittest.TestCase):
+    def test_release_inference_control_filter(self):
+        source = ROOT / "scripts/inference/k562_only/generate_and_evaluate.py"
+        tree = ast.parse(source.read_text())
+        selected = ast.Module(body=[n for n in tree.body if isinstance(n, ast.FunctionDef)
+                                    and n.name == "control_row_mask"], type_ignores=[])
+        scope = {"np": np, "KeyError": KeyError, "ValueError": ValueError}
+        exec(compile(selected, str(source), "exec"), scope)
+        obs = pd.DataFrame({"condition": ["ctrl", "G0"], "Group": ["G0", "ctrl"]})
+        np.testing.assert_array_equal(
+            scope["control_row_mask"](obs, "condition", {"ctrl"}),
+            np.asarray([True, False]),
+        )
+
+    def test_release_inference_entry_points_match(self):
+        k562 = ROOT / "scripts/inference/k562_only/generate_and_evaluate.py"
+        cross = ROOT / "scripts/inference/cross_cell_line/generate_and_evaluate.py"
+        self.assertEqual(k562.read_text(), cross.read_text())
+        source = k562.read_text()
+        for option in ["--config", "--gene_feature_csv", "--control_anchor_latents",
+                       "--displacement_scaler", "--eval_h5ad", "--control_context_h5ad"]:
+            self.assertIn(option, source)
+
     def test_training_boundaries(self):
         sources = [ROOT / f"scripts/training/{task}/train_drdd_lite.py"
                    for task in ["k562_only", "cross_cell_line"]]
