@@ -247,13 +247,12 @@ def read_condition_set(path):
 
 def infer_control_mask(obs, condition_key, group_key, control_labels):
     labels = {label.lower() for label in control_labels}
-    mask = np.zeros(len(obs), dtype=bool)
     for key in [condition_key, group_key, "target_gene", "gene", "guide_id"]:
         if key not in obs.columns:
             continue
-        values = obs[key].astype(str).str.lower().to_numpy()
-        mask |= np.isin(values, list(labels))
-    return mask
+        values = obs[key].astype(str).str.strip().str.lower().to_numpy()
+        return np.isin(values, list(labels))
+    return np.zeros(len(obs), dtype=bool)
 
 
 def enforce_diffusion_boundary(train_obs, control_obs, args):

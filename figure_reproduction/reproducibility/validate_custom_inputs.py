@@ -14,11 +14,13 @@ from scipy import sparse
 
 
 def control_mask(obs, condition_key, group_key, labels):
-    mask = np.zeros(len(obs), dtype=bool)
+    # The configured condition column is authoritative. Falling back to another
+    # column only when it is absent prevents contradictory metadata such as
+    # condition=G0, Group=control from being accepted as a control row.
     for key in [condition_key, group_key, "target_gene", "gene", "guide_id"]:
         if key in obs:
-            mask |= obs[key].astype(str).str.lower().isin(labels).to_numpy()
-    return mask
+            return obs[key].astype(str).str.strip().str.lower().isin(labels).to_numpy()
+    return np.zeros(len(obs), dtype=bool)
 
 
 def inspect_h5ad(path, args):
@@ -146,10 +148,18 @@ def main():
             if ids.isna().any() or ids.astype(str).str.strip().eq("").any() or ids.astype(str).duplicated().any():
                 problems.append("features: missing, empty or duplicate identifiers")
             feature_ids = set(ids.astype(str))
-        numeric = features.drop(columns=[args.feature_key], errors="ignore").select_dtypes(include="number")
-        if numeric.shape[1] == 0:
+        feature_cols = [
+            column
+            for column in features.columns
+            if column not in {args.feature_key, "gene", "split"} and not column.startswith("class_")
+        ]
+        non_numeric = [column for column in feature_cols if not pd.api.types.is_numeric_dtype(features[column])]
+        if non_numeric:
+            problems.append(f"features: non-numeric feature columns: {non_numeric[:10]}")
+        numeric = features[feature_cols].select_dtypes(include="number")
+        if not feature_cols:
             problems.append("features: no numeric feature columns")
-        elif not np.isfinite(numeric.to_numpy(dtype=float)).all():
+        elif not non_numeric and not np.isfinite(numeric.to_numpy(dtype=float)).all():
             problems.append("features: numeric values contain NaN or Inf")
         for name in ["train", "test"]:
             if name not in observations:
@@ -158,7 +168,11 @@ def main():
             missing = conditions - feature_ids
             if missing:
                 problems.append(f"features: {len(missing)} uncovered {name} conditions: {sorted(missing)[:10]}")
-        features_summary = {"n_rows": len(features), "n_numeric_columns": numeric.shape[1]}
+        features_summary = {
+            "n_rows": len(features),
+            "n_feature_columns": len(feature_cols),
+            "n_numeric_columns": numeric.shape[1],
+        }
     except (OSError, ValueError) as exc:
         problems.append(f"features: cannot inspect {args.feature_csv}: {exc}")
     report = {"status": "FAIL" if problems else "PASS", "datasets": details,

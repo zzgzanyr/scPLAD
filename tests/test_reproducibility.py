@@ -83,6 +83,13 @@ class InputValidationTests(unittest.TestCase):
         self.write("control", "A")
         self.assert_failure("identifiable controls")
 
+    def test_conflicting_control_metadata(self):
+        self.write("control", "A")
+        data = ad.read_h5ad(self.root / "control.h5ad")
+        data.obs["Group"] = "control"
+        data.write_h5ad(self.root / "control.h5ad")
+        self.assert_failure("identifiable controls")
+
     def test_prior_nan(self):
         pd.DataFrame({"condition": ["A", "B"], "go1": [np.nan, 0.2]}).to_csv(self.root / "features.csv", index=False)
         self.assert_failure("NaN or Inf")
@@ -101,7 +108,12 @@ class InputValidationTests(unittest.TestCase):
 
     def test_no_numeric_features(self):
         pd.DataFrame({"condition": ["A", "B"], "description": ["foo", "bar"]}).to_csv(self.root / "features.csv", index=False)
-        self.assert_failure("no numeric feature")
+        self.assert_failure("non-numeric feature")
+
+    def test_mixed_numeric_and_text_features(self):
+        pd.DataFrame({"condition": ["A", "B"], "go1": [0.1, 0.2],
+                      "description": ["foo", "bar"]}).to_csv(self.root / "features.csv", index=False)
+        self.assert_failure("non-numeric feature columns")
 
     def test_missing_training_feature(self):
         pd.DataFrame({"condition": ["B"], "go1": [1]}).to_csv(self.root / "features.csv", index=False)
@@ -143,6 +155,10 @@ class EntryPointTests(unittest.TestCase):
             train = pd.DataFrame({"cell_line": ["K562"], "condition": ["A"]})
             controls = pd.DataFrame({"cell_line": ["K562"], "condition": ["ctrl"]})
             scope["enforce_diffusion_boundary"](train, controls, args)
+            conflicting = pd.DataFrame({"cell_line": ["K562"], "condition": ["A"],
+                                        "Group": ["ctrl"]})
+            with self.subTest(source=source), self.assertRaises(ValueError):
+                scope["enforce_diffusion_boundary"](train, conflicting, args)
             with self.subTest(source=source), self.assertRaises(ValueError):
                 scope["enforce_diffusion_boundary"](train, train, args)
             args.heldout_context = "K562"
