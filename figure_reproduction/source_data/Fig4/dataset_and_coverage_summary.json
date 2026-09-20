@@ -1,5 +1,5 @@
 {
-  "dataset_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0",
+  "dataset_root": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0",
   "target_context": "K562",
   "source_contexts": [
     "RPE1",
@@ -43,11 +43,11 @@
     "hepg2": 4976
   },
   "outputs": {
-    "full_table": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_test_condition_source_coverage.csv",
-    "source_unseen_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_unseen_conditions.csv",
-    "source_seen_any_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_any_conditions.csv",
-    "source_seen_1_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_1_conditions.csv",
-    "source_seen_2_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_2_conditions.csv",
-    "source_seen_3_conditions": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_3_conditions.csv"
+    "full_table": "external/scPLAD-assets/analysis/context_coverage_k562_perturbations_v1/k562_test_condition_source_coverage.csv",
+    "source_unseen_conditions": "external/scPLAD-assets/analysis/context_coverage_k562_perturbations_v1/k562_source_unseen_conditions.csv",
+    "source_seen_any_conditions": "external/scPLAD-assets/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_any_conditions.csv",
+    "source_seen_1_conditions": "external/scPLAD-assets/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_1_conditions.csv",
+    "source_seen_2_conditions": "external/scPLAD-assets/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_2_conditions.csv",
+    "source_seen_3_conditions": "external/scPLAD-assets/analysis/context_coverage_k562_perturbations_v1/k562_source_seen_3_conditions.csv"
   }
 }

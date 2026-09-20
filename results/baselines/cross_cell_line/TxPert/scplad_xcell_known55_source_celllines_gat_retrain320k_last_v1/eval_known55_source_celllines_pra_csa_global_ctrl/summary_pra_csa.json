@@ -1,6 +1,6 @@
 {
   "model": "TxPert GAT retrain320k last.ckpt",
-  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_known55_source_celllines_gat_retrain320k_last_v1",
+  "predictions_dir": "outputs/TxPert_generated/scplad_xcell_known55_source_celllines_gat_retrain320k_last_v1",
   "sample_count_mode": "match_source_cell_line_counts_from_saved_txpert_predictions",
   "control_definition": "same-cell-line global control mean from TxPert cache",
   "pra_quantiles": [

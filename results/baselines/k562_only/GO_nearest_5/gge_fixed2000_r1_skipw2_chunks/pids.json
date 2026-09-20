@@ -3,28 +3,28 @@
     "chunk": 0,
     "pid": 125444,
     "n_conditions": 34,
-    "log": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk0.log",
-    "out": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk0"
+    "log": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk0.log",
+    "out": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk0"
   },
   {
     "chunk": 1,
     "pid": 125445,
     "n_conditions": 34,
-    "log": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk1.log",
-    "out": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk1"
+    "log": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk1.log",
+    "out": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk1"
   },
   {
     "chunk": 2,
     "pid": 125446,
     "n_conditions": 34,
-    "log": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk2.log",
-    "out": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk2"
+    "log": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk2.log",
+    "out": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk2"
   },
   {
     "chunk": 3,
     "pid": 125510,
     "n_conditions": 34,
-    "log": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk3.log",
-    "out": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk3"
+    "log": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk3.log",
+    "out": "external/legacy-workspace/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1/gge_fixed2000_r1_skipw2_chunks/chunk3"
   }
 ]

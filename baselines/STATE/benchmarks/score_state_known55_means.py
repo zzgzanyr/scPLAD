@@ -9,17 +9,17 @@ from scipy.stats import rankdata
 
 
 PREDICTION_DIR = Path(
-    "<SCPLAD_DATA_ROOT>/third_party/state_py39/experiments/"
+    "external/third-party/state_py39/experiments/"
     "txpert_pathway3352_xcell_state_bs8_30k_seed42_20260719/"
     "state_pathway3352_ddp2_bs8_steps30000_seed42/"
     "eval_step=00020000.ckpt"
 )
 KNOWN55_CSV = Path(
-    "<SCPLAD_DATA_ROOT>/scplad/experiments_transport/"
+    "external/scPLAD-assets/experiments_transport/"
     "known55_conditions_from_200k_eval.csv"
 )
 OUTPUT_DIR = Path(
-    "<SCPLAD_DATA_ROOT>/third_party/state_py39/experiments/"
+    "external/third-party/state_py39/experiments/"
     "txpert_pathway3352_xcell_state_bs8_30k_seed42_20260719/"
     "state_pathway3352_ddp2_bs8_steps30000_seed42/"
     "eval_step_20000_known55_20260719"

@@ -1,6 +1,6 @@
 {
   "mode": "pathway5000_greedy",
-  "gmt_path": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/priors/ReactomePathways.gmt",
+  "gmt_path": "external/legacy-workspace/datasets/otherdata/priors/ReactomePathways.gmt",
   "patch_size": 20,
   "corr_weight": 0.7,
   "pathway_weight": 0.3,
@@ -13,7 +13,7 @@
     "median_module_score": 0.012875271961092949,
     "num_modules": 250
   },
-  "dataset_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/K562_single_cell_line",
+  "dataset_root": "external/legacy-workspace/datasets/otherdata/txpert/K562_single_cell_line",
   "n_genes": 5000,
   "modules": [
     [

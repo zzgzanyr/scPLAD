@@ -73,8 +73,8 @@ python_bin="${SCPLAD_PYTHON:-}"
 if [[ -z "$python_bin" ]] && command -v python3 >/dev/null 2>&1; then
   python_bin="$(command -v python3)"
 fi
-if [[ -z "$python_bin" ]] && [[ -x <SCPLAD_DATA_ROOT>/miniconda3/envs/squidiff_env/bin/python ]]; then
-  python_bin="<SCPLAD_DATA_ROOT>/miniconda3/envs/squidiff_env/bin/python"
+if [[ -z "$python_bin" ]] && [[ -x external/conda/envs/squidiff_env/bin/python ]]; then
+  python_bin="external/conda/envs/squidiff_env/bin/python"
 fi
 
 if [[ "$failed" -eq 0 ]] && [[ -n "$python_bin" ]]; then

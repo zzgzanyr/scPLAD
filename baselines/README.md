@@ -9,9 +9,9 @@ large predictions are linked or referenced under `artifacts/generated_cells/`.
 
 ## Recovered local snapshots (2026-09-04)
 
-TxPert, GEARS, CellFlow, Scouter and STATE have been restored from the existing
-server-8 archive. `experiment_runners/` contains additional original task
-scripts recovered from servers 7 and 8.
+TxPert, GEARS, CellFlow, Scouter and STATE source snapshots are included.
+`experiment_runners/` contains the task-specific scripts used for the archived
+experiments.
 
 See `../docs/BASELINE_RECOVERY_20260904.md` and
 `../manifest/baseline_runs.tsv` for actual-run parameters, evidence sources,

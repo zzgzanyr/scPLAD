@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT=<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722
-XC_AE=<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1
-XC_MAIN=<SCPLAD_DATA_ROOT>/scplad/experiments_transport/txpert_xcell_bioprior_noDepMap_drdd_lite_fixedtau500_film_priorfeature_x0_500k_v1
+ROOT=.
+XC_AE=external/scPLAD-assets/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1
+XC_MAIN=external/scPLAD-assets/experiments_transport/txpert_xcell_bioprior_noDepMap_drdd_lite_fixedtau500_film_priorfeature_x0_500k_v1
 
 mkdir -p "$ROOT/artifacts/checkpoints/cross_cell_line/patchae_pathway3352"
 mkdir -p "$ROOT/configs/cross_cell_line"

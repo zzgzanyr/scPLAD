@@ -1,5 +1,5 @@
 [datasets]
-txpert_pathway3352 = "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/ae_train.h5ad"
+txpert_pathway3352 = "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/ae_train.h5ad"
 
 [training]
 txpert_pathway3352 = "train"

@@ -30,5 +30,4 @@ does not alter the correlation structure of a sampled K562 control cloud.
 
 - Evaluation script:
   `../../analysis_scripts/eval_condition_balanced_source_global_baseline.py`
-- Server result directory:
-  `<SCPLAD_DATA_ROOT>/scplad/analysis/condition_balanced_source_global_baseline_unseen506_fixed2000_20260811`
+- Archived summary: `summary_fixed2000_across_seeds.csv`

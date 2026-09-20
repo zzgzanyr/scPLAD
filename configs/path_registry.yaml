@@ -1,5 +1,9 @@
 archive:
-  root: <SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722
+  root: .
+
+huggingface:
+  repository: https://huggingface.co/zhangzhigang/scPLAD
+  local_dir: external/scPLAD-assets
 
 data:
   k562_only: data/k562_only/pathway5000
@@ -7,9 +11,8 @@ data:
   cross_cell_line: data/cross_cell_line/pathway3352/fold_0
   cross_cell_line_priors: data/priors/cross_cell_line_bioprior
 
-original_sources:
-  server7_project: <SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307
-  server7_results: <SCPLAD_DATA_ROOT>/scplad/scPLAD_generated
-  server8_project: <SCPLAD_DATA_ROOT>/Squidiff_transport_20260601
-  server8_cross_data: <SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1
-  server8_cross_results: <SCPLAD_DATA_ROOT>/scplad/experiments_transport
+release_assets:
+  k562_only: external/scPLAD-assets/datasets/k562_only
+  cross_cell_line: external/scPLAD-assets/datasets/cross_cell_line
+  k562_only_model: external/scPLAD-assets/k562_only
+  cross_cell_line_model: external/scPLAD-assets/cross_cell_line

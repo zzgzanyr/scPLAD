@@ -21,7 +21,7 @@ bleach==6.2.0
 blobfile==3.1.0
 -e git+https://github.com/snap-stanford/GEARS.git@f374e43e197b295016d80395d7a54ddb81cc6769#egg=cell_gears
 # Editable install with no version control (cellot==0.1)
--e <SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/cellot
+-e external/legacy-workspace/third_party/cellot
 certifi==2026.1.4
 cffi==2.0.0
 charset-normalizer==3.4.4

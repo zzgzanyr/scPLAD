@@ -26,12 +26,12 @@ def specifications():
     for config in configs:
         source = json.loads(config.read_text())["gene_feature_csv"]
         task = "cross_cell_line" if "cross_cell_line" in str(config) else "k562_only"
-        host = "<PRIVATE_HOST>" if task == "cross_cell_line" else "<PRIVATE_HOST>"
+        host = "compute-host.invalid" if task == "cross_cell_line" else "compute-host.invalid"
         # Original-order adaptation is kept separately until its content is verified.
         subdir = "original_order" if "original5000" in source else "pathway"
         target = f"data/priors/{task}/{subdir}/{Path(source).name}"
         specs[source] = {"host": host, "source": source, "local": target, "kind": "prior"}
-    base = "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/"
+    base = "external/legacy-workspace/datasets/otherdata/txpert/"
     for variant in ["pathway5000", "original5000"]:
         source_dir = base + f"txpert_k562_{variant}_module"
         names = ["gene_order.json", "summary.json", "label_map.json"]
@@ -39,12 +39,12 @@ def specifications():
             names.append("gene_order_table.csv")
         for name in names:
             source = source_dir + "/" + name
-            specs[source] = {"host": "<PRIVATE_HOST>", "source": source,
+            specs[source] = {"host": "compute-host.invalid", "source": source,
                              "local": f"data/metadata/k562_only/{variant}/{name}", "kind": "gene_order_or_metadata"}
-    base = "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/"
+    base = "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/"
     for name in ["gene_order.json", "gene_order_recomputed_metadata.json", "prep_summary.json", "fold_0/raw_expression_norms_fold0.json"]:
         source = base + name
-        specs[source] = {"host": "<PRIVATE_HOST>", "source": source,
+        specs[source] = {"host": "compute-host.invalid", "source": source,
                          "local": "data/metadata/cross_cell_line/pathway3352/" + Path(name).name,
                          "kind": "gene_order_or_metadata"}
     return list(specs.values())

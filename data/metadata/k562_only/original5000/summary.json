@@ -1,7 +1,7 @@
 {
-  "source_original_h5ad": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/K562_single_cell_line/de_adata_test.h5ad",
-  "split_source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
-  "output_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_original5000_module",
+  "source_original_h5ad": "external/legacy-workspace/datasets/otherdata/txpert/K562_single_cell_line/de_adata_test.h5ad",
+  "split_source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "output_dir": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_original5000_module",
   "feature_space": "TxPert original 5000 gene order",
   "splits": {
     "train": {

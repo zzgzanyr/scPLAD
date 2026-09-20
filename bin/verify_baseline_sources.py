@@ -15,15 +15,15 @@ MANIFEST = ROOT / "manifest/baseline_sources_20260904.json"
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--capture", action="store_true")
-    parser.add_argument("--remote-python", default="<SCPLAD_DATA_ROOT>/miniconda3/envs/squidiff_env/bin/python")
+    parser.add_argument("--remote-python", default="external/conda/envs/squidiff_env/bin/python")
     args = parser.parse_args()
     if args.capture:
         locations = []
         for model in ["TxPert", "GEARS", "CellFlow", "Scouter", "STATE"]:
-            locations.append((f"<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines/{model}", f"baselines/{model}"))
+            locations.append((f"./baselines/{model}", f"baselines/{model}"))
         locations += [
-            ("<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks", "baselines/STATE/benchmarks"),
-            ("<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/scripts_tmp/current_txpert_official_fixed2000",
+            ("external/third-party/state_py39/benchmarks", "baselines/STATE/benchmarks"),
+            ("./scripts_tmp/current_txpert_official_fixed2000",
              "baselines/experiment_runners/TxPert/current_txpert_official_fixed2000")]
         remote = (
             "import pathlib,hashlib,json; rows=[]\n"
@@ -31,10 +31,10 @@ def main():
             "for base,target in locations:\n"
             " for p in pathlib.Path(base).rglob('*'):\n"
             "  if p.is_file() and not p.is_symlink() and not any(x in p.parts for x in ['.git','__pycache__','.pytest_cache','.venv-squidiff']):\n"
-            "   rows.append(dict(host='<PRIVATE_HOST>',source=str(p),local=target+'/'+str(p.relative_to(base)),sha256=hashlib.sha256(p.read_bytes()).hexdigest()))\n"
+            "   rows.append(dict(host='compute-host.invalid',source=str(p),local=target+'/'+str(p.relative_to(base)),sha256=hashlib.sha256(p.read_bytes()).hexdigest()))\n"
             "print(json.dumps(rows))"
         )
-        rows = json.loads(subprocess.check_output(["ssh", "-o", "BatchMode=yes", "<PRIVATE_HOST>",
+        rows = json.loads(subprocess.check_output(["ssh", "-o", "BatchMode=yes", "compute-host.invalid",
                                                    shlex.quote(args.remote_python) + " -c " + shlex.quote(remote)], text=True))
         # Optional non-source files omitted by the explicit transfer filters are not claimed.
         rows = [r for r in rows if (ROOT / r["local"]).is_file()]

@@ -3,9 +3,9 @@ set -euo pipefail
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 export CUDA_VISIBLE_DEVICES=7
-PY=<SCPLAD_DATA_ROOT>/miniconda3/envs/cellflow_env/bin/python
-ROOT_RUN=<SCPLAD_DATA_ROOT>/CellFlow_runs
-cd <SCPLAD_DATA_ROOT>/CellFlow
+PY=external/conda/envs/cellflow_env/bin/python
+ROOT_RUN=outputs/baselines/CellFlow
+cd external/third-party/CellFlow
 
 run_one() {
   local name="$1"
@@ -33,7 +33,7 @@ run_one() {
     --distribution_bins 50
 }
 
-run_one replogle_top100_full_original_1000k <SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/state_replogle_filtered/k562_seen_hvg2000_top100
-run_one replogle_top100_full_pathwaymodule_1000k <SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/state_replogle_filtered/k562_seen_hvg2000_top100_pathway_module
+run_one replogle_top100_full_original_1000k external/legacy-workspace/datasets/otherdata/state_replogle_filtered/k562_seen_hvg2000_top100
+run_one replogle_top100_full_pathwaymodule_1000k external/legacy-workspace/datasets/otherdata/state_replogle_filtered/k562_seen_hvg2000_top100_pathway_module
 
 echo "==== $(date) done ===="

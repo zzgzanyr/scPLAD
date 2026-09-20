@@ -18,9 +18,9 @@
     "energy_pca50": 0.45212261098113765
   },
   "part_files": [
-    "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part0/per_condition_gge_metrics.csv",
-    "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part1/per_condition_gge_metrics.csv",
-    "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part2/per_condition_gge_metrics.csv",
-    "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part3/per_condition_gge_metrics.csv"
+    "outputs/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part0/per_condition_gge_metrics.csv",
+    "outputs/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part1/per_condition_gge_metrics.csv",
+    "outputs/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part2/per_condition_gge_metrics.csv",
+    "outputs/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/gge_pca50_three_metrics_part3/per_condition_gge_metrics.csv"
   ]
 }

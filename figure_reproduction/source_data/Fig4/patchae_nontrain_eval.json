@@ -1,7 +1,7 @@
 [
   {
     "name": "val",
-    "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/val.h5ad",
+    "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/val.h5ad",
     "n_eval_cells": 12000,
     "n_genes": 3352,
     "mse": 0.0016345877666026354,
@@ -19,7 +19,7 @@
   },
   {
     "name": "test_control",
-    "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test_control.h5ad",
+    "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test_control.h5ad",
     "n_eval_cells": 10691,
     "n_genes": 3352,
     "mse": 0.001867191749624908,

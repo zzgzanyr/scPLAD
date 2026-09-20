@@ -6,15 +6,15 @@ import pandas as pd
 
 
 DATA_ROOT = Path(
-    "<SCPLAD_DATA_ROOT>/scplad/datasets/"
+    "external/scPLAD-assets/datasets/"
     "txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0"
 )
 CONDITIONS_CSV = Path(
-    "<SCPLAD_DATA_ROOT>/third_party/state_py39/eval_data/"
+    "external/third-party/state_py39/eval_data/"
     "txpert_pathway3352_k562_allcovered/covered_conditions.csv"
 )
 OUTPUT_ROOT = Path(
-    "<SCPLAD_DATA_ROOT>/scplad/state_eval_data/"
+    "outputs/state_eval_data/"
     "txpert_pathway3352_k562_allcovered_fixed2000"
 )
 N_CELLS = 2000

@@ -1,4 +1,4 @@
-# Packages missing from the existing squidiff_env on <PRIVATE_HOST>.
+# Packages missing from the existing squidiff_env on compute-host.invalid.
 # Install these into an overlay venv created with --system-site-packages.
 toml==0.10.2
 wandb==0.19.11

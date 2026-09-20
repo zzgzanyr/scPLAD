@@ -1,5 +1,5 @@
 {
-  "run": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/frangieh_overlap45_match_txpert4000_geneplusctrl_v1_official_cell_gat_predict_v1",
+  "run": "outputs/TxPert_generated/frangieh_overlap45_match_txpert4000_geneplusctrl_v1_official_cell_gat_predict_v1",
   "n_conditions": 45,
   "n_cells": 10399,
   "n_genes": 3352,

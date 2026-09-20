@@ -1,6 +1,6 @@
 {
-  "dataset_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0",
-  "conditions_csv": "<SCPLAD_DATA_ROOT>/scplad/analysis/context_coverage_k562_perturbations_v1/k562_source_unseen_conditions.csv",
+  "dataset_root": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0",
+  "conditions_csv": "external/scPLAD-assets/analysis/context_coverage_k562_perturbations_v1/k562_source_unseen_conditions.csv",
   "n_source_cells": 254170,
   "n_source_gene_cell_line_conditions": 2981,
   "n_source_genes": 1350,

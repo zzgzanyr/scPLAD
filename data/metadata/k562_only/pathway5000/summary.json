@@ -1,17 +1,17 @@
 {
-  "source_h5ad": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/K562_single_cell_line/de_adata_test.h5ad",
-  "output_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "source_h5ad": "external/legacy-workspace/datasets/otherdata/txpert/K562_single_cell_line/de_adata_test.h5ad",
+  "output_root": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
   "feature_space": "txpert_original_5000_gene_pathway_module_order",
   "gene_size": 5000,
   "patch_size": 20,
   "num_patches": 250,
   "num_conditions": 1093,
   "control_label": "ctrl",
-  "gene_order_json": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gene_order.json",
+  "gene_order_json": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gene_order.json",
   "written": {
-    "train": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/train.h5ad",
-    "val": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/val.h5ad",
-    "test": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/test.h5ad"
+    "train": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/train.h5ad",
+    "val": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/val.h5ad",
+    "test": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/test.h5ad"
   },
   "splits": {
     "train": {
@@ -74,7 +74,7 @@
   },
   "ordering_meta": {
     "mode": "pathway5000_greedy",
-    "gmt_path": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/priors/ReactomePathways.gmt",
+    "gmt_path": "external/legacy-workspace/datasets/otherdata/priors/ReactomePathways.gmt",
     "patch_size": 20,
     "corr_weight": 0.7,
     "pathway_weight": 0.3,

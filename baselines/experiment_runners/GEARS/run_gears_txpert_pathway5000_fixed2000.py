@@ -15,7 +15,7 @@ from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 
-GEARS_REPO = Path("<SCPLAD_DATA_ROOT>/GEARS")
+GEARS_REPO = Path("external/third-party/GEARS")
 if str(GEARS_REPO) not in sys.path:
     sys.path.insert(0, str(GEARS_REPO))
 
@@ -205,7 +205,7 @@ def main():
     parser.add_argument("--benchmark_root", required=True)
     parser.add_argument("--gears_data_root", required=True)
     parser.add_argument("--dataset_name", default="txpert_k562_pathway5000_trainonly")
-    parser.add_argument("--source_gene2go", default="<SCPLAD_DATA_ROOT>/GEARS_data/gene2go_all.pkl")
+    parser.add_argument("--source_gene2go", default="external/third-party/GEARS_data/gene2go_all.pkl")
     parser.add_argument("--output_root", required=True)
     parser.add_argument("--epochs", type=int, default=20)
     parser.add_argument("--batch_size", type=int, default=32)

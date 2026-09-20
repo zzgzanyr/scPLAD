@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd <SCPLAD_DATA_ROOT>/Squidiff_transport_20260601
+cd .
 
 export CUDA_VISIBLE_DEVICES=0,1
 export OMP_NUM_THREADS=4
 
-PY=<SCPLAD_DATA_ROOT>/miniconda3/envs/squidiff_env/bin/python
-OUT=<SCPLAD_DATA_ROOT>/scplad/experiments_transport/txpert_xcell_go256_drdd_lite_fixedtau500_sharednoise_directadd_x0_200k_v2
+PY=external/conda/envs/squidiff_env/bin/python
+OUT=external/scPLAD-assets/experiments_transport/txpert_xcell_go256_drdd_lite_fixedtau500_sharednoise_directadd_x0_200k_v2
 LOG=${OUT}/train.log
 
 mkdir -p "${OUT}"
@@ -16,9 +16,9 @@ nohup "${PY}" -m torch.distributed.run \
   --nproc_per_node=2 \
   --master_port=29611 \
   train_drdd_lite_fixed_noise_ddp.py \
-  --benchmark_root <SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1 \
-  --autoencoder_dir <SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1 \
-  --gene_feature_csv <SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_condition_features_go_256_xcell_alias_numeric.csv \
+  --benchmark_root external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1 \
+  --autoencoder_dir external/scPLAD-assets/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1 \
+  --gene_feature_csv external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_condition_features_go_256_xcell_alias_numeric.csv \
   --output_dir "${OUT}" \
   --context_feature_mode zero \
   --model_variant direct_add_cond \

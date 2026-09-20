@@ -1,8 +1,8 @@
 {
   "dataset_name": "txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1",
-  "source_input_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_official_raw3352_go256_filtered",
-  "source_raw_h5ad": "<SCPLAD_DATA_ROOT>/TxPert_cross_cell_lines/K562_cross_cell_lines/K562_cross_cell_lines/de_adata_test.h5ad",
-  "pathway_gene_order_json": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_order.json",
+  "source_input_root": "external/scPLAD-assets/datasets/txpert_xcell_k562_official_raw3352_go256_filtered",
+  "source_raw_h5ad": "external/third-party/TxPert_cross_cell_lines/K562_cross_cell_lines/K562_cross_cell_lines/de_adata_test.h5ad",
+  "pathway_gene_order_json": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_order.json",
   "clean_split": {
     "train_cell_lines": [
       "RPE1",
@@ -46,7 +46,7 @@
   },
   "splits": {
     "train.h5ad": {
-      "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/train.h5ad",
+      "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/train.h5ad",
       "shape": [
         254170,
         3352
@@ -59,7 +59,7 @@
       "condition_count": 1350
     },
     "val.h5ad": {
-      "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/val.h5ad",
+      "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/val.h5ad",
       "shape": [
         80006,
         3352
@@ -72,7 +72,7 @@
       "condition_count": 452
     },
     "test.h5ad": {
-      "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
+      "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
       "shape": [
         150312,
         3352
@@ -83,7 +83,7 @@
       "condition_count": 1086
     },
     "test_control.h5ad": {
-      "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test_control.h5ad",
+      "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test_control.h5ad",
       "shape": [
         10691,
         3352
@@ -95,7 +95,7 @@
     }
   },
   "control_context": {
-    "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
+    "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
     "shape": [
       39165,
       3352
@@ -111,7 +111,7 @@
     }
   },
   "ae_train": {
-    "path": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/ae_train.h5ad",
+    "path": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/ae_train.h5ad",
     "shape": [
       293335,
       3352

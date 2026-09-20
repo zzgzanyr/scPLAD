@@ -6,3 +6,5 @@ logs/
 tmp/
 *.log
 artifacts/generated_cells/*
+external/
+outputs/

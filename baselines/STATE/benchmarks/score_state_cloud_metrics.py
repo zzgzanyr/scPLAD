@@ -10,30 +10,30 @@ from scipy import sparse
 from scipy.stats import rankdata
 
 
-sys.path.insert(0, "<SCPLAD_DATA_ROOT>/scplad/scripts_tmp")
+sys.path.insert(0, "external/scPLAD-assets/scripts_tmp")
 from eval_prediction_dir_known55_pra_csa import csa_metrics, pra_interval  # noqa: E402
 
 
 PRED_H5AD = Path(
-    "<SCPLAD_DATA_ROOT>/third_party/state_py39/experiments/"
+    "external/third-party/state_py39/experiments/"
     "txpert_pathway3352_xcell_state_bs8_30k_seed42_20260719/"
     "eval_state20k_known55_fixed2000_20260719/"
     "eval_step=00020000.ckpt/adata_pred.h5ad"
 )
 TEST_H5AD = Path(
-    "<SCPLAD_DATA_ROOT>/scplad/datasets/"
+    "external/scPLAD-assets/datasets/"
     "txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/test.h5ad"
 )
 CONTROL_H5AD = Path(
-    "<SCPLAD_DATA_ROOT>/scplad/datasets/"
+    "external/scPLAD-assets/datasets/"
     "txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/control_context.h5ad"
 )
 KNOWN55_CSV = Path(
-    "<SCPLAD_DATA_ROOT>/scplad/experiments_transport/"
+    "external/scPLAD-assets/experiments_transport/"
     "known55_conditions_from_200k_eval.csv"
 )
 OUTPUT_DIR = Path(
-    "<SCPLAD_DATA_ROOT>/third_party/state_py39/experiments/"
+    "external/third-party/state_py39/experiments/"
     "txpert_pathway3352_xcell_state_bs8_30k_seed42_20260719/"
     "eval_state20k_known55_fixed2000_20260719/metrics_non_gge"
 )

@@ -65,7 +65,7 @@ def main() -> None:
     parser.add_argument("--condition_limit", type=int, default=0)
     parser.add_argument("--max_cells_per_group", type=int, default=None)
     parser.add_argument("--seed", type=int, default=20260523)
-    parser.add_argument("--gge_src", default="<SCPLAD_DATA_ROOT>/GGE/src")
+    parser.add_argument("--gge_src", default="external/third-party/GGE/src")
     args = parser.parse_args()
 
     gge = import_gge(args.gge_src)

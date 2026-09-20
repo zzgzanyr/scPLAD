@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT7=<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307
-GEN7=<SCPLAD_DATA_ROOT>/scplad/scPLAD_generated
-DEST_HOST=<PRIVATE_HOST>
-DEST=<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722
+ROOT7=external/legacy-workspace
+GEN7=outputs/scPLAD_generated
+DEST_HOST=compute-host.invalid
+DEST=.
 
 ssh "$DEST_HOST" "mkdir -p \
   '$DEST/artifacts/checkpoints/k562_only/main' \
@@ -109,10 +109,10 @@ for spec in "${ablation_results[@]}"; do
 done
 
 copy_metric_tree "$GEN7/analysis_prior_coverage_20260714" "$DEST/results/k562_only/prior_coverage"
-copy_metric_tree <SCPLAD_DATA_ROOT>/scplad/TxPert_generated/K562_unseen_exphormer_mg_fixed2000_native_eval "$DEST/results/baselines/k562_only/TxPert"
-copy_metric_tree <SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz "$DEST/results/baselines/k562_only/GEARS"
-copy_metric_tree <SCPLAD_DATA_ROOT>/scplad/CellFlow_generated/txpert_pathway5000_esm2_t36_3B_1000k_fixed2000 "$DEST/results/baselines/k562_only/CellFlow"
-copy_metric_tree <SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000 "$DEST/results/baselines/k562_only/Scouter"
+copy_metric_tree outputs/TxPert_generated/K562_unseen_exphormer_mg_fixed2000_native_eval "$DEST/results/baselines/k562_only/TxPert"
+copy_metric_tree outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz "$DEST/results/baselines/k562_only/GEARS"
+copy_metric_tree outputs/CellFlow_generated/txpert_pathway5000_esm2_t36_3B_1000k_fixed2000 "$DEST/results/baselines/k562_only/CellFlow"
+copy_metric_tree outputs/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000 "$DEST/results/baselines/k562_only/Scouter"
 copy_metric_tree "$ROOT7/patch_latent_diffusion_experiments/replogle_k562_unseen_go_nearest5_equal_fixed2000_baseline_v1" "$DEST/results/baselines/k562_only/GO_nearest_5"
 
 echo SERVER7_ARTIFACTS_DONE

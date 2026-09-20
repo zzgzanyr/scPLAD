@@ -1,9 +1,9 @@
-CUDA_VISIBLE_DEVICES=2,3 <SCPLAD_DATA_ROOT>/miniconda3/envs/squidiff_env/bin/python -m torch.distributed.run --standalone --nproc_per_node=2 train_drdd_lite_fixed_noise_weighted_prior_ddp.py \
-  --benchmark_root <SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1 \
+CUDA_VISIBLE_DEVICES=2,3 external/conda/envs/squidiff_env/bin/python -m torch.distributed.run --standalone --nproc_per_node=2 train_drdd_lite_fixed_noise_weighted_prior_ddp.py \
+  --benchmark_root external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1 \
   --fold 0 \
-  --autoencoder_dir <SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1 \
-  --output_dir <SCPLAD_DATA_ROOT>/scplad/experiments_transport/txpert_xcell_bioprior_noDepMap_drdd_lite_fixedtau500_film_priorfeature_x0_500k_v1 \
-  --gene_feature_csv <SCPLAD_DATA_ROOT>/scplad/features/txpert_xcell_bioprior_esm3_v1/gene_condition_features_bioprior_go256_reactome256_esm3pca256_string_omnipath_grn_complex_depmap.csv \
+  --autoencoder_dir external/scPLAD-assets/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1 \
+  --output_dir external/scPLAD-assets/experiments_transport/txpert_xcell_bioprior_noDepMap_drdd_lite_fixedtau500_film_priorfeature_x0_500k_v1 \
+  --gene_feature_csv external/scPLAD-assets/features/txpert_xcell_bioprior_esm3_v1/gene_condition_features_bioprior_go256_reactome256_esm3pca256_string_omnipath_grn_complex_depmap.csv \
   --exclude_feature_prefixes depmap_ \
   --context_feature_mode zero \
   --model_variant prior_feature_cond \

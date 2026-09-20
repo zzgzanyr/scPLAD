@@ -1,9 +1,9 @@
 {
   "model": "state_20k_known55",
-  "eval_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/test.h5ad",
-  "control_context_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/control_context.h5ad",
-  "predictions_dir": "<SCPLAD_DATA_ROOT>/third_party/state_py39/experiments/txpert_pathway3352_xcell_state_bs8_30k_seed42_20260719/state_pathway3352_ddp2_bs8_steps30000_seed42/eval_step_20000_known55_20260719/predictions_by_condition",
-  "known_conditions_csv": "<SCPLAD_DATA_ROOT>/scplad/experiments_transport/known55_conditions_from_200k_eval.csv",
+  "eval_h5ad": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/test.h5ad",
+  "control_context_h5ad": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0/control_context.h5ad",
+  "predictions_dir": "external/third-party/state_py39/experiments/txpert_pathway3352_xcell_state_bs8_30k_seed42_20260719/state_pathway3352_ddp2_bs8_steps30000_seed42/eval_step_20000_known55_20260719/predictions_by_condition",
+  "known_conditions_csv": "external/scPLAD-assets/experiments_transport/known55_conditions_from_200k_eval.csv",
   "context": "K562",
   "num_conditions": 55,
   "q_low": 0.1,

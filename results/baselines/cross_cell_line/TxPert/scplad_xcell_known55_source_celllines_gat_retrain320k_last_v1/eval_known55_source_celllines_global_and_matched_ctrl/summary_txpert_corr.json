@@ -1,6 +1,6 @@
 {
   "model": "TxPert GAT retrain320k last.ckpt",
-  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_known55_source_celllines_gat_retrain320k_last_v1",
+  "predictions_dir": "outputs/TxPert_generated/scplad_xcell_known55_source_celllines_gat_retrain320k_last_v1",
   "known_conditions_requested": 55,
   "known_conditions_present": 55,
   "condition_cell_line_pairs": 143,

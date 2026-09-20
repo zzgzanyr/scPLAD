@@ -1,39 +1,29 @@
 # Source provenance
 
-## Server 7: K562-only task
+## Public release
 
-- Host: `<PRIVATE_HOST>`
-- Main project: `<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307`
-- Core dataset: `datasets/otherdata/txpert/txpert_k562_pathway5000_module`
-- DRDD-compatible context and priors:
-  `datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat`
-- Current checkpoints: `patch_latent_diffusion_experiments/`
-- Pathway PatchAE:
-  `patch_latent_experiments/txpert_pathway5000_patchae_dim32_gaussian_gw1e3_noise008_trainonly_100ep_v1`
-- Original-order PatchAE:
-  `patch_latent_experiments/txpert_original5000_patchae_dim32_gaussian_gw1e3_noise008_trainonly_100ep_v1`
-- Current generated outputs: `<SCPLAD_DATA_ROOT>/scplad/scPLAD_generated`
+The release assets used by this repository are hosted at
+[`zhangzhigang/scPLAD`](https://huggingface.co/zhangzhigang/scPLAD). The release
+contains the manuscript data splits, gene-order files, biological priors,
+PatchAE checkpoints and selected scPLAD checkpoints for both tasks.
 
-## Server 8: cross-cell-line task
+| Task | Dataset | Model assets |
+| --- | --- | --- |
+| K562 only | `datasets/k562_only/` | `k562_only/` |
+| Cross cell line | `datasets/cross_cell_line/` | `cross_cell_line/` |
 
-- Host: `<PRIVATE_HOST>`
-- Main project: `<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601`
-- Core dataset:
-  `<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1`
-- Biological priors: `<SCPLAD_DATA_ROOT>/scplad/features/txpert_xcell_bioprior_esm3_v1`
-- Current experiments: `<SCPLAD_DATA_ROOT>/scplad/experiments_transport`
-- Cross-cell PatchAE:
-  `<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae_latent32_noise008_200ep_from150_v1`
-- STATE baseline: `<SCPLAD_DATA_ROOT>/third_party/state_py39`
+The release-level `SHA256SUMS` files provide integrity checks for downloaded
+assets. Repository-relative experiment and figure provenance is recorded in
+`manifest/experiments.tsv`, `manifest/baseline_runs.tsv` and
+`figure_reproduction/manifests/PANEL_REPRODUCIBILITY.tsv`.
 
-## Archive policy
+## Provenance policy
 
-Core split files are copied. Selected manuscript checkpoints are copied when the
-source is on server 7, while complete server-8 experiment directories are linked.
-Generated-cell matrices are not duplicated. Metric JSON/CSV files are copied so
-that manuscript tables can be reconstructed without reading multi-gigabyte h5ad
-files.
+Public metadata records stable repository-relative paths or Hugging Face paths,
+not machine-specific mount points, host names or user directories. Historical
+execution locations are intentionally excluded because they are not needed for
+reproduction and are not valid on another machine.
 
-The archive is a reproducibility snapshot, not a replacement for the original
-experiment stores. `manifest/result_sources.tsv` records every authoritative
-result location and whether it was copied, linked, or retained remotely.
+Compact metric JSON/CSV files are included so manuscript tables and figures can
+be reconstructed without loading multi-gigabyte AnnData matrices. Generated
+single-cell matrices are optional outputs rather than training inputs.

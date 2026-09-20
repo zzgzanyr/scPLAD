@@ -1,147 +1,147 @@
 [
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/scripts_tmp/run_scouter_txpert_pathway5000_unseen.py",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/scripts_tmp/run_scouter_txpert_pathway5000_unseen.py",
     "local": "baselines/experiment_runners/Scouter/run_scouter_txpert_pathway5000_unseen.py",
-    "sha256": "1f797aeb380a0c17341694603df1e51eff475b2b0ba42b9e8b29417443fe70d3",
-    "size_bytes": 12372
+    "sha256": "2094035cee2cbe5bf5bd64f9c17542d8f605602adeb0172af0bb39f619044f0b",
+    "size_bytes": 12355
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/scripts_tmp/generate_eval_scouter_txpert_extended.py",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/scripts_tmp/generate_eval_scouter_txpert_extended.py",
     "local": "baselines/experiment_runners/Scouter/generate_eval_scouter_txpert_extended.py",
-    "sha256": "c983f6dc72e861cab49db9a221cb8a8ece17267ad68f07ac2af4ce69a47d666e",
-    "size_bytes": 17311
+    "sha256": "afe2d64148cda9b05c29f1a1a3381ca409cb55a59ad7bd27e2431ceaa4af0f5f",
+    "size_bytes": 17260
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/scripts_tmp/run_gears_txpert_pathway5000_fixed2000.py",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/scripts_tmp/run_gears_txpert_pathway5000_fixed2000.py",
     "local": "baselines/experiment_runners/GEARS/run_gears_txpert_pathway5000_fixed2000.py",
-    "sha256": "f9719be795704c12c60b59b50e379617fac7dd9f801f5e9d5789ef82d12649f6",
-    "size_bytes": 15096
+    "sha256": "dc0137321db4cae3ecbe63217bd5f8db108e4a3b27cf82041021d26798b02930",
+    "size_bytes": 15100
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/scripts_tmp/generate_replogle_go_nearest_perturb_cloud_baseline.py",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/scripts_tmp/generate_replogle_go_nearest_perturb_cloud_baseline.py",
     "local": "baselines/experiment_runners/GO_nearest_5/generate_replogle_go_nearest_perturb_cloud_baseline.py",
     "sha256": "3a2bb3ecef6fd9c81eb4fe5781a3c263fa3e0e3e2747ed9eecd644a1f4460c72",
     "size_bytes": 8727
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_fixed2000_v1/metadata.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_fixed2000_v1/metadata.json",
     "local": "configs/baselines/GEARS/k562_only/metadata.json",
-    "sha256": "082bacdc1d2ed9c68f505b66e686681992c18ca951e4af7842252f1a45c930ac",
-    "size_bytes": 899
+    "sha256": "157879a6f646caf881d0219fab03bb8b11765ae067c5a4d483b91236dc2989c5",
+    "size_bytes": 850
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_fixed2000_v1/summary.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_fixed2000_v1/summary.json",
     "local": "configs/baselines/GEARS/k562_only/summary.json",
     "sha256": "225781070d77cdd621e7b504cbdf4e65f6ea8ff612a8c20745cdd4e1a88d0d1e",
     "size_bytes": 2777
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_fixed2000_v1/model/config.pkl",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gears_fixed2000_v1/model/config.pkl",
     "local": "configs/baselines/GEARS/k562_only/config.pkl",
     "sha256": "eb50139cc215f39c426cb0795761baceeb620b74f3f48caf06330742b042c9e5",
     "size_bytes": 2272258
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/scouter_runs/txpert_pathway5000_unseen_geneptv1_official40_npred2000_v1/run_summary.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/third_party/scouter_runs/txpert_pathway5000_unseen_geneptv1_official40_npred2000_v1/run_summary.json",
     "local": "configs/baselines/Scouter/k562_only/run_summary.json",
-    "sha256": "93fb95c8719e4c31f124ec1a952d209abf85bd3a23b5efc6401aab6b8ba24817",
-    "size_bytes": 1529
+    "sha256": "d5b0a03769b3bcee3d0574eceb0cdfd69ecfab9e9063fa01e6fd34a85890c374",
+    "size_bytes": 1444
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/CellFlow_runs/run_cellflow_1000k_generate2000_20260511.sh",
+    "host": "compute-host.invalid",
+    "source": "outputs/baselines/CellFlow/run_cellflow_1000k_generate2000_20260511.sh",
     "local": "baselines/experiment_runners/CellFlow/run_cellflow_1000k_generate2000_20260511.sh",
-    "sha256": "2c440e67c0ce08db4ac6bc297717b4c6c7f281a4c7ce55e16ee31df7de6c1a21",
-    "size_bytes": 1361
+    "sha256": "5783f811bde9c010e1399815a4e3d3ec818091a98abd5678e4799dd6eefcd7be",
+    "size_bytes": 1308
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/CellFlow_runs/run_cellflow_txpert_pathway5000_smoke.py",
+    "host": "compute-host.invalid",
+    "source": "outputs/baselines/CellFlow/run_cellflow_txpert_pathway5000_smoke.py",
     "local": "baselines/experiment_runners/CellFlow/run_cellflow_txpert_pathway5000_smoke.py",
     "sha256": "fee20cdd79ea21677876717e9284703dea8bfe2798a5bf849a5d8b507ead08eb",
     "size_bytes": 3402
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/CellFlow_runs/eval_cellflow_txpert_unseen_fixed2000.py",
+    "host": "compute-host.invalid",
+    "source": "outputs/baselines/CellFlow/eval_cellflow_txpert_unseen_fixed2000.py",
     "local": "baselines/experiment_runners/CellFlow/eval_cellflow_txpert_unseen_fixed2000.py",
     "sha256": "4346deb19796e4e4dc37cda63b09a8c8570e26039290c87915df5755d5e0c1eb",
     "size_bytes": 6500
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/CellFlow_runs/cellflow_predict_saved_model.py",
+    "host": "compute-host.invalid",
+    "source": "outputs/baselines/CellFlow/cellflow_predict_saved_model.py",
     "local": "baselines/experiment_runners/CellFlow/cellflow_predict_saved_model.py",
     "sha256": "8d981f79b2dce6f031dd900bf3275542cfc565bc1ca217f3467d1b5bce3b6d1c",
     "size_bytes": 3447
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/CellFlow_runs/generate_txpert_esm2_embeddings.py",
+    "host": "compute-host.invalid",
+    "source": "outputs/baselines/CellFlow/generate_txpert_esm2_embeddings.py",
     "local": "baselines/experiment_runners/CellFlow/generate_txpert_esm2_embeddings.py",
     "sha256": "e2e6566c7dcb86d3046065bf27cd5a7f4a5b5f799958348abffd5965bf26dc7c",
     "size_bytes": 6728
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/CellFlow_runs/txpert_pathway5000_esm2_t36_3B_1000k_v1/smoke_meta.json",
+    "host": "compute-host.invalid",
+    "source": "outputs/baselines/CellFlow/txpert_pathway5000_esm2_t36_3B_1000k_v1/smoke_meta.json",
     "local": "configs/baselines/CellFlow/k562_only/run_parameters.json",
-    "sha256": "578a9e7c2dd4d3406b15a85acddf65885cb3869ded043051e82924bd66644024",
-    "size_bytes": 691
+    "sha256": "ef0d009db5663f477c7495b14831757c6fa775a79ad2202414eb3834632ca797",
+    "size_bytes": 651
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/txpert_pathway3352_xcell_zeroshot_k562.toml",
+    "host": "compute-host.invalid",
+    "source": "external/third-party/state_py39/benchmarks/txpert_pathway3352_xcell_zeroshot_k562.toml",
     "local": "baselines/experiment_runners/STATE/txpert_pathway3352_xcell_zeroshot_k562.toml",
-    "sha256": "0a6cf0c12c9f7e558fec2ec44c6ea8af6a41cb319eea05c311b48b862fd01bd9",
-    "size_bytes": 243
+    "sha256": "148d0b27b42775c2888b0ad98065f8bb7bb34a47dad5763c9323786881d0caf6",
+    "size_bytes": 239
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/run_state_bs8_30k_training.sh",
+    "host": "compute-host.invalid",
+    "source": "external/third-party/state_py39/benchmarks/run_state_bs8_30k_training.sh",
     "local": "baselines/experiment_runners/STATE/run_state_bs8_30k_training.sh",
-    "sha256": "163a05cb6c60123e1523d9e1f1b7420ab97ae23f4fc187e6e90d2e32b4b93224",
-    "size_bytes": 2474
+    "sha256": "56eee925541bdf8b66a8a9901e0ba82a29033030ca39c9edf845220ab4c40248",
+    "size_bytes": 2463
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/txpert_pathway3352_k562_allcovered_fixed2000.toml",
+    "host": "compute-host.invalid",
+    "source": "external/third-party/state_py39/benchmarks/txpert_pathway3352_k562_allcovered_fixed2000.toml",
     "local": "baselines/experiment_runners/STATE/txpert_pathway3352_k562_allcovered_fixed2000.toml",
-    "sha256": "6959a2f2b94788a607f0735fe4048e87fade5044b7cd3b11f8a13964bb4fa68b",
-    "size_bytes": 284
+    "sha256": "b6aca39832f4b6cd6234971fbc861a2a4e19c797de69b504ece76b0685d2e6ac",
+    "size_bytes": 265
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/generate_txpert_scplad_predictions_fixed.py",
+    "host": "compute-host.invalid",
+    "source": "./generate_txpert_scplad_predictions_fixed.py",
     "local": "baselines/experiment_runners/TxPert/generate_txpert_scplad_predictions_fixed.py",
     "sha256": "b50f090d7b16f778612cc76045dae1052a42c59714d31c33d4675567f1f515ef",
     "size_bytes": 10026
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/eval_txpert_scplad_fixed2000_pra_corr.py",
+    "host": "compute-host.invalid",
+    "source": "./eval_txpert_scplad_fixed2000_pra_corr.py",
     "local": "baselines/experiment_runners/TxPert/eval_txpert_scplad_fixed2000_pra_corr.py",
     "sha256": "a1f2ab41da87a7b8e84a17cf36298c57b369a0c2575cb47770416230b414274f",
     "size_bytes": 12172
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/scripts_tmp/current_txpert_official_fixed2000/run_txpert_official_k562_all_fixed2000_sharded4.sh",
+    "host": "compute-host.invalid",
+    "source": "./scripts_tmp/current_txpert_official_fixed2000/run_txpert_official_k562_all_fixed2000_sharded4.sh",
     "local": "baselines/experiment_runners/TxPert/run_txpert_official_k562_all_fixed2000_sharded4.sh",
-    "sha256": "235f699080edfa40c4a587339f8d61d6b81f20eaa099fde86d72521513a0ac09",
-    "size_bytes": 3854
+    "sha256": "33d7ae5589786ca482c44fd15e4504ed774ebbd69b27a1cad739b34c66ccce2c",
+    "size_bytes": 3752
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601/scripts_tmp/generate_source_expression_baselines.py",
+    "host": "compute-host.invalid",
+    "source": "./scripts_tmp/generate_source_expression_baselines.py",
     "local": "baselines/experiment_runners/Direct_source/generate_source_expression_baselines.py",
     "sha256": "52bf4b745da95938a20dc5da158ca7aa5da8c795f717ce00d295618cecb5ab75",
     "size_bytes": 5395

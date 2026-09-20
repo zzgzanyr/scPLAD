@@ -5,11 +5,11 @@ import pandas as pd
 
 
 DATA_ROOT = Path(
-    "<SCPLAD_DATA_ROOT>/scplad/datasets/"
+    "external/scPLAD-assets/datasets/"
     "txpert_xcell_k562_clean_pathway3352_go256_context_v1/fold_0"
 )
 OUTPUT_ROOT = Path(
-    "<SCPLAD_DATA_ROOT>/third_party/state_py39/eval_data/"
+    "external/third-party/state_py39/eval_data/"
     "txpert_pathway3352_k562_allcovered"
 )
 

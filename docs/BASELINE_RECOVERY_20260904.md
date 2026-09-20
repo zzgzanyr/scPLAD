@@ -2,10 +2,9 @@
 
 ## What was recovered
 
-The server archive at
-`<PRIVATE_HOST>:<SCPLAD_DATA_ROOT>/scPLAD_engineered_20260722/baselines`
-already contained the five model source snapshots. The earlier missing-code
-finding applied to the local lightweight package, not to that server archive.
+The consolidated archive already contained the five model source snapshots.
+The earlier missing-code finding applied to a lightweight copy rather than the
+complete source collection.
 
 The local package now contains:
 
@@ -15,8 +14,8 @@ The local package now contains:
 - `baselines/Scouter/`
 - `baselines/STATE/`
 
-Experiment-specific runners were additionally recovered from the original
-server-7 and server-8 project/run directories into `baselines/experiment_runners/`.
+Experiment-specific runners were additionally consolidated into
+`baselines/experiment_runners/`.
 Compact baseline result CSV/JSON/YAML files were recovered into
 `results/baselines/`. Large training matrices, predictions, environments and
 model weights were not transferred.
@@ -63,9 +62,9 @@ they are evidence specifications, not executable launcher configuration files.
 
 ## Running on another machine
 
-Original shell launchers are preserved as evidence and still contain historical
-server paths and GPU/environment settings. Do not run them unreviewed. Set local
-dataset/checkpoint/cache paths and use each baseline's own dependency environment;
+Original shell launchers are preserved as evidence and may require local path,
+GPU and environment settings. Set local dataset/checkpoint/cache paths and use
+each baseline's own dependency environment;
 CellFlow, PyG-based models and STATE must not be assumed to share one environment.
 The baseline code includes install/requirements metadata from the source archives.
 Environment directories and credentials were deliberately not copied.
@@ -76,8 +75,7 @@ and checkpoint/data licenses still need review before public release.
 
 ## Integrity and scope of validation
 
-- `manifest/baseline_sources_20260904.json`: server archive and additional
-  source snapshot hashes.
+- `manifest/baseline_sources_20260904.json`: source snapshot hashes.
 - `manifest/baseline_run_evidence_20260904.json`: original run-metadata and
   experiment-runner paths plus verified SHA256.
 - `python3 bin/verify_baseline_sources.py`: offline hash and Python-syntax check.

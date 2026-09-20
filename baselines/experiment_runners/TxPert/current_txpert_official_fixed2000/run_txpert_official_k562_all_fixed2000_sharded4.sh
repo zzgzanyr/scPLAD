@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PY=${PY:-<SCPLAD_DATA_ROOT>/miniconda3/envs/squidiff_env/bin/python}
-PROJECT=${PROJECT:-<SCPLAD_DATA_ROOT>/Squidiff_transport_20260601}
-TXPERT=${TXPERT:-<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/TxPert}
-BENCH=${BENCH:-<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1}
+PY=${PY:-external/conda/envs/squidiff_env/bin/python}
+PROJECT=${PROJECT:-.}
+TXPERT=${TXPERT:-external/legacy-workspace/third_party/TxPert}
+BENCH=${BENCH:-external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1}
 SCRIPT_DIR=${SCRIPT_DIR:-$PROJECT/scripts_tmp/current_txpert_official_fixed2000}
 TASK_PREFIX=${TASK_PREFIX:-scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1}
-OUT_ROOT=${OUT_ROOT:-<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/${TASK_PREFIX}_official_cell_gat_predict_v1}
+OUT_ROOT=${OUT_ROOT:-outputs/TxPert_generated/${TASK_PREFIX}_official_cell_gat_predict_v1}
 N_SHARDS=${N_SHARDS:-4}
 N_CELLS=${N_CELLS:-2000}
 BATCH_SIZE=${BATCH_SIZE:-512}

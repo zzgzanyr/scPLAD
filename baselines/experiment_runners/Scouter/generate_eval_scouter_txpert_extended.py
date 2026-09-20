@@ -368,9 +368,9 @@ def evaluate_native(args) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--project-root", type=Path, default=Path("<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307"))
-    parser.add_argument("--data-dir", type=Path, default=Path("<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module"))
-    parser.add_argument("--embedding", type=Path, default=Path("<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle"))
+    parser.add_argument("--project-root", type=Path, default=Path("external/legacy-workspace"))
+    parser.add_argument("--data-dir", type=Path, default=Path("external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module"))
+    parser.add_argument("--embedding", type=Path, default=Path("external/legacy-workspace/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle"))
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--model-name", default="Scouter_GenePTv1_official40_fixed2000")

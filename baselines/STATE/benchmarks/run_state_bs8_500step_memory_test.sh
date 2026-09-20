@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-STATE_ROOT="<SCPLAD_DATA_ROOT>/third_party/state_py39"
+STATE_ROOT="external/third-party/state_py39"
 STATE_BIN="${STATE_ROOT}/.venv-squidiff/bin/state"
 TOML_PATH="${STATE_ROOT}/benchmarks/txpert_pathway3352_xcell_zeroshot_k562.toml"
 OUTPUT_ROOT="${STATE_ROOT}/benchmarks/bs8_500step_memory_20260718"

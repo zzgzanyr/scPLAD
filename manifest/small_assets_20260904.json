@@ -1,138 +1,138 @@
 [
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/scplad/features/txpert_xcell_bioprior_esm3_v1/gene_condition_features_bioprior_go256_reactome256_esm3pca256_string_omnipath_grn_complex_depmap.csv",
+    "host": "compute-host.invalid",
+    "source": "external/scPLAD-assets/features/txpert_xcell_bioprior_esm3_v1/gene_condition_features_bioprior_go256_reactome256_esm3pca256_string_omnipath_grn_complex_depmap.csv",
     "local": "data/priors/cross_cell_line/pathway/gene_condition_features_bioprior_go256_reactome256_esm3pca256_string_omnipath_grn_complex_depmap.csv",
     "kind": "prior",
     "sha256": "265fd0131115d3d524d8ce067c79e4a057a499cd774c1343c50cd0430fac9b04",
     "size_bytes": 29061128
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_bioprior_2342_plusctrl_adapted.csv",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_bioprior_2342_plusctrl_adapted.csv",
     "local": "data/priors/k562_only/pathway/gene_condition_features_bioprior_2342_plusctrl_adapted.csv",
     "kind": "prior",
     "sha256": "b1abdd6ba93aea603f9134a6cb7e4fa65c53ac7fa0e7b3047204e6430ba00fae",
     "size_bytes": 13846819
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_pathway_go_reactome_esm3_zeroothers_2342_plusctrl_adapted.csv",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_pathway_go_reactome_esm3_zeroothers_2342_plusctrl_adapted.csv",
     "local": "data/priors/k562_only/pathway/gene_condition_features_pathway_go_reactome_esm3_zeroothers_2342_plusctrl_adapted.csv",
     "kind": "prior",
     "sha256": "6361d8210d5eb90294c107d714581a27db6f7b64b142519c08349a6b302cd6e2",
     "size_bytes": 8206908
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_pathway_go_reactome_network_zeroothers_2342_plusctrl_adapted.csv",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_pathway_go_reactome_network_zeroothers_2342_plusctrl_adapted.csv",
     "local": "data/priors/k562_only/pathway/gene_condition_features_pathway_go_reactome_network_zeroothers_2342_plusctrl_adapted.csv",
     "kind": "prior",
     "sha256": "d3f73166fad37bf974454cb4d399e5c4a01c9c8b3a0dc2e441ce035a539c0164",
     "size_bytes": 12040045
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_pathwayonly_go_reactome_zeroothers_2342_plusctrl_adapted.csv",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module_drdd_compat/gene_condition_features_pathwayonly_go_reactome_zeroothers_2342_plusctrl_adapted.csv",
     "local": "data/priors/k562_only/pathway/gene_condition_features_pathwayonly_go_reactome_zeroothers_2342_plusctrl_adapted.csv",
     "kind": "prior",
     "sha256": "214e35f96f5bfad73be0a1d87c6a27be8194c4d81360d04b814c42f1bf34890b",
     "size_bytes": 9583041
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_original5000_module_drdd_compat/gene_condition_features_bioprior_2342_plusctrl_adapted.csv",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_original5000_module_drdd_compat/gene_condition_features_bioprior_2342_plusctrl_adapted.csv",
     "local": "data/priors/k562_only/original_order/gene_condition_features_bioprior_2342_plusctrl_adapted.csv",
     "kind": "prior",
     "sha256": "b1abdd6ba93aea603f9134a6cb7e4fa65c53ac7fa0e7b3047204e6430ba00fae",
     "size_bytes": 13846819
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gene_order.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gene_order.json",
     "local": "data/metadata/k562_only/pathway5000/gene_order.json",
     "kind": "gene_order_or_metadata",
-    "sha256": "65ac5f33f98013bb9a73013a6173d28e75553a885e78a32659df91222fa2915a",
-    "size_bytes": 149063
+    "sha256": "40457debb99bd456a78fd8c0e8f7d9b592fed9c49058b9179a1fad5433d8ec6b",
+    "size_bytes": 149029
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/summary.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/summary.json",
     "local": "data/metadata/k562_only/pathway5000/summary.json",
     "kind": "gene_order_or_metadata",
-    "sha256": "930759a9ead3f459a78b73c6d2670984d26bd0da21ffe0a50cce2456a27854af",
-    "size_bytes": 2784
+    "sha256": "7bf9f9909757f59e0ff15240bfef9b551612c78bd4cc047712d0336e7c5fc67f",
+    "size_bytes": 2665
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/label_map.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/label_map.json",
     "local": "data/metadata/k562_only/pathway5000/label_map.json",
     "kind": "gene_order_or_metadata",
     "sha256": "5c6c455c0d7af12de36d7c25b01f7f6700c2c6ec6a50e536acedbbec7d4f8abe",
     "size_bytes": 23008
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gene_order_table.csv",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module/gene_order_table.csv",
     "local": "data/metadata/k562_only/pathway5000/gene_order_table.csv",
     "kind": "gene_order_or_metadata",
     "sha256": "59d731c2415d23ea2a463b3b431a08ab62ca6d93b309e144a6fa2e3cbf6fd480",
     "size_bytes": 80517
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_original5000_module/gene_order.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_original5000_module/gene_order.json",
     "local": "data/metadata/k562_only/original5000/gene_order.json",
     "kind": "gene_order_or_metadata",
     "sha256": "e79a1890fc93ae1bbfa2038f694205a82dd497bfd1778e75df1a8fa47603b608",
     "size_bytes": 67787
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_original5000_module/summary.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_original5000_module/summary.json",
     "local": "data/metadata/k562_only/original5000/summary.json",
     "kind": "gene_order_or_metadata",
-    "sha256": "1d8828f24cedf6628896f30f7c6dd0dd33bab04659b91be7146e4b5160d635fd",
-    "size_bytes": 1798
+    "sha256": "fc5deb6feebe53017e8a1952de80ba70b10b86e5bdfd2b1e8532b411c61c34a4",
+    "size_bytes": 1747
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_original5000_module/label_map.json",
+    "host": "compute-host.invalid",
+    "source": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_original5000_module/label_map.json",
     "local": "data/metadata/k562_only/original5000/label_map.json",
     "kind": "gene_order_or_metadata",
     "sha256": "5c6c455c0d7af12de36d7c25b01f7f6700c2c6ec6a50e536acedbbec7d4f8abe",
     "size_bytes": 23008
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_order.json",
+    "host": "compute-host.invalid",
+    "source": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_order.json",
     "local": "data/metadata/cross_cell_line/pathway3352/gene_order.json",
     "kind": "gene_order_or_metadata",
     "sha256": "dbc78e26916fefd18edd65179c41aefe334e4fed485e0c48fe04de8ffa9f4145",
     "size_bytes": 44652
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_order_recomputed_metadata.json",
+    "host": "compute-host.invalid",
+    "source": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/gene_order_recomputed_metadata.json",
     "local": "data/metadata/cross_cell_line/pathway3352/gene_order_recomputed_metadata.json",
     "kind": "gene_order_or_metadata",
-    "sha256": "60a18dfc3c61a55fff42c16b9e0f345d9c5190cb4d3688d627844299c89b74a7",
-    "size_bytes": 45652
+    "sha256": "2219f5859748f7567505bce81abd6b9d904e470a12dcb922cf36ff6055db7baa",
+    "size_bytes": 45630
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/prep_summary.json",
+    "host": "compute-host.invalid",
+    "source": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/prep_summary.json",
     "local": "data/metadata/cross_cell_line/pathway3352/prep_summary.json",
     "kind": "gene_order_or_metadata",
-    "sha256": "ae41f6e16c00c8166fc0c7b9bc49f64d183ec050f341030c6a3eb8004b47bcba",
-    "size_bytes": 3518
+    "sha256": "ecd3a5e3b5ce30ba8abeb9355e0de7f5aaddfe1b7dde5014c3cfb6b674ea2b5b",
+    "size_bytes": 3487
   },
   {
-    "host": "<PRIVATE_HOST>",
-    "source": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/raw_expression_norms_fold0.json",
+    "host": "compute-host.invalid",
+    "source": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/raw_expression_norms_fold0.json",
     "local": "data/metadata/cross_cell_line/pathway3352/raw_expression_norms_fold0.json",
     "kind": "gene_order_or_metadata",
-    "sha256": "d89ab0d542fd72c2f07608fc3c94ab05d5ac1d29c4fed9e4cf84e66cd5318ebb",
-    "size_bytes": 5657
+    "sha256": "d13862334fd4548587d55a4cc0a7859ee65c4cafc4148c167c9d511d5502f6d5",
+    "size_bytes": 5653
   }
 ]

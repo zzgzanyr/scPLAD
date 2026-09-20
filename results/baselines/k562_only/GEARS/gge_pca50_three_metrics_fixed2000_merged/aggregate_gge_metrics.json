@@ -1,16 +1,16 @@
 {
   "framework": "GGE",
   "n_conditions": 272,
-  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/predictions_condition",
+  "predictions_dir": "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/predictions_condition",
   "merged_from": [
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part0",
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part1",
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part2",
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part3",
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part4",
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part5",
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part6",
-    "<SCPLAD_DATA_ROOT>/scplad/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part7"
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part0",
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part1",
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part2",
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part3",
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part4",
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part5",
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part6",
+    "outputs/GEARS_generated/txpert_pathway5000_fixed2000_from_npz/gge_pca50_three_metrics_fixed2000_part7"
   ],
   "mean_n_test_cells": 141.45220588235293,
   "std_n_test_cells": 96.20985371060719,

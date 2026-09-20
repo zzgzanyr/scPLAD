@@ -179,7 +179,7 @@ def evaluate_simple(model, test_conds: list[str], n_pred: int, max_eval_conds: i
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--project-root", type=Path, default=Path("<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307"))
+    parser.add_argument("--project-root", type=Path, default=Path("external/legacy-workspace"))
     parser.add_argument("--data-dir", type=Path, default=None)
     parser.add_argument("--embedding", type=Path, default=None)
     parser.add_argument("--outdir", type=Path, required=True)

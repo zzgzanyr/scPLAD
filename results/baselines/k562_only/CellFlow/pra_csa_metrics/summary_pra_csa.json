@@ -1,6 +1,6 @@
 {
   "model": "CellFlow_ESM2_1000k_fixed2000",
-  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/CellFlow_generated/txpert_pathway5000_esm2_t36_3B_1000k_fixed2000/predictions",
+  "prediction_dir": "outputs/CellFlow_generated/txpert_pathway5000_esm2_t36_3B_1000k_fixed2000/predictions",
   "n_conditions": 272,
   "num_samples": 2000,
   "metrics_mean": {

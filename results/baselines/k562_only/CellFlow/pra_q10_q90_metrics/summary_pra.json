@@ -1,7 +1,7 @@
 {
   "model": "CellFlow_ESM2_1000k_fixed2000",
-  "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
-  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/CellFlow_generated/txpert_pathway5000_esm2_t36_3B_1000k_fixed2000/predictions",
+  "data_dir": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "prediction_dir": "outputs/CellFlow_generated/txpert_pathway5000_esm2_t36_3B_1000k_fixed2000/predictions",
   "num_conditions": 272,
   "q_low": 0.1,
   "q_high": 0.9,

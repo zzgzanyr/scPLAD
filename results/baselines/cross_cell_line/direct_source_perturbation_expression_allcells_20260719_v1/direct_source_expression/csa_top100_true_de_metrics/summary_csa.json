@@ -1,8 +1,8 @@
 {
   "model": "direct_source_expression",
-  "eval_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
-  "control_context_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
-  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/analysis/direct_source_perturbation_expression_allcells_20260719_v1/direct_source_expression/condition_npy",
+  "eval_h5ad": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
+  "control_context_h5ad": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/control_context.h5ad",
+  "predictions_dir": "external/scPLAD-assets/analysis/direct_source_perturbation_expression_allcells_20260719_v1/direct_source_expression/condition_npy",
   "num_conditions": 580,
   "gene_set": "top_true_de",
   "top_k": 100,

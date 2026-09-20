@@ -1,5 +1,5 @@
 {
-  "benchmark_root": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1",
+  "benchmark_root": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1",
   "fold": 0,
   "space": "raw_expression",
   "gene_dim": 3352,

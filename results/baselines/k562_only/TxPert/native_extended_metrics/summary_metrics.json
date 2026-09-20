@@ -1,7 +1,7 @@
 {
   "model": "TxPert_exphormer_mg_fixed2000",
-  "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
-  "prediction_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/K562_unseen_exphormer_mg_fixed2000_native_eval/predictions",
+  "data_dir": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "prediction_dir": "outputs/TxPert_generated/K562_unseen_exphormer_mg_fixed2000_native_eval/predictions",
   "num_conditions": 272,
   "de_top_k": 100,
   "distribution_pca_dim": 50,

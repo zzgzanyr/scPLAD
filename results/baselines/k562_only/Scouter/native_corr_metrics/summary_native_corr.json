@@ -1,6 +1,6 @@
 {
-  "benchmark_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
-  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/predictions",
+  "benchmark_root": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "predictions_dir": "outputs/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/predictions",
   "num_conditions": 272,
   "sample_count_mode": "fixed_n_cells_from_saved_predictions",
   "fixed_n_cells": 2000,

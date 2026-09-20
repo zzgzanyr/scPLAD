@@ -1,7 +1,7 @@
 {
   "model": "Scouter_GenePTv1_40ep_fixed2000",
   "data_dir": "datasets/otherdata/txpert/txpert_k562_pathway5000_module",
-  "predictions_dir": "<SCPLAD_DATA_ROOT>/scplad/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/predictions",
+  "predictions_dir": "outputs/Scouter_generated/txpert_pathway5000_geneptv1_official40_fixed2000/predictions",
   "num_conditions": 272,
   "gene_set": "top_true_de",
   "top_k": 100,

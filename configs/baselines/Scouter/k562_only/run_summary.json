@@ -1,6 +1,6 @@
 {
-  "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
-  "embedding": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle",
+  "data_dir": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+  "embedding": "external/legacy-workspace/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle",
   "adata_shape_after_filter": [
     160238,
     5000
@@ -35,9 +35,9 @@
     "WDR61"
   ],
   "args": {
-    "project_root": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307",
-    "data_dir": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
-    "embedding": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle",
+    "project_root": "external/legacy-workspace",
+    "data_dir": "external/legacy-workspace/datasets/otherdata/txpert/txpert_k562_pathway5000_module",
+    "embedding": "external/legacy-workspace/third_party/scouter_misc/data/Data_GeneEmbd/GenePT_V1.pickle",
     "outdir": "third_party/scouter_runs/txpert_pathway5000_unseen_geneptv1_official40_npred2000_v1",
     "seed": 24,
     "epochs": 40,

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-STATE_ROOT="<SCPLAD_DATA_ROOT>/third_party/state_py39"
+STATE_ROOT="external/third-party/state_py39"
 STATE_BIN="${STATE_ROOT}/.venv-squidiff/bin/state"
 TOML_PATH="${STATE_ROOT}/benchmarks/txpert_pathway3352_xcell_zeroshot_k562.toml"
-OUTPUT_ROOT="<SCPLAD_DATA_ROOT>/third_party/state_py39/benchmarks/batch_memory_20260718"
+OUTPUT_ROOT="external/third-party/state_py39/benchmarks/batch_memory_20260718"
 GPU_IDS="1,3"
 MAX_STEPS=20
 

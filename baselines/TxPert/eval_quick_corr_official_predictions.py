@@ -5,7 +5,7 @@ import pandas as pd
 import scanpy as sc
 from scipy.stats import spearmanr
 
-ROOT = Path("<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/TxPert/cache/predictions_quick")
+ROOT = Path("external/legacy-workspace/third_party/TxPert/cache/predictions_quick")
 MODELS = ["K562_unseen_pert_gat", "K562_unseen_pert_exphormer", "K562_unseen_pert_exphormer_mg"]
 
 def dense_x(a):

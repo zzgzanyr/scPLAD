@@ -1,5 +1,5 @@
 [datasets]
-txpert_pathway3352_known55_fixed2000 = "<SCPLAD_DATA_ROOT>/third_party/state_py39/eval_data/txpert_pathway3352_k562_known55_fixed2000"
+txpert_pathway3352_known55_fixed2000 = "external/third-party/state_py39/eval_data/txpert_pathway3352_k562_known55_fixed2000"
 
 [training]
 txpert_pathway3352_known55_fixed2000 = "train"

@@ -1,5 +1,5 @@
 {
-  "h5ad": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/datasets/otherdata/state_replogle_filtered/replogle_concat.h5ad",
+  "h5ad": "external/legacy-workspace/datasets/otherdata/state_replogle_filtered/replogle_concat.h5ad",
   "obs_col": "gene",
   "requested_perturbation": "SRSF7",
   "selected_perturbation": "SRSF7",

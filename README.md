@@ -1,7 +1,10 @@
-# scPLAD engineered archive
+# scPLAD
 
-This directory consolidates the code, datasets, checkpoints, evaluation outputs,
-ablations, and external baselines used by the current scPLAD manuscript.
+This repository consolidates the code, portable experiment configurations,
+evaluation outputs, ablations, external baselines and figure-reproduction
+materials used by the scPLAD manuscript. Large datasets and selected manuscript
+checkpoints are distributed separately through the
+[scPLAD Hugging Face release](https://huggingface.co/zhangzhigang/scPLAD).
 
 The archive covers two tasks:
 
@@ -9,18 +12,39 @@ The archive covers two tasks:
 2. `cross_cell_line`: K562 perturbation generation from source-cell-line data,
    with K562 control cells providing the target context.
 
+## Data and checkpoints
+
+- K562-only data: [`datasets/k562_only`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/datasets/k562_only)
+- Cross-cell-line data: [`datasets/cross_cell_line`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/datasets/cross_cell_line)
+- K562-only model assets: [`k562_only`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/k562_only)
+- Cross-cell-line model assets: [`cross_cell_line`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/cross_cell_line)
+
+Download the complete release into a local directory:
+
+```bash
+hf download zhangzhigang/scPLAD --local-dir external/scPLAD-assets
+```
+
+To download only one task, use an include pattern, for example:
+
+```bash
+hf download zhangzhigang/scPLAD \
+  --include "datasets/cross_cell_line/*" "cross_cell_line/*" \
+  --local-dir external/scPLAD-assets
+```
+
+After downloading, set configuration paths to the corresponding files under
+`external/scPLAD-assets/`. No access to the authors' compute environment is
+required.
+
 ## Design rules
 
-- The full server archive stores physical train/validation/test copies under
-  `data/`. A lightweight local or public release may omit these large AnnData
-  files and use the custom-data templates instead.
+- Large AnnData files and manuscript checkpoints are hosted on Hugging Face
+  rather than duplicated in this Git repository.
 - Public biological-prior tables required by training are copied under `data/priors/`.
 - Current lightweight metrics and tables are copied under `results/`.
-- Large generated-cell matrices and complete experiment directories remain in their
-  original server locations and are exposed through symlinks under `artifacts/`.
-- K562 artifacts that originate on server 7 and cannot be represented by a local
-  symlink are accompanied by `REMOTE_SOURCE.md`; selected manuscript checkpoints
-  and all lightweight metrics are copied to server 8.
+- Generated-cell matrices are optional outputs and are not required to
+  reproduce the paper figures from the provided compact source data.
 - `scripts/` contains portable copies of the curated data-preparation,
   training, inference, evaluation, and ablation entry points.
 - `src/scplad_transport/` contains the shared model implementation imported by
@@ -82,23 +106,22 @@ single-cell training matrices.
 - `manifest/small_assets_20260904.json`: verified sources and hashes for the local priors and gene orders.
 
 - `docs/DIRECTORY_LAYOUT.md`: directory responsibilities.
-- `docs/SOURCE_PROVENANCE.md`: original server paths and copy/link policy.
+- `docs/SOURCE_PROVENANCE.md`: public release layout and provenance policy.
 - `docs/RESULTS_CATALOG.md`: current manuscript result families.
 - `docs/EXPERIMENT_REGISTRY.md`: experiment names, objectives, code, data,
   checkpoints, and results.
-- `configs/path_registry.yaml`: canonical archive paths and original paths.
+- `configs/path_registry.yaml`: canonical repository and Hugging Face paths.
 - `manifest/files.tsv`: generated file inventory.
 - `manifest/experiments.tsv`: machine-readable experiment registry.
 - `manifest/checksums.sha256`: checksums for available copied core data and checkpoints (not a promise that omitted files are present).
 - `figure_reproduction/manifests/PANEL_REPRODUCIBILITY.tsv`: links every
   manuscript panel to experiment IDs, data, training/evaluation entry points,
   plotting code, and canonical assets.
-- `bin/verify_archive.sh`: use `--mode lightweight` for the local/public code
-  package and `--mode full` for the server archive with AnnData, checkpoints,
-  checksums and symlink targets. The default `auto` mode selects the appropriate
-  check from the files that are present.
+- `bin/verify_archive.sh`: use `--mode lightweight` for a code-only checkout
+  and `--mode full` after downloading AnnData files and checkpoints. The
+  default `auto` mode selects the appropriate check from the files present.
 
-The original source directories are never modified by archive construction.
+External datasets and checkpoints are treated as read-only inputs.
 
 ## Reproduction fixes (2026-09-04)
 

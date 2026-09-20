@@ -1,7 +1,7 @@
 {
-  "pred_root": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_random50_known_source_celllines_gat_retrain320k_last_v1",
-  "txpert_cache": "<SCPLAD_DATA_ROOT>/Squidiff_cloud_20260307/third_party/TxPert/cache/scplad_xcell_clean_trainval_quick100test_officialorder_geneplusctrl_v1/de_adata_test.h5ad",
-  "selected_pairs": "<SCPLAD_DATA_ROOT>/scplad/experiments/txpert_xcell_clean_pathway3352_go256_patchae200ep_adaln_interaction_basalctx_ddp6_1000k_v1/eval_random50_known_source_match_counts_1000k_pra_csa_parts8/selected_pairs_all.csv",
+  "pred_root": "outputs/TxPert_generated/scplad_xcell_random50_known_source_celllines_gat_retrain320k_last_v1",
+  "txpert_cache": "external/legacy-workspace/third_party/TxPert/cache/scplad_xcell_clean_trainval_quick100test_officialorder_geneplusctrl_v1/de_adata_test.h5ad",
+  "selected_pairs": "external/scPLAD-assets/experiments/txpert_xcell_clean_pathway3352_go256_patchae200ep_adaln_interaction_basalctx_ddp6_1000k_v1/eval_random50_known_source_match_counts_1000k_pra_csa_parts8/selected_pairs_all.csv",
   "pra_quantiles": [
     0.1,
     0.9

@@ -1,12 +1,12 @@
 {
   "prediction_h5ad": [
-    "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part00/test_predictions.h5ad",
-    "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part01/test_predictions.h5ad",
-    "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part02/test_predictions.h5ad",
-    "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part03/test_predictions.h5ad"
+    "outputs/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part00/test_predictions.h5ad",
+    "outputs/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part01/test_predictions.h5ad",
+    "outputs/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part02/test_predictions.h5ad",
+    "outputs/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/part03/test_predictions.h5ad"
   ],
-  "reference_h5ad": "<SCPLAD_DATA_ROOT>/scplad/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
-  "out_dir": "<SCPLAD_DATA_ROOT>/scplad/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/condition_npy",
+  "reference_h5ad": "external/scPLAD-assets/datasets/txpert_xcell_k562_clean_pathway3352_go256_context_recomputed_order_v1/fold_0/test.h5ad",
+  "out_dir": "outputs/TxPert_generated/scplad_xcell_k562_all_fixed2000_officialorder_geneplusctrl_v1_official_cell_gat_predict_v1/condition_npy",
   "n_conditions": 1086,
   "n_genes": 3352,
   "gene_order": "reordered_to_reference_var_names"
