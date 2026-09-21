@@ -1,4 +1,8 @@
-# scPLAD
+<p align="center">
+  <img src="docs/assets/scplad-logo.png" width="112" alt="scPLAD logo">
+</p>
+
+<h1 align="center">scPLAD</h1>
 
 This repository consolidates the code, portable experiment configurations,
 evaluation outputs, ablations, external baselines and figure-reproduction
