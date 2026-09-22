@@ -16,6 +16,59 @@ The archive covers two tasks:
 2. `cross_cell_line`: K562 perturbation generation from source-cell-line data,
    with K562 control cells providing the target context.
 
+## Quick start
+
+### 1. Clone and create an environment
+
+```bash
+git clone https://github.com/zzgzanyr/scPLAD.git
+cd scPLAD
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+python -m pip install --upgrade pip
+python -m pip install -r figure_reproduction/requirements-figures.txt
+```
+
+### 2. Verify the code-only checkout
+
+```bash
+bash bin/verify_archive.sh --mode lightweight
+```
+
+This runs the metric unit tests, validates the figure/table registry, and
+checks the compact archived assets. It does not download large data or train a
+model.
+
+### 3. Reproduce every manuscript panel without a GPU
+
+```bash
+cd figure_reproduction
+python reproducibility/scplad_repro.py \
+  --config reproducibility/configs/provided_results.json \
+  --stages figures
+```
+
+The regenerated SVG, PDF, PNG, and TIFF panels are written under
+`figure_reproduction/reproduced/Fig1` through `Fig5`. The command uses the
+distributed compact source data and does not overwrite the canonical figure
+archive.
+
+### 4. Inspect a full custom-data run before training
+
+```bash
+cd figure_reproduction
+cp reproducibility/configs/custom_data.template.json my_run.json
+# Edit the absolute input paths in my_run.json, then validate the plan:
+python reproducibility/scplad_repro.py --config my_run.json --validate-only
+python reproducibility/scplad_repro.py --config my_run.json --stages all --dry-run
+```
+
+Training is never started by the commands above. After the paths and generated
+command plan have been checked, add `--allow-training` to explicitly authorize
+the training stages. See the [detailed usage guide](docs/USAGE_GUIDE.md) for
+input contracts, stage-by-stage commands, output locations, cross-cell-line
+configuration, and troubleshooting.
+
 ## Data and checkpoints
 
 - K562-only data: [`datasets/k562_only`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/datasets/k562_only)
