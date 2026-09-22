@@ -10,6 +10,16 @@ materials used by the scPLAD manuscript. Large datasets and selected manuscript
 checkpoints are distributed separately through the
 [scPLAD Hugging Face release](https://huggingface.co/zhangzhigang/scPLAD).
 
+## Interactive demo
+
+<p align="center">
+  <img src="docs/assets/scplad-response-lab.png" width="100%" alt="scPLAD Response Lab interactive interface">
+</p>
+
+The scPLAD Response Lab provides an interactive view of supported cellular
+contexts, perturbation-response generation, single-cell expression profiles,
+and biological priors. Model inference runs locally in a compatible browser.
+
 The archive covers two tasks:
 
 1. `k562_only`: held-out perturbation generation within the K562 background.
