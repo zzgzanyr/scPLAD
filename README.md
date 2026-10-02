@@ -196,3 +196,11 @@ See [the repair and validation notes](docs/REPRODUCIBILITY_FIXES_20260904.md)
 for input contracts, task-specific settings, VAE source provenance, and remaining
 limits of the legacy raw-data/prior builders. No training result was changed.
 Figure 1 requires Inkscape on PATH, or an explicit `INKSCAPE_BINARY` path.
+
+## License
+
+scPLAD-authored software, configuration, and documentation are released under
+the [Apache License 2.0](LICENSE). Third-party baseline snapshots, external
+datasets, biological-prior resources, and derived assets retain their original
+licenses and usage terms; see [the license-scope notice](THIRD_PARTY_LICENSES.md)
+and [source-provenance documentation](docs/SOURCE_PROVENANCE.md).
