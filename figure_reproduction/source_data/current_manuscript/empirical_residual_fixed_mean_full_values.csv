@@ -1,0 +1,109 @@
+comparison,task,model,n_conditions,metric,value
+complete_method,K562 internal,Mean + training-perturbation residual,272,mean_pcc,0.9933849879870728
+complete_method,K562 internal,scPLAD lambda=0.75,272,mean_pcc,0.99378
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,mean_pcc,0.9922785637423264
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,mean_pcc,0.992584
+complete_method,K562 internal,Mean + training-perturbation residual,272,mean_spearman,0.9642787195394056
+complete_method,K562 internal,scPLAD lambda=0.75,272,mean_spearman,0.96545
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,mean_spearman,0.961304638986466
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,mean_spearman,0.962792
+complete_method,K562 internal,Mean + training-perturbation residual,272,mean_mse,0.0017211017375118
+complete_method,K562 internal,scPLAD lambda=0.75,272,mean_mse,0.00162
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,mean_mse,0.0025888231585366
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,mean_mse,0.002494
+complete_method,K562 internal,Mean + training-perturbation residual,272,mean_mae,0.02381237024559
+complete_method,K562 internal,scPLAD lambda=0.75,272,mean_mae,0.0231
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,mean_mae,0.0302253491105898
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,mean_mae,0.029792
+complete_method,K562 internal,Mean + training-perturbation residual,272,delta_pcc,0.5481423099900444
+complete_method,K562 internal,scPLAD lambda=0.75,272,delta_pcc,0.5581
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,delta_pcc,0.4478579923642228
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,delta_pcc,0.46871
+complete_method,K562 internal,Mean + training-perturbation residual,272,delta_spearman,0.4259058641243411
+complete_method,K562 internal,scPLAD lambda=0.75,272,delta_spearman,0.4335
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,delta_spearman,0.3272544647309997
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,delta_spearman,0.339388
+complete_method,K562 internal,Mean + training-perturbation residual,272,top100_de_overlap,0.451985294117647
+complete_method,K562 internal,scPLAD lambda=0.75,272,top100_de_overlap,0.461
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,top100_de_overlap,0.3717955801104972
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,top100_de_overlap,0.382474
+complete_method,K562 internal,Mean + training-perturbation residual,272,response_auprc,0.4448317661392871
+complete_method,K562 internal,scPLAD lambda=0.75,272,response_auprc,0.4558
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,response_auprc,0.3318222752929321
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,response_auprc,0.347783
+complete_method,K562 internal,Mean + training-perturbation residual,272,erc_all,0.8690737518930433
+complete_method,K562 internal,scPLAD lambda=0.75,272,erc_all,0.8255
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,erc_all,0.8857467467710082
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,erc_all,0.872179
+complete_method,K562 internal,Mean + training-perturbation residual,272,erc_top100,0.8431191236877361
+complete_method,K562 internal,scPLAD lambda=0.75,272,erc_top100,0.7942
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,erc_top100,0.8146496552795074
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,erc_top100,0.8373
+complete_method,K562 internal,Mean + training-perturbation residual,272,iou_all,0.8202860586871058
+complete_method,K562 internal,scPLAD lambda=0.75,272,iou_all,0.8307
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,iou_all,0.7520761238678789
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,iou_all,0.7842
+complete_method,K562 internal,Mean + training-perturbation residual,272,iou_top100,0.7455626455863246
+complete_method,K562 internal,scPLAD lambda=0.75,272,iou_top100,0.7318
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,iou_top100,0.7036568941585791
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,iou_top100,0.7045
+complete_method,K562 internal,Mean + training-perturbation residual,272,width_ratio_top100,1.0067985564435005
+complete_method,K562 internal,scPLAD lambda=0.75,272,width_ratio_top100,0.884
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,width_ratio_top100,1.003135743574202
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,width_ratio_top100,1.03
+complete_method,K562 internal,Mean + training-perturbation residual,272,variance_sum_ratio,1.0227899790533486
+complete_method,K562 internal,scPLAD lambda=0.75,272,variance_sum_ratio,0.8473303311027703
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,variance_sum_ratio,1.0795597340363423
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,variance_sum_ratio,1.0491913424715755
+complete_method,K562 internal,Mean + training-perturbation residual,272,csa_top100_pearson,0.6444885578553922
+complete_method,K562 internal,scPLAD lambda=0.75,272,csa_top100_pearson,0.6401
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,csa_top100_pearson,0.5183509704349204
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,csa_top100_pearson,0.535895
+complete_method,K562 internal,Mean + training-perturbation residual,272,csa_top100_spearman,0.5942256980048823
+complete_method,K562 internal,scPLAD lambda=0.75,272,csa_top100_spearman,0.591
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,csa_top100_spearman,0.4520418538835618
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,csa_top100_spearman,0.479126
+complete_method,K562 internal,Mean + training-perturbation residual,272,rcf,0.7702259099643884
+complete_method,K562 internal,scPLAD lambda=0.75,272,rcf,0.9760725406401828
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,rcf,0.4190229657161146
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,rcf,0.7157942097846023
+complete_method,K562 internal,Mean + training-perturbation residual,272,occ,0.6880409509093204
+complete_method,K562 internal,scPLAD lambda=0.75,272,occ,0.8934018421828158
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,occ,0.304920238520949
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,occ,0.5933414828865764
+complete_method,K562 internal,Mean + training-perturbation residual,272,fcs,0.7124614816914054
+complete_method,K562 internal,scPLAD lambda=0.75,272,fcs,0.9250470133644828
+complete_method,Cross-cell-line K562,Mean + training-perturbation residual,1086,fcs,0.3423315291631496
+complete_method,Cross-cell-line K562,scPLAD lambda=0.75,1086,fcs,0.6387562404525668
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,iou_all,0.8202860586871058
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,iou_all,0.826781461179388
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,iou_all,0.7520761238678789
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,iou_all,0.7696640911938482
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,iou_top100,0.7455626455863246
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,iou_top100,0.7273963241149825
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,iou_top100,0.7036568941585791
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,iou_top100,0.6984834675827827
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,csa_top100_pearson,0.6444885578553922
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,csa_top100_pearson,0.6415479299712463
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,csa_top100_pearson,0.5183509704349204
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,csa_top100_pearson,0.5305849249340423
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,csa_top100_spearman,0.5942256980048823
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,csa_top100_spearman,0.5929533047953823
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,csa_top100_spearman,0.4520418538835618
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,csa_top100_spearman,0.473137718857647
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,occ,0.6880409509093204
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,occ,0.8825400295241113
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,occ,0.304920238520949
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,occ,0.5080531033088299
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,fcs,0.7124614816914054
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,fcs,0.9170356035333588
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,fcs,0.3423315291631496
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,fcs,0.5593007353616808
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,width_ratio_top100,1.0067985564435005
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,width_ratio_top100,0.8771617887060179
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,width_ratio_top100,1.003135743574202
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,width_ratio_top100,1.0919103232482827
+fixed_mean,K562 internal,Mean + training-perturbation residual,272,rcf,0.7702259099643884
+fixed_mean,K562 internal,"scPLAD, fixed mean",272,rcf,0.974345491681422
+fixed_mean,Cross-cell-line K562,Mean + training-perturbation residual,1086,rcf,0.4190229657161146
+fixed_mean,Cross-cell-line K562,"scPLAD, fixed mean",1086,rcf,0.6492931605426453

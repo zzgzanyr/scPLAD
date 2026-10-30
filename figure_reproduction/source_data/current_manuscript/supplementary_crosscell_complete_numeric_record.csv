@@ -1,0 +1,76 @@
+block,group,model,conditions,metric,estimate,sd
+overall,all,scPLAD,1086,mean_pcc,0.9926,
+overall,all,scPLAD,1086,mean_spearman,0.9628,
+overall,all,scPLAD,1086,delta_pcc,0.4687,
+overall,all,scPLAD,1086,delta_spearman,0.3394,
+overall,all,scPLAD,1086,top100_de_overlap,0.3825,
+overall,all,scPLAD,1086,auprc,0.3478,
+overall,all,TxPert,1086,mean_pcc,0.99,
+overall,all,TxPert,1086,mean_spearman,0.95,
+overall,all,TxPert,1086,delta_pcc,0.4915,
+overall,all,TxPert,1086,delta_spearman,0.3613,
+overall,all,TxPert,1086,top100_de_overlap,0.3773,
+overall,all,TxPert,1086,auprc,0.3406,
+overall,all,STATE + mean fallback,1086,mean_pcc,0.9899,
+overall,all,STATE + mean fallback,1086,mean_spearman,0.9474,
+overall,all,STATE + mean fallback,1086,delta_pcc,0.32,
+overall,all,STATE + mean fallback,1086,delta_spearman,0.2053,
+overall,all,STATE + mean fallback,1086,top100_de_overlap,0.3193,
+overall,all,STATE + mean fallback,1086,auprc,0.2633,
+overall,all,PIE,1086,mean_pcc,0.9852,
+overall,all,PIE,1086,mean_spearman,0.9479,
+overall,all,PIE,1086,delta_pcc,0.4399,
+overall,all,PIE,1086,delta_spearman,0.2513,
+overall,all,PIE,1086,top100_de_overlap,0.3678,
+overall,all,PIE,1086,auprc,0.3587,
+interval,all,scPLAD,1086,iou_all,0.7842,
+interval,all,scPLAD,1086,iou100,0.7045,
+interval,all,scPLAD,1086,width_ratio100,1.03,
+interval,all,TxPert,1086,iou_all,0.114,
+interval,all,TxPert,1086,iou100,0.1566,
+interval,all,TxPert,1086,width_ratio100,0.127,
+interval,source_observed,scPLAD,580,iou_all,0.7843,
+interval,source_observed,scPLAD,580,iou100,0.7136,
+interval,source_observed,scPLAD,580,width_ratio100,1.03,
+interval,source_observed,TxPert,580,iou_all,0.1137,
+interval,source_observed,TxPert,580,iou100,0.1574,
+interval,source_observed,TxPert,580,width_ratio100,0.127,
+interval,source_observed,STATE,580,iou_all,0.5255,
+interval,source_observed,STATE,580,iou100,0.2154,
+interval,source_observed,STATE,580,width_ratio100,0.561,
+subpopulation,seen,scPLAD,568,complete_tvd,0.1993,
+subpopulation,seen,scPLAD,568,unassigned_fraction,0.0832,
+subpopulation,seen,scPLAD,568,cluster_detection_rate,0.9941,
+subpopulation,seen,scPLAD,568,within_cluster_occ,0.6217,
+subpopulation,seen,TxPert,568,complete_tvd,0.4557,
+subpopulation,seen,TxPert,568,unassigned_fraction,0.0052,
+subpopulation,seen,TxPert,568,cluster_detection_rate,0.5791,
+subpopulation,seen,TxPert,568,within_cluster_occ,0.2815,
+subpopulation,seen,STATE,568,complete_tvd,0.2585,
+subpopulation,seen,STATE,568,unassigned_fraction,0.1634,
+subpopulation,seen,STATE,568,cluster_detection_rate,0.9808,
+subpopulation,seen,STATE,568,within_cluster_occ,0.4232,
+subpopulation,unseen,scPLAD,494,complete_tvd,0.226,
+subpopulation,unseen,scPLAD,494,unassigned_fraction,0.0996,
+subpopulation,unseen,scPLAD,494,cluster_detection_rate,0.9905,
+subpopulation,unseen,scPLAD,494,within_cluster_occ,0.5811,
+subpopulation,unseen,TxPert,494,complete_tvd,0.4474,
+subpopulation,unseen,TxPert,494,unassigned_fraction,0.0,
+subpopulation,unseen,TxPert,494,cluster_detection_rate,0.5811,
+subpopulation,unseen,TxPert,494,within_cluster_occ,0.2845,
+coverage,0,scPLAD,506,Delta Spearman,0.312,0.0009
+coverage,1,scPLAD,75,Delta Spearman,0.3217,0.0011
+coverage,2,scPLAD,162,Delta Spearman,0.3614,0.0008
+coverage,3,scPLAD,343,Delta Spearman,0.3733,0.0028
+coverage,0,scPLAD,506,AUPRC,0.3283,0.0025
+coverage,1,scPLAD,75,AUPRC,0.3433,0.0023
+coverage,2,scPLAD,162,AUPRC,0.3639,0.0025
+coverage,3,scPLAD,343,AUPRC,0.3699,0.0045
+coverage,0,scPLAD,506,IoU100,0.6942,0.0023
+coverage,1,scPLAD,75,IoU100,0.7106,0.0028
+coverage,2,scPLAD,162,IoU100,0.716,0.0022
+coverage,3,scPLAD,343,IoU100,0.7131,0.0025
+coverage,0,scPLAD,506,Width ratio100,1.031,0.058
+coverage,1,scPLAD,75,Width ratio100,1.003,0.063
+coverage,2,scPLAD,162,Width ratio100,1.02,0.051
+coverage,3,scPLAD,343,Width ratio100,1.04,0.05

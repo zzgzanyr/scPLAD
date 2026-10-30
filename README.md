@@ -183,6 +183,8 @@ single-cell training matrices.
   the mean-correction and current metric release.
 - `docs/MEAN_CORRECTION_AND_FCS.md`: portable mean predictor, fixed correction,
   and Fidelity-Coverage Score definitions.
+- `figure_reproduction/source_data/current_manuscript/`: 14 compact current
+  manuscript source-data tables, data dictionary, and checksums.
 
 - `docs/LOCAL_REPRODUCTION_ASSETS_20260904.md`: local configuration and compact-input audit.
 - `manifest/portable_configs.tsv`: ten archive-relative experiment parameter specifications.

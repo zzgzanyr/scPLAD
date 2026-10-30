@@ -1,0 +1,25 @@
+setting,metric,estimate
+GO + Reactome,Delta PCC,0.5551
++ ESM3,Delta PCC,0.5556
++ Network,Delta PCC,0.563
+Complete prior,Delta PCC,0.5581
+GO + Reactome,Delta Spearman,0.4304
++ ESM3,Delta Spearman,0.4307
++ Network,Delta Spearman,0.4357
+Complete prior,Delta Spearman,0.4335
+GO + Reactome,Top-100 DE,0.4577
++ ESM3,Top-100 DE,0.4573
++ Network,Top-100 DE,0.4633
+Complete prior,Top-100 DE,0.461
+GO + Reactome,ERC all,0.8157
++ ESM3,ERC all,0.8235
++ Network,ERC all,0.8186
+Complete prior,ERC all,0.8255
+GO + Reactome,IoU all,0.8231
++ ESM3,IoU all,0.8278
++ Network,IoU all,0.8252
+Complete prior,IoU all,0.8307
+GO + Reactome,CSA100 Pearson,0.6346
++ ESM3,CSA100 Pearson,0.6376
++ Network,CSA100 Pearson,0.6383
+Complete prior,CSA100 Pearson,0.6401

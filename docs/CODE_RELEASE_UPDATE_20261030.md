@@ -2,8 +2,8 @@
 
 This update closes the portable implementation gap for the current K562
 condition-mean correction and adds the current distribution-oriented
-evaluation entry points. Manuscript result CSV files are intentionally not
-included in this update.
+evaluation entry points. A follow-up commit adds 14 compact manuscript
+source-data CSV files under `figure_reproduction/source_data/current_manuscript/`.
 
 ## Included
 
@@ -20,7 +20,8 @@ maximum absolute difference of `4.7683716e-7`.
 
 ## Deliberately deferred
 
-- Manuscript source/result CSV files and complete per-condition outputs.
+- Large generated-cell matrices and additional complete per-condition outputs
+  beyond the 14 compact released tables.
 - Historical shell launchers containing author-server absolute paths.
 - Control-cell-count launchers that still dynamically import private server
   modules; only the portable summary verifier is included.

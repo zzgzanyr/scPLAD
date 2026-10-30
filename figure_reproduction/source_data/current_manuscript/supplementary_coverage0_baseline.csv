@@ -1,0 +1,13 @@
+method,metric,estimate,sd
+"scPLAD, validation-selected",Delta PCC,0.4315,
+"scPLAD, validation-selected",Delta Spearman,0.313,
+"scPLAD, validation-selected",Top-100 DE,0.3698,
+"scPLAD, validation-selected",AUPRC,0.3307,
+"scPLAD, three seeds",Delta PCC,0.4278,0.0033
+"scPLAD, three seeds",Delta Spearman,0.312,0.0009
+"scPLAD, three seeds",Top-100 DE,0.3664,0.003
+"scPLAD, three seeds",AUPRC,0.3283,0.0025
+Source average effect,Delta PCC,0.3069,
+Source average effect,Delta Spearman,0.229,
+Source average effect,Top-100 DE,0.2735,
+Source average effect,AUPRC,0.2201,

@@ -1,0 +1,13 @@
+metric,setting,estimate,sd
+Delta PCC,Original,0.5575,0.0011
+Delta PCC,Pathway-aware,0.5581,0.0008
+Delta Spearman,Original,0.432,0.0009
+Delta Spearman,Pathway-aware,0.4335,0.0008
+Top-100 DE,Original,0.4604,0.0034
+Top-100 DE,Pathway-aware,0.461,0.0008
+ERC all,Original,0.8069,0.004
+ERC all,Pathway-aware,0.8255,0.001
+IoU all,Original,0.8163,0.0015
+IoU all,Pathway-aware,0.8307,0.0012
+CSA100 Pearson,Original,0.6293,0.0011
+CSA100 Pearson,Pathway-aware,0.6401,0.0013
