@@ -81,6 +81,8 @@ configuration, and troubleshooting.
 
 ## Data and checkpoints
 
+- Portable K562 mean-response ensemble (three model states in one file):
+  [`checkpoints/k562_only/mean_predictor_go_reactome_ensemble.pt`](checkpoints/k562_only/mean_predictor_go_reactome_ensemble.pt)
 - K562-only data: [`datasets/k562_only`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/datasets/k562_only)
 - Cross-cell-line data: [`datasets/cross_cell_line`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/datasets/cross_cell_line)
 - K562-only model assets: [`k562_only`](https://huggingface.co/zhangzhigang/scPLAD/tree/main/k562_only)
@@ -104,6 +106,14 @@ After downloading, set configuration paths to the corresponding files under
 `external/scPLAD-assets/`. No access to the authors' compute environment is
 required.
 
+The current K562 prediction protocol applies a separately trained
+GO+Reactome condition-mean predictor to the generated populations with a fixed
+mixing coefficient of `0.75`. The released bundle contains all three model
+states, feature and gene orders, control mean, and normalization statistics.
+See [mean correction and FCS](docs/MEAN_CORRECTION_AND_FCS.md) for the exact
+transformation, retraining/export commands, and the Fidelity-Coverage Score
+definition.
+
 ## Design rules
 
 - Large AnnData files and manuscript checkpoints are hosted on Hugging Face
@@ -114,6 +124,8 @@ required.
   reproduce the paper figures from the provided compact source data.
 - `scripts/` contains portable copies of the curated data-preparation,
   training, inference, evaluation, and ablation entry points.
+- `checkpoints/k562_only/` contains the compact self-contained mean-response
+  ensemble used by the current K562 correction protocol.
 - `src/scplad_transport/` contains the shared model implementation imported by
   the training and inference entry points.
 - `figure_reproduction/` contains the canonical Figures 1-5, compact source
@@ -167,6 +179,10 @@ single-cell training matrices.
 
 - `docs/BASELINE_RECOVERY_20260904.md`: recovered baseline code and actual-run parameters.
 - `manifest/baseline_runs.tsv`: eight baseline model/task and diagnostic evidence records.
+- `docs/CODE_RELEASE_UPDATE_20261030.md`: scope and remaining boundaries of
+  the mean-correction and current metric release.
+- `docs/MEAN_CORRECTION_AND_FCS.md`: portable mean predictor, fixed correction,
+  and Fidelity-Coverage Score definitions.
 
 - `docs/LOCAL_REPRODUCTION_ASSETS_20260904.md`: local configuration and compact-input audit.
 - `manifest/portable_configs.tsv`: ten archive-relative experiment parameter specifications.
